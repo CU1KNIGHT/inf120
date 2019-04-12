@@ -546,6 +546,97 @@ wenn $(X_n)$ beschränkt ist können wir fragen ob $(X_n)$    konvergent.\\
 
 $(X_n)$ beschränkt von Monotonie $\Rightarrow$ $(X_n)$ konvergent.  
 
+\begin{remark}
+% noch zu schreiben 
+\end{remark}
+
+\begin{example}
+
+\end{example}
+\begin{equation}
+\lim\limits_{n \rightarrow \infty}{\frac{11+1}{9-n}}\quad ? \\
+\\\quad X_n = \frac{11+1}{9-n}=\frac{n}{n} \frac{\frac{11}{n}+1}{\frac{9}{n}-1}
+\end{equation}
+
+\begin{equation}
+\lim\limits_{n \rightarrow \infty}{\bigg(\frac{11}{n}+1\bigg)}=1
+\end{equation}
+
+\begin{equation}
+\lim\limits_{n \rightarrow \infty}{\bigg(\frac{9}{n}+1\bigg)}=-1
+\end{equation}
+
+\begin{equation}
+\lim\limits_{n \rightarrow \infty}{(X_n)}= \frac{1}{-1}=-1
+\end{equation}
+
+\begin{lemma}
+Seien $(x_n)=(y_n)$ Folgen auf $\lim\limits_{n \rightarrow \infty}{(x_n)}= \lim\limits_{n \rightarrow \infty}{(y_n)}= a$ und es gelte 
+$x_n \leq z_n \leq y_n$ für "fest alle " $n \in \mathbb{N}$\\
+
+Dann gilt für die Folge $(Z_n) \lim\limits_{n \rightarrow \infty}{(z_n)}=a$
+\end{lemma}
+
+\begin{example}
+Ist die Folge $(-1)^n\frac{1}{n})$ konvergent ?\\
+
+\[ - \frac{1}{n} \leq(-1)^n(\frac{1}{n}) \leq 1 \frac{1}{n}\]
+ 
+\[ \lim\limits_{n \rightarrow \infty}{- \big(\frac{1}{n} \big)}= -1 \]  
+\[ \lim\limits_{n \rightarrow \infty}{ \big(\frac{1}{n} \big)}= 0 \Rightarrow \lim\limits_{n \rightarrow \infty}{(-1)^n \frac{1}{n}}= 0                                        
+\]
+\end{example}
+
+\begin{example}
+\begin{equation}
+\begin{aligned}
+x_n \leq  = \frac{a^n}{n!} = \frac{a}{n} \times \frac{a^{a-1}}{n-1!} %
+\end{aligned}
+\end{equation}\\
+
+denn $ x_n = 0 \leq \frac{a_n}{n!} \leq y_n$ 
+, gesucht! $\underbrace{y_n}_{\lim\limits_{n \rightarrow \infty}{y_n}=0}$  für hinreichend großes n. 
+
+\begin{equation}
+\begin{aligned}
+\frac{a^n}{n!} = \frac{a}{n} \times \frac{a^{n-1}}{(n-1)!} \\ \leq 
+\frac{1}{2} \times
+\frac{a^{n-1}}{(n-1)!} \\ =
+ \frac{1}{2} \times 
+\frac{a}{(n-1)} \times 
+\frac{a^{n-2}}{(n-2)!} \\ \leq
+\frac{1}{2} \times 
+\frac{1}{2} \times
+\frac{a^{n-2}}{(n-2)!} \\ \leq
+\frac{1}{2} \times
+\frac{1}{2} \times
+\frac{1}{2} \times 
+\frac{a^{n-3}}{(n-3)!}\\
+%
+y_n = (\frac{1}{2})^{n-k} \times \frac{a^k}{k!} \quad \text{k ist fest} 
+ \end{aligned}
+\end{equation}\\
+
+{Es gilt} $\frac{a^n}{n!} \leq y_n$  für hinreichend großes n und 
+ $\lim\limits_{n \rightarrow \infty}{(y_n)}$ \\
+
+\begin{equation}
+\begin{aligned}
+&=
+\lim\limits_{n \rightarrow \infty}{(\frac{1}{2})^{n-k}} \times 
+\underbrace{\frac{a^l}{k!}}_{Konst} \\
+&= 
+\lim\limits_{n \rightarrow \infty}{(\frac{1}{2})^{n}} \times
+\underbrace{\lim\limits_{n \rightarrow \infty}{(\frac{1}{2})^{-k}}}_{\in \mathbb{R}} \times 
+\underbrace{\lim\limits_{n \rightarrow \infty}{(\frac{a^k}{k!})}}_{\in \mathbb{R}} \\
+&= 0 . (\frac{1}{2})^{-k} \times \frac{a^k}{k!}=0 
+\\
+\end{aligned}
+\end{equation} 
+\end{example}
+
+
+
 
 \end{document}
 
