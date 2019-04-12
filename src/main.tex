@@ -3,14 +3,17 @@
 % Prof Dr Ulrike Baumann
 
 % Setup document
-\documentclass[a4paper,12pt,leqno]{report}
+\documentclass[a4paper,12pt]{report}
 
 \usepackage{inputenc,fontenc}
 \usepackage{longtable,tabularx,tabulary,array,booktabs,multicol}
 \usepackage{graphicx,caption,color,xcolor}
+\usepackage{chngcntr}
 \usepackage{verbatim}
 \usepackage{url}
 \usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage[nottoc]{tocbibind}
+\usepackage{thmtools}
 \usepackage[a4paper,margin=3cm]{geometry}
 \usepackage{pgfplots}
 \usepackage[english,german]{babel}
@@ -26,7 +29,7 @@
 \usepgfplotslibrary{fillbetween}
 \usetikzlibrary{patterns}
 
-\renewcommand{\mathscr}{\mathcal}
+\newcommand{\mathscr}{\mathcal}
 %\usepackage{picinpar} %Einbinden von Bildern
 %\usepackage{picins}   %Einbinden von Bildern
 
@@ -56,6 +59,7 @@
 \newtheorem{remark}[theorem]{Bemerkung}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Beispiel}
+
 
 
 
@@ -146,4 +150,5 @@ Mitschrift zur Vorlesung Sommer Semester 2019  \\[\bigskipamount]
     \chapter*{Einleitung}
 \include{v1}
 
+\listoftheorems[ignoreall,show={definition}]
 \end{document}
