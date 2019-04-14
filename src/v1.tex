@@ -85,7 +85,6 @@
 \newpage
 
 \begin{definition}$$ \newline
-
         \begin{enumerate}
 
         \item Eine reellwertige Funktion ist in der Mathematik eine Funktion, deren Funktionswerte reelle Zahlen sind.
@@ -219,14 +218,17 @@ axis x line=bottom,
 yticklabels={,, $ a - \varepsilon$, a , $a + \varepsilon$ },xtick={1,...,10},
 xticklabels={,,N,n},
 ]
-    %\addplot {|x-a|<0};
+
     \addplot[dashed, name path =A] coordinates {(0,1) (5.5,1)};
 
 
     \addplot[thick, samples=50, smooth,domain=0:6,magenta, name path=V] coordinates {(3,-2)(3,3)};
     \addplot[dashed, name path =B] coordinates {(0,-1) (5.5,-1)};
     \addplot[gray, pattern=north west lines] fill between[of=A and B, soft clip={domain=3:6}];
-    \addplot[samples at={0,...,5},only marks,mark size=1] {sin(x)};
+    \addplot[samples at={0,...,5},only marks,mark size=1] { 1/x };
+    \addplot[samples at={0,...,5},only marks,mark size=1] { f(x)=1 };
+
+
 
 \end{axis}
 \end{tikzpicture}%
