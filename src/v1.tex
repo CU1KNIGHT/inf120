@@ -54,7 +54,7 @@
         \item Konstante Folge $(X_n)$ mit \quad $X_n = a \in \mathbf{M },a \dots$ \\
         \[ X_n = a \in \mathbf{M} \]
         \item Harmonische Folge $(X_n)$  mit $X_n$ =  $\frac{1}{n+1}$ \quad$ n \geq 1$
-        \item Geometrische folge $(X_n)$ mit $X_n = q^n \:. \: q \in \mathbb{R}, \dots $
+        \item Geometrische folge $(X_n)$ mit $X_n = q^n \:, \: q \in \mathbb{R}, \dots $
         \item Fibonaccifolge $(X_n)$ mit
         \[ X_n =\frac{1}{\sqrt{5}} \Big(  \big( \frac{1+ \sqrt{5}}{2} \big)^n - \big( \frac{1- \sqrt{5}}{2}\big)^n   \Big)    \]
 
@@ -67,7 +67,7 @@
         \item conway  folge
         \[ 1, 11 ,21 , 1211, 111217, 312211 \dots \]
 
-        \item folge aller Primzahlen:- \[ 2, 3 ,5 ,7 ,11, 13 , \dots \]
+        \item folge aller Primzahlen: \[ 2, 3 ,5 ,7 ,11, 13 , \dots \]
 
     \end{enumerate}
 \end{example}
@@ -84,8 +84,7 @@
 \end{remark}
 \newpage
 
-\begin{definition}$$ \newline
-
+\begin{definition}$ \newline$
         \begin{enumerate}
 
         \item Eine reellwertige Funktion ist in der Mathematik eine Funktion, deren Funktionswerte reelle Zahlen sind.
@@ -143,12 +142,12 @@
 \begin{example}{Standard:}\\
 
 {Die folge}
-$ \bigg(\big(1 + \frac{1}{n} \big)^n \bigg)^\infty$
+$ \bigg(\big(1 + \frac{1}{n} \big)^n \bigg)^\infty_{n=1}$
 {ist beschränkt durch 3}\\
 
-Zu Zeigen:
+Zu zeigen: \quad $ -3 \leq X_n \leq 3 \quad \text{für alle} \quad n \in \mathbb{N} $
 
-\[ -3 \leq X_n \leq 3 \quad \text{für alle} \quad n \in \mathbb{N} \]
+
 \[ { (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^k . b^{n .k} = \sum_{k=0}^{n} \binom{n}{k} a^{n.k} b^k }  \]
 \[  \binom{n}{k} = \frac{n!}{k!(n-k!)} =  \frac{n(n-1) -(n-k-1))}{k!} \]
 \[  \sum_{K=1}^{n} \frac{1}{k} = 1+ \frac{1}{2} + \frac{1}{2.3} + \frac{1}{2.3.4} + \dots \]
@@ -219,14 +218,18 @@ axis x line=bottom,
 yticklabels={,, $ a - \varepsilon$, a , $a + \varepsilon$ },xtick={1,...,10},
 xticklabels={,,N,n},
 ]
-    %\addplot {|x-a|<0};
+
     \addplot[dashed, name path =A] coordinates {(0,1) (5.5,1)};
 
 
     \addplot[thick, samples=50, smooth,domain=0:6,magenta, name path=V] coordinates {(3,-2)(3,3)};
     \addplot[dashed, name path =B] coordinates {(0,-1) (5.5,-1)};
     \addplot[gray, pattern=north west lines] fill between[of=A and B, soft clip={domain=3:6}];
-    \addplot[samples at={0,...,5},only marks,mark size=1] {sin(x)};
+    \addplot[samples at={0,...,5},only marks,mark size=1] { 1/x };
+    \addplot[samples at={0,...,5},only marks,mark size=1] { (1-x)/x^2 };
+   
+
+
 
 \end{axis}
 \end{tikzpicture}%
