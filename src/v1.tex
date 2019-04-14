@@ -4,9 +4,9 @@
 %%
 
 \chapter{Folge und Reihen:}
-\section{Folgen und Reihen}
+\section{Folgen}
 \numberwithin{equation}{theorem}
-\begin{definition}
+\begin{definition}[Folgen]
     Ein folge ist eine Abbildung
 
     \[ f: \mathbb{N} \rightarrow \underbrace{\mathbf{M}}_{Menge} : \mathrm{n} \mapsto \underbrace{X_n}_{folgenglied} \]
@@ -14,9 +14,9 @@
 \end{definition}
 \begin{remark}
 
-    \begin{align}	\mathbb{M} &= \mathbb{R} \quad reelewert Folge  \notag \\
-    M&= \mathbb{C} \quad	 Komplexewetig folge  \notag \\
-    \mathbb{M}&= \mathbb{R}^n \quad vertical folge \notag
+    \begin{align}	\mathbf{M} &= \mathbb{R} \quad reelewert Folge  \notag \\
+    M&= \mathbb{C} \quad	 komplexewetig folge  \notag \\
+    \mathbf{M}&= \mathbb{R}^n \quad vertical folge \notag
     \end{align}
 
 
@@ -27,21 +27,22 @@
 
     \item[Bezeichnung]
 
-    \quad $(X_n)$ \space \text{mit} \space $ \left( X_n =  \right) \frac{n}{n+1} $
+    \quad $(X_n)$ \space \text{mit} \space $ \left( X_n   \right)$=$ \frac{n}{n+1} $
     \\ \\ Aufzählung der folglieder: 0 , $\frac{1}{2}$ ,$\frac{2}{3}$ , $\frac{3}{4}$ , \dots
-    \begin{remark}
-        zuweten wird $\mathbb{N}$ durch $\mathbb{N}$ {0,1 \dots} erstellt.
 
-
-    \end{remark}
-    \begin{tikzpicture}
-        \begin{axis}[
-        xlabel= $x$,
-        ylabel= {$y$}]
-            \addplot { x/(x+1)};
-        \end{axis}
-    \end{tikzpicture}
 \end{description}
+\begin{remark}
+    zuweten wird $\mathbb{N}$ durch $\mathbb{N}$ {0,1 \dots} erstellt.
+
+
+\end{remark}
+\begin{tikzpicture}
+    \begin{axis}[
+    xlabel= $x$,
+    ylabel= {$y$}]
+        \addplot[only marks,mark size=1] { x/(x+1)};
+    \end{axis}
+\end{tikzpicture}
 \begin{example}
     \[\]
     \begin{enumerate}
