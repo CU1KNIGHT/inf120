@@ -13,6 +13,8 @@
 \usepackage{url}
 \usepackage{amsmath,amsthm,amssymb,amsfonts}
 \usepackage[nottoc]{tocbibind}
+\usepackage{mathtools}
+\usepackage{mathabx}
 \usepackage{thmtools}
 \usepackage[a4paper,margin=3cm]{geometry}
 \usepackage{pgfplots}
@@ -60,11 +62,21 @@
 \swapnumbers
 
 \theoremstyle{plain} %Text ist Kursiv
+\newtheoremstyle{break}% name
+{}%         Space above, empty = `usual value'
+{}%         Space below
+{\itshape}% Body font
+{}%         Indent amount (empty = no indent, \parindent = para indent)
+{\bfseries}% Thm head font
+{.}%        Punctuation after thm head
+{\newline}% Space after thm head: \newline = linebreak
+{}%         Thm head spec
 \newtheorem{theorem}{Satz}[chapter]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Korollar}
-\theoremstyle{definition} %Text ist \"upright"
+%\theoremstyle{definition} %Text ist \"upright"
+\theoremstyle{break}
 \newtheorem{remark}[theorem]{Bemerkung}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Beispiel}
@@ -156,6 +168,5 @@ Mitschrift zur Vorlesung Sommer Semester 2019  \\[\bigskipamount]
     \setcounter{page}{0}
     \chapter*{Einleitung}
 \include{v1}
-
-\listoftheorems[ignoreall,show={definition}]
-\end{document}
+\listoftheorems[ ignoreall,show={definition}]
+ \end{document}
