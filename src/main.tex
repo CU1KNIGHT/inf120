@@ -22,6 +22,10 @@
 \usepackage{eucal}    %sch\"{o}nere Skript-Buchstaben
 \usepackage{dsfont}   %sch\"{o}nere "Doppelstrich"-Fonts
 
+\usepackage{tikz}
+=======
+
+
 % Fontauswahl
 
 \pgfplotsset{compat=1.12}
@@ -43,7 +47,13 @@
 \newcommand{\emailS}{mahmoud.kiki@tu-dresden.de}
 
 
-%%
+
+%% Created defnintions 
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+=======
+
+
+
 %% Theorem environments etc.
 %% See also: ftp://ftp.ams.org/ams/doc/amscls/amsthdoc.pdf
 %%
@@ -59,8 +69,6 @@
 \newtheorem{remark}[theorem]{Bemerkung}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Beispiel}
-
-
 
 
 
