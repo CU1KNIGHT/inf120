@@ -1,0 +1,53 @@
+\begin{example}
+\begin{equation}
+\begin{aligned}
+0,4 \overline{3} = \frac{3}{4} + \frac{3}{100} + \frac{3}{10000}+ \dots \\
+\frac{4}{10} + \frac{3}{100}(\frac{1}{10})^0 + \frac{1}{10} + \frac{3}{10^2} + \dots \\
+=\frac{4}{10} + \frac{3}{100} \times \frac{1}{1-\frac{1}{10}}\\
+= \frac{4}{10}+ \frac{1}{30} = \frac{12+1}{30}= \frac{13}{30}
+\end{aligned}
+\end{equation}
+\end{example}
+
+\begin{example}
+\begin{equation}
+\begin{aligned}
+\sum_{K=1}^\infty{\frac{1}{k}} \text{ist divergent , denn }\\
+\lim_{n \to \infty} \sum_{K=1}^n{\frac{1}{k}} \text{ex. nicht ! }\\
+S_n = \frac{1}{1} + \frac{1}{2} + \big(\frac{1}{3} + \frac{1}{4} \big)+
+\big(\frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8} \big) 
++ \frac{1}{9} \dots + \frac{1}{16} + \dots \frac{1}{n} \\
+ > 1 + \frac{1}{2} \big(\frac{1}{4} + \frac{1}{4} \big) + 
+ \big(\frac{1}{8}+ \frac{1}{8}+ \frac{1}{8}+ \frac{1}{8}+ \big)+ \\
+ \big( \frac{1}{10} + \dots + \dots + \frac{1}{10} \big)+ \dots + \frac{1}{n}= 1+ \frac{1}{2} + \frac{1}{2} + \frac{1}{2} + \frac{1}{2}+ \dots + \frac{1}{n}\\
+ \Rightarrow \lim_{n \to \infty}S_n=\infty
+\end{aligned}
+\end{equation}
+\end{example}
+
+\section{Alleemiene Reihen}
+\begin{lemma}
+\begin{equation}
+\begin{aligned}
+\sum_{k=1}^\infty {\frac{1}{k^x}} \text{x fest}\\
+\text{falls:}\\
+x > 1 \Rightarrow konvergent\\
+x \leq q \Rightarrow Divergent\\
+\end{aligned}
+\end{equation}
+\end{lemma}
+
+
+\begin{proof}{mit Monotoniekriterium}
+\begin{equation}
+(1)\bigg(\sum_{k=1}^n {\frac{1}{k^2}} \bigg) \text{\quad Monoton (wachsend)} 
+\end{equation}
+
+\begin{equation}
+(2)(\bigg(\sum_{k=1}^n {\frac{1}{k^2}} \bigg)) \text{ \quad ist beschränkt}
+\end{equation}  \\
+
+
+
+
+\end{proof}
