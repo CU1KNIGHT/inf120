@@ -24,6 +24,7 @@
 \usepackage{eucal}    %sch\"{o}nere Skript-Buchstaben
 \usepackage{dsfont}   %sch\"{o}nere "Doppelstrich"-Fonts
 \usepackage{tikz}
+\usepackage{forest}
 
 
 
@@ -81,6 +82,8 @@
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Beispiel}
 
+
+
 \hypersetup{
 	colorlinks=true,
 	linkcolor=blue,
@@ -102,6 +105,16 @@
 \newcommand{\thema}{Mathematische Methoden für Informatiker}
 
 \newcommand{\datum}{\today}%Format tt.\ mm.\ jjjj
+
+%shortcut :Mahmoud
+\newcommand{\sumIn}{\sum_{K=1}^{n}}
+\newcommand{\sumIin}{\sum_{K=1}^{\infty}}
+\newcommand{\sumOin}{\sum_{K=0}^{\infty}}
+\newcommand{\sumOn}{\sum_{K=0}^{n}}
+\newcommand{\fracKetwo}{\frac{1}{k^2}} %1/(k^2)
+\newcommand{\fracKone}{\frac{1}{k}}   %1/k
+\newcommand{\limNin}{\lim\limits_{n \rightarrow \infty}}
+\newcommand{\limKin}{\lim\limits_{k \rightarrow \infty}}
 
 
 
@@ -164,5 +177,7 @@ Mitschrift zur Vorlesung Sommer Semester 2019  \\[\bigskipamount]
     \setcounter{page}{0}
     \chapter*{Einleitung}
 \include{v1}
+\include{v2}
+\include{v4}
 \listoftheorems[ ignoreall,show={definition}]
  \end{document}
