@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a11aa28-ded3-403e-ae34-ca1a67fe1668" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.loe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.loe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/v1.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v4.aux" beforeDir="false" afterPath="$PROJECT_DIR$/src/v4.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/v4.tex" afterDir="false" />
-    </list>
+    <list default="true" id="7a11aa28-ded3-403e-ae34-ca1a67fe1668" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/auxil/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,10 +15,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="-2171">
               <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
             </state>
           </provider>
@@ -86,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/v1.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="121">
@@ -123,8 +108,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Mahmoud" />
         <option value="Mahmoud &lt;mah2009moud@hotmail.com&gt;" />
+        <option value="Mahmoud" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -263,7 +248,7 @@
       <workItem from="1555258888820" duration="6479000" />
       <workItem from="1555276481413" duration="2517000" />
       <workItem from="1555281004983" duration="1931000" />
-      <workItem from="1555707187446" duration="1357000" />
+      <workItem from="1555707187446" duration="1623000" />
     </task>
     <task id="LOCAL-00001" summary="new version of latex file that mohammed wrote">
       <created>1555091706331</created>
@@ -363,11 +348,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555705967943</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix some misaktes and the conflict in the github manual">
+      <created>1555709592066</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1555709592066</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add the &quot;Einleitung&quot;">
+      <created>1555709813654</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1555709813654</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44445000" />
+    <option name="totallyTimeSpent" value="44711000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -505,7 +504,9 @@
     <MESSAGE value="fix bugs" />
     <MESSAGE value="try" />
     <MESSAGE value="fix some misaktes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix some misaktes" />
+    <MESSAGE value="fix some misaktes and the conflict in the github manual" />
+    <MESSAGE value="add the &quot;Einleitung&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the &quot;Einleitung&quot;" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -570,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.tex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/v4.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -629,6 +623,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="618" column="19" selection-start-line="618" selection-start-column="19" selection-end-line="618" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2171">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
         </state>
       </provider>
     </entry>
