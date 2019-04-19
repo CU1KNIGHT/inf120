@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.6)  15 APR 2019 01:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.6)  19 APR 2019 22:30
 entering extended mode
 **./main.tex
 (main.tex
@@ -1628,23 +1628,349 @@ LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 ont.sty"
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/forest\forest.st
+y"
+Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
+
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibraryshapes.code.tex"
+File: tikzlibraryshapes.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibraryshapes.geometric.code.tex"
+File: tikzlibraryshapes.geometric.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/
+shapes\pgflibraryshapes.geometric.code.tex"
+File: pgflibraryshapes.geometric.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibraryshapes.misc.code.tex"
+File: tikzlibraryshapes.misc.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/
+shapes\pgflibraryshapes.misc.code.tex"
+File: pgflibraryshapes.misc.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibraryshapes.symbols.code.tex"
+File: tikzlibraryshapes.symbols.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/
+shapes\pgflibraryshapes.symbols.code.tex"
+File: pgflibraryshapes.symbols.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibraryshapes.arrows.code.tex"
+File: tikzlibraryshapes.arrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/
+shapes\pgflibraryshapes.arrows.code.tex"
+File: pgflibraryshapes.arrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibraryshapes.callouts.code.tex"
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/
+shapes\pgflibraryshapes.callouts.code.tex"))
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibraryshapes.multipart.code.tex"
+File: tikzlibraryshapes.multipart.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/
+shapes\pgflibraryshapes.multipart.code.tex"
+File: pgflibraryshapes.multipart.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfnodepartlowerbox=\box73
+\pgfnodeparttwobox=\box74
+\pgfnodepartthreebox=\box75
+\pgfnodepartfourbox=\box76
+\pgfnodeparttwentybox=\box77
+\pgfnodepartnineteenbox=\box78
+\pgfnodeparteighteenbox=\box79
+\pgfnodepartseventeenbox=\box80
+\pgfnodepartsixteenbox=\box81
+\pgfnodepartfifteenbox=\box82
+\pgfnodepartfourteenbox=\box83
+\pgfnodepartthirteenbox=\box84
+\pgfnodeparttwelvebox=\box85
+\pgfnodepartelevenbox=\box86
+\pgfnodeparttenbox=\box87
+\pgfnodepartninebox=\box88
+\pgfnodeparteightbox=\box89
+\pgfnodepartsevenbox=\box90
+\pgfnodepartsixbox=\box91
+\pgfnodepartfivebox=\box92
+)))
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibraryfit.code.tex"
+File: tikzlibraryfit.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
+yer/tikz/libraries\tikzlibrarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\
+pgflibraryintersections.code.tex"
+\pgf@intersect@solutions=\count176
+)
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgfopts\pgfopts.
+sty"
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks53
+\pgfopts@list@add@b@toks=\toks54
+)
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbo
+x.sty"
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count177
+)
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/elocalloc\elocal
+loc.sty"
+Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
+)
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/environ\environ.
+sty"
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/trimspaces\trims
+paces.sty"
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xpars
+e\xparse.sty"
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.s
+ty"
+Package: expl3 2019-04-06 L3 programming layer (loader) 
+
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3-c
+ode.tex"
+Package: expl3 2019-04-06 L3 programming layer (code)
+\c_max_int=\count178
+\l_tmpa_int=\count179
+\l_tmpb_int=\count180
+\g_tmpa_int=\count181
+\g_tmpb_int=\count182
+\g__kernel_prg_map_int=\count183
+\c__ior_term_ior=\count184
+\c_log_iow=\count185
+\l_iow_line_count_int=\count186
+\l__iow_line_target_int=\count187
+\l__iow_one_indent_int=\count188
+\l__iow_indent_int=\count189
+\c_zero_dim=\dimen294
+\c_max_dim=\dimen295
+\l_tmpa_dim=\dimen296
+\l_tmpb_dim=\dimen297
+\g_tmpa_dim=\dimen298
+\g_tmpb_dim=\dimen299
+\c_zero_skip=\skip62
+\c_max_skip=\skip63
+\l_tmpa_skip=\skip64
+\l_tmpb_skip=\skip65
+\g_tmpa_skip=\skip66
+\g_tmpb_skip=\skip67
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count190
+\l__intarray_loop_int=\count191
+\c__intarray_sp_dim=\dimen300
+\g__intarray_font_int=\count192
+\c__fp_leading_shift_int=\count193
+\c__fp_middle_shift_int=\count194
+\c__fp_trailing_shift_int=\count195
+\c__fp_big_leading_shift_int=\count196
+\c__fp_big_middle_shift_int=\count197
+\c__fp_big_trailing_shift_int=\count198
+\c__fp_Bigg_leading_shift_int=\count199
+\c__fp_Bigg_middle_shift_int=\count266
+\c__fp_Bigg_trailing_shift_int=\count267
+\c__kernel_randint_max_int=\count268
+\g__fp_array_int=\count269
+\l__fp_array_loop_int=\count270
+\l__sort_length_int=\count271
+\l__sort_min_int=\count272
+\l__sort_top_int=\count273
+\l__sort_max_int=\count274
+\l__sort_true_max_int=\count275
+\l__sort_block_int=\count276
+\l__sort_begin_int=\count277
+\l__sort_end_int=\count278
+\l__sort_A_int=\count279
+\l__sort_B_int=\count280
+\l__sort_C_int=\count281
+\l__tl_analysis_normal_int=\count282
+\l__tl_analysis_index_int=\count283
+\l__tl_analysis_nesting_int=\count284
+\l__tl_analysis_type_int=\count285
+\l__regex_internal_a_int=\count286
+\l__regex_internal_b_int=\count287
+\l__regex_internal_c_int=\count288
+\l__regex_balance_int=\count289
+\l__regex_group_level_int=\count290
+\l__regex_mode_int=\count291
+\c__regex_cs_in_class_mode_int=\count292
+\c__regex_cs_mode_int=\count293
+\l__regex_catcodes_int=\count294
+\l__regex_default_catcodes_int=\count295
+\c__regex_catcode_D_int=\count296
+\c__regex_catcode_S_int=\count297
+\c__regex_catcode_L_int=\count298
+\c__regex_catcode_O_int=\count299
+\c__regex_catcode_A_int=\count300
+\c__regex_all_catcodes_int=\count301
+\l__regex_show_lines_int=\count302
+\l__regex_min_state_int=\count303
+\l__regex_max_state_int=\count304
+\l__regex_left_state_int=\count305
+\l__regex_right_state_int=\count306
+\l__regex_capturing_group_int=\count307
+\l__regex_min_pos_int=\count308
+\l__regex_max_pos_int=\count309
+\l__regex_curr_pos_int=\count310
+\l__regex_start_pos_int=\count311
+\l__regex_success_pos_int=\count312
+\l__regex_curr_char_int=\count313
+\l__regex_curr_catcode_int=\count314
+\l__regex_last_char_int=\count315
+\l__regex_case_changed_char_int=\count316
+\l__regex_curr_state_int=\count317
+\l__regex_step_int=\count318
+\l__regex_min_active_int=\count319
+\l__regex_max_active_int=\count320
+\l__regex_replacement_csnames_int=\count321
+\l__regex_match_count_int=\count322
+\l__regex_min_submatch_int=\count323
+\l__regex_submatch_int=\count324
+\l__regex_zeroth_submatch_int=\count325
+\g__regex_trace_regex_int=\count326
+\c_empty_box=\box93
+\l_tmpa_box=\box94
+\l_tmpb_box=\box95
+\g_tmpa_box=\box96
+\g_tmpb_box=\box97
+\l__box_top_dim=\dimen301
+\l__box_bottom_dim=\dimen302
+\l__box_left_dim=\dimen303
+\l__box_right_dim=\dimen304
+\l__box_top_new_dim=\dimen305
+\l__box_bottom_new_dim=\dimen306
+\l__box_left_new_dim=\dimen307
+\l__box_right_new_dim=\dimen308
+\l__box_internal_box=\box98
+\l__coffin_internal_box=\box99
+\l__coffin_internal_dim=\dimen309
+\l__coffin_offset_x_dim=\dimen310
+\l__coffin_offset_y_dim=\dimen311
+\l__coffin_x_dim=\dimen312
+\l__coffin_y_dim=\dimen313
+\l__coffin_x_prime_dim=\dimen314
+\l__coffin_y_prime_dim=\dimen315
+\c_empty_coffin=\box100
+\l__coffin_aligned_coffin=\box101
+\l__coffin_aligned_internal_coffin=\box102
+\l_tmpa_coffin=\box103
+\l_tmpb_coffin=\box104
+\g_tmpa_coffin=\box105
+\g_tmpb_coffin=\box106
+\l__coffin_bounding_shift_dim=\dimen316
+\l__coffin_left_corner_dim=\dimen317
+\l__coffin_right_corner_dim=\dimen318
+\l__coffin_bottom_corner_dim=\dimen319
+\l__coffin_top_corner_dim=\dimen320
+\l__coffin_scaled_total_height_dim=\dimen321
+\l__coffin_scaled_width_dim=\dimen322
+\c__coffin_empty_coffin=\box107
+\l__coffin_display_coffin=\box108
+\l__coffin_display_coord_coffin=\box109
+\l__coffin_display_pole_coffin=\box110
+\l__coffin_display_offset_dim=\dimen323
+\l__coffin_display_x_dim=\dimen324
+\l__coffin_display_y_dim=\dimen325
+\g__file_internal_ior=\read3
+\l__seq_internal_a_int=\count327
+\l__seq_internal_b_int=\count328
+\c__deprecation_minus_one=\count329
+)
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\l3pdfmo
+de.def"
+File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count330
+))
+Package: xparse 2019-03-05 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count331
+\g__xparse_grabber_int=\count332
+\l__xparse_m_args_int=\count333
+\l__xparse_v_nesting_int=\count334
+)
+("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/inlinedef\inline
+def.sty"
+Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
+\ID@toks=\toks55
+\ID@count=\count335
+)
+\ID@usercommands=\toks56
+\safeloop@depth=\count336
+\safeRKloop@depth=\count337
+\forest@temp@dimen=\dimen326
+\forest@temp@count=\count338
+\forest@n=\count339
+\forest@temp@global@count=\count340
+\forest@temp@toks=\toks57
+\forest@temparray@M=\count341
+\forest@temparray@N=\count342
+\forest@global@temparray@M=\count343
+\forest@global@temparray@N=\count344
+\forest@isnum@count=\count345
+\forest@isdim@nonintpart=\count346
+\forest@isdim@dimen=\dimen327
+\forest@sort@m=\count347
+\forest@sort@k=\count348
+\forest@sort@p=\count349
+\bracket@content=\toks58
+\bracket@afterthought=\toks59
+\forest@node@maxid=\count350
+\forest@process@left@M=\count351
+\forest@process@left@N=\count352
+\forest@process@right@M=\count353
+\forest@process@right@N=\count354
+\forest@process@saved@M=\count355
+\forest@process@saved@N=\count356
+\forest@process@result@M=\count357
+\forest@process@result@N=\count358
+\forest@process@n=\count359
+\forest@nodewalk@branch@toks=\toks60
+\forest@nodewalk@shortsteps@resolution=\toks61
+\forest@do@dynamics=\toks62
+\forest@box=\box111
+\forest@xg=\dimen328
+\forest@yg=\dimen329
+\forest@xs=\dimen330
+\forest@ys=\dimen331
+\forest@pi@toks=\toks63
+\forest@segment@toks=\toks64
+\forest@PIi@toks=\toks65
+\forest@PIii@toks=\toks66
+\forest@copy@in=\read4
+\forest@copy@out=\write4
+\forest@externalize@max@outer@n=\count360
+\forest@externalize@inner@n=\count361
+)
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/libs\
 tikzlibrarypgfplots.fillbetween.code.tex"
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/pgfco
 ntrib\tikzlibraryfillbetween.code.tex"
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
-yer/tikz/libraries\tikzlibraryintersections.code.tex"
-("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\
-pgflibraryintersections.code.tex"
-\pgf@intersect@solutions=\count176
-))
+yer/tikz/libraries\tikzlibraryintersections.code.tex")
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/pgfco
 ntrib\tikzlibrarydecorations.softclip.code.tex"
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/pgfco
 ntrib\pgflibraryfillbetween.code.tex"
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/oldpg
 fcompatib\pgfplotsoldpgfsupp_pgflibraryintersections.code.tex"
-\pgf@intersect@solutions=\count177
+\pgf@intersect@solutions=\count362
 ))))
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/libs\
 tikzlibrarypgfplots.decorations.softclip.code.tex"))
@@ -1656,48 +1982,48 @@ File: tikzlibrarypatterns.code.tex 2019/04/04 v3.1.2 (3.1.2)
 pgflibrarypatterns.code.tex"
 File: pgflibrarypatterns.code.tex 2019/04/04 v3.1.2 (3.1.2)
 ))
-\c@theorem=\count178
-Package hyperref Info: Option `colorlinks' set `true' on input line 88.
- (main.aux (v1.aux))
+\c@theorem=\count363
+Package hyperref Info: Option `colorlinks' set `true' on input line 91.
+ (main.aux (v1.aux) (v2.aux) (v4.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 122.
 
 
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    ... okay on input line 122.
 
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp
 -pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count179
-\scratchdimen=\dimen294
-\scratchbox=\box73
-\nofMPsegments=\count180
-\nofMParguments=\count181
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count182
-\MPscratchDim=\dimen295
-\MPnumerator=\count183
-\makeMPintoPDFobject=\count184
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count364
+\scratchdimen=\dimen332
+\scratchbox=\box112
+\nofMPsegments=\count365
+\nofMParguments=\count366
+\everyMPshowfont=\toks67
+\MPscratchCnt=\count367
+\MPscratchDim=\dimen333
+\MPnumerator=\count368
+\makeMPintoPDFobject=\count369
+\everyMPtoPDFconversion=\toks68
 )
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopd
 f-base.sty"
@@ -1756,8 +2082,8 @@ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.16} (current compat level: 1.12).
 
-\AtBeginShipoutBox=\box74
-Package hyperref Info: Link coloring ON on input line 109.
+\AtBeginShipoutBox=\box113
+Package hyperref Info: Link coloring ON on input line 122.
 
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref
 .sty"
@@ -1767,14 +2093,14 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 tlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count185
+\c@section@level=\count370
 )
-LaTeX Info: Redefining \ref on input line 109.
-LaTeX Info: Redefining \pageref on input line 109.
-LaTeX Info: Redefining \nameref on input line 109.
+LaTeX Info: Redefining \ref on input line 122.
+LaTeX Info: Redefining \pageref on input line 122.
+LaTeX Info: Redefining \nameref on input line 122.
  (main.out) (main.out)
-\@outlinefile=\write4
-\openout4 = `main.out'.
+\@outlinefile=\write5
+\openout5 = `main.out'.
 
  [1
 
@@ -1791,17 +2117,22 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-\tf@toc=\write5
-\openout5 = `main.toc'.
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
  [0
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+]
+Underfull \hbox (badness 10000) in paragraph at lines 179--185
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166 \include{v1}
+l.187 \include{v1}
                    [1
 
 ]
@@ -1819,29 +2150,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--32
  []
 
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 51.
-[2
+t line 52.
 
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+[2
+
+
+] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 NOTE: coordinate (0,4Y0.0e0]) has been dropped because it is unbounded (in y). 
 (see also unbounded coords=jump). 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
 
  []
 
@@ -1852,90 +2183,80 @@ NOTE: coordinate (0,4Y0.0e0]) has been dropped because it is unbounded (in y).
 (see also unbounded coords=jump). 
 NOTE: coordinate (0,4Y0.0e0]) has been dropped because it is unbounded (in y). 
 (see also unbounded coords=jump). 
-Package pgfplots info on input line 234: fill between: activating layered graph
+Package pgfplots info on input line 239: fill between: activating layered graph
 ics
-\pgf@layerbox@axis background=\box75
-\pgf@layerboxsaved@axis background=\box76
-\pgf@layerbox@axis grid=\box77
-\pgf@layerboxsaved@axis grid=\box78
-\pgf@layerbox@axis ticks=\box79
-\pgf@layerboxsaved@axis ticks=\box80
-\pgf@layerbox@axis lines=\box81
-\pgf@layerboxsaved@axis lines=\box82
-\pgf@layerbox@axis tick labels=\box83
-\pgf@layerboxsaved@axis tick labels=\box84
-\pgf@layerbox@pre main=\box85
-\pgf@layerboxsaved@pre main=\box86
-\pgf@layerbox@axis descriptions=\box87
-\pgf@layerboxsaved@axis descriptions=\box88
-\pgf@layerbox@axis foreground=\box89
-\pgf@layerboxsaved@axis foreground=\box90
-Package pgfplots info on input line 234: Setting layers 'axis background,axis g
+\pgf@layerbox@axis background=\box114
+\pgf@layerboxsaved@axis background=\box115
+\pgf@layerbox@axis grid=\box116
+\pgf@layerboxsaved@axis grid=\box117
+\pgf@layerbox@axis ticks=\box118
+\pgf@layerboxsaved@axis ticks=\box119
+\pgf@layerbox@axis lines=\box120
+\pgf@layerboxsaved@axis lines=\box121
+\pgf@layerbox@axis tick labels=\box122
+\pgf@layerboxsaved@axis tick labels=\box123
+\pgf@layerbox@pre main=\box124
+\pgf@layerboxsaved@pre main=\box125
+\pgf@layerbox@axis descriptions=\box126
+\pgf@layerboxsaved@axis descriptions=\box127
+\pgf@layerbox@axis foreground=\box128
+\pgf@layerboxsaved@axis foreground=\box129
+Package pgfplots info on input line 239: Setting layers 'axis background,axis g
 rid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis
  foreground'...
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 248.
+t line 253.
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 265--267
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
 
-Overfull \hbox (77.71776pt too wide) detected at line 284
+Overfull \hbox (77.71776pt too wide) detected at line 289
 \U/MnSymbolA/m/n/12  \OT1/cmr/m/n/12 1 \U/MnSymbolD/m/n/12 @ [] \OML/cmm/m/it/
 12 falls Aussage; Widerspruch also ist die Annahme falsch also gilt a \U/MnSymb
 olD/m/n/12   \OML/cmm/m/it/12 b
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--310
+Underfull \hbox (badness 10000) in paragraph at lines 313--315
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
 
  []
 
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 334.
+line 339.
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 414--415
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
@@ -1945,107 +2266,152 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--417
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--421
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--452
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--426
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--457
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 457--458
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 473--474
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--497
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--500
+Underfull \hbox (badness 10000) in paragraph at lines 503--505
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 562--563
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 574--575
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
 
  []
 
-) [13]
-showing definition
-(main.loe) [14
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--595
+
+ []
+
+[13]) [14]
+\openout2 = `v2.aux'.
+
+ (v2.tex) [15
 
 
 ]
-\tf@loe=\write6
-\openout6 = `main.loe'.
+\openout2 = `v4.aux'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
- (main.aux (v1.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+ (v4.tex
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+[16
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+[17]) [18]
+showing definition
+(main.loe)
+showing example
+[19
+
+
+] (main.loe) [20
+
+]
+\tf@loe=\write7
+\openout7 = `main.loe'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
+ (main.aux (v1.aux) (v2.aux) (v4.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0B51B97B1C566E6E1D62BCBC62948F09;465.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
+(rerunfilecheck)             Checksum: 904C9D3AFEADCB1930E181F8588950A3;963.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 33242 strings out of 492945
- 773374 string characters out of 3125365
- 930694 words of memory out of 3000000
- 36326 multiletter control sequences out of 15000+200000
- 30768 words of font info for 102 fonts, out of 3000000 for 9000
+ 53034 strings out of 492945
+ 1253863 string characters out of 3125365
+ 1392277 words of memory out of 3000000
+ 55965 multiletter control sequences out of 15000+200000
+ 560071 words of font info for 114 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,16n,109p,737b,2148s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/
-MnSymbolA.enc}{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
-ps/mnsymbol/MnSymbolD.enc}{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/f
-onts/enc/dvips/mnsymbol/MnSymbolC.enc}{C:/Users/mahmoud/AppData/Local/Programs/
-MiKTeX 2.9/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{C:/Users/mahmoud/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/MnSymbolF.enc} <C:\Users\mahmou
-d\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1728.pk><C:/U
-sers/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mnsymbol/MnSy
-mbol12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/mnsymbol/MnSymbol6.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/mnsymbol/MnSymbol8.pfb><C:/Users/mahmoud/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mahmoud/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Us
-ers/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-csc10.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/mahmoud/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mahmoud/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/
-mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr17.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/mahmoud/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/mahmoud/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/
-Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb>
-Output written on main.pdf (16 pages, 313548 bytes).
+ 128i,20n,155p,1582b,2148s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{example.1.4} has been referenced but does not exi
+st, replaced by a fixed one
+
+{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/Mn
+SymbolA.enc}{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
+/mnsymbol/MnSymbolD.enc}{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/enc/dvips/mnsymbol/MnSymbolC.enc}{C:/Users/mahmoud/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{C:/Users/mahmoud/AppData/Local
+/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/MnSymbolF.enc} <C:\Users\mahmoud\
+AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1728.pk><C:/Use
+rs/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mnsymbol/MnSymb
+ol12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/mnsymbol/MnSymbol6.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/mnsymbol/MnSymbol8.pfb><C:/Users/mahmoud/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mahmoud/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/User
+s/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcs
+c10.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/mahmoud/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mahmoud/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/ma
+hmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr6.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mahmoud/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/mahmoud/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/User
+s/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
+12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on main.pdf (22 pages, 355523 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 497 PDF objects out of 1000 (max. 8388607)
+ 184 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

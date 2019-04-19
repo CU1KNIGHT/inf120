@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a11aa28-ded3-403e-ae34-ca1a67fe1668" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/2.v.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/main.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/main.loe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/main.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/main.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/v1.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.loe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v1.aux" afterDir="false" />
+    <list default="true" id="7a11aa28-ded3-403e-ae34-ca1a67fe1668" name="Default Changelist" comment="try">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.loe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.loe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v1.aux" beforeDir="false" afterPath="$PROJECT_DIR$/src/v1.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2.aux" beforeDir="false" afterPath="$PROJECT_DIR$/src/v2.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v4.aux" beforeDir="false" afterPath="$PROJECT_DIR$/src/v4.aux" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/auxil/" />
@@ -36,82 +30,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="270">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/v4.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/v1.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
-              <folding>
-                <element signature="e#197#208#2" expanded="true" />
-                <element signature="e#254#261#2" expanded="true" />
-                <element signature="e#1284#1287#2" expanded="true" />
-                <element signature="e#1302#1307#2" expanded="true" />
-                <element signature="e#1331#1334#2" expanded="true" />
-                <element signature="e#1428#1432#2" expanded="true" />
-                <element signature="e#1501#1504#2" expanded="true" />
-                <element signature="e#1517#1522#2" expanded="true" />
-                <element signature="e#1951#1956#2" expanded="true" />
-                <element signature="e#2023#2028#2" expanded="true" />
-                <element signature="e#2611#2618#2" expanded="true" />
-                <element signature="e#2621#2624#2" expanded="true" />
-                <element signature="e#2640#2647#2" expanded="true" />
-                <element signature="e#2650#2653#2" expanded="true" />
-                <element signature="e#2746#2751#2" expanded="true" />
-                <element signature="e#2854#2860#2" expanded="true" />
-                <element signature="e#2963#2968#2" expanded="true" />
-                <element signature="e#3407#3412#2" expanded="true" />
-                <element signature="e#3415#3429#2" expanded="true" />
-                <element signature="e#3577#3581#2" expanded="true" />
-                <element signature="e#3586#3590#2" expanded="true" />
-                <element signature="e#3601#3608#2" expanded="true" />
-                <element signature="e#3611#3614#2" expanded="true" />
-                <element signature="e#4136#4142#2" expanded="true" />
-                <element signature="e#4200#4204#2" expanded="true" />
-                <element signature="e#4209#4213#2" expanded="true" />
-                <element signature="e#4246#4249#2" expanded="true" />
-                <element signature="e#4280#4284#3" expanded="true" />
-                <element signature="e#4325#4329#3" expanded="true" />
-                <element signature="e#4448#4452#2" expanded="true" />
-                <element signature="e#4528#4533#2" expanded="true" />
-                <element signature="e#4722#4729#2" expanded="true" />
-                <element signature="e#4732#4735#2" expanded="true" />
-                <element signature="e#4797#4801#3" expanded="true" />
-                <element signature="e#4827#4831#3" expanded="true" />
-                <element signature="e#4924#4929#2" expanded="true" />
-                <element signature="e#4942#4947#2" expanded="true" />
-                <element signature="e#4956#4961#2" expanded="true" />
-                <element signature="e#5008#5012#2" expanded="true" />
-                <element signature="e#5023#5038#2" expanded="true" />
-                <element signature="e#5054#5058#2" expanded="true" />
-                <element signature="e#5067#5082#2" expanded="true" />
-                <element signature="e#5104#5108#2" expanded="true" />
-                <element signature="e#5958#5961#2" expanded="true" />
-                <element signature="e#6031#6038#3" expanded="true" />
-                <element signature="e#6039#6047#3" expanded="true" />
-                <element signature="e#6092#6099#3" expanded="true" />
-                <element signature="e#6111#6114#3" expanded="true" />
-                <element signature="e#6162#6173#3" expanded="true" />
-                <element signature="e#6184#6195#3" expanded="true" />
-                <element signature="e#6201#6212#3" expanded="true" />
-                <element signature="e#6213#6217#3" expanded="true" />
-                <element signature="e#6222#6226#3" expanded="true" />
-                <element signature="e#6229#6240#3" expanded="true" />
-                <element signature="e#6247#6254#2" expanded="true" />
-                <element signature="e#6257#6260#2" expanded="true" />
-                <element signature="e#6276#6280#2" expanded="true" />
-                <element signature="e#6312#6323#2" expanded="true" />
-                <element signature="e#6330#6341#2" expanded="true" />
-                <element signature="e#6398#6402#2" expanded="true" />
-                <element signature="e#6414#6430#2" expanded="true" />
-                <element signature="e#6600#6611#2" expanded="true" />
-                <element signature="e#6623#6634#2" expanded="true" />
-              </folding>
+            <state relative-caret-position="10115">
+              <caret line="639" selection-start-line="639" selection-end-line="639" />
             </state>
           </provider>
         </entry>
@@ -139,7 +77,7 @@
     </findStrings>
   </component>
   <component name="Git.Rebase.Settings">
-    <option name="ONTO" value="refs/heads/Mahmoud" />
+    <option name="ONTO" value="refs/heads/master" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -160,6 +98,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/2.v.tex" />
+        <option value="$PROJECT_DIR$/inf120.iml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/v1.tex" />
+        <option value="$PROJECT_DIR$/src/main.tex" />
         <option value="$PROJECT_DIR$/src/main.tex" />
         <option value="$PROJECT_DIR$/inf120.iml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -178,23 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="inf120" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inf120" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inf120" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inf120" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -211,6 +136,23 @@
               <item name="inf120" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="inf120" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="inf120" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inf120" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inf120" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inf120" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,29 +180,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="main" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">
-      <texify>
-        <compiler>PDFLATEX</compiler>
-        <compiler-path />
-        <compiler-arguments />
-        <main-file>$PROJECT_DIR$/src/main.tex</main-file>
-        <aux-dir>true</aux-dir>
-        <out-dir>true</out-dir>
-        <output-format>PDF</output-format>
-        <bib-run-config />
-      </texify>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="LaTeX.main" />
-        <item itemvalue="LaTeX.main" />
-        <item itemvalue="LaTeX.main" />
-        <item itemvalue="LaTeX.main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -369,11 +288,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555279057567</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="try">
+      <created>1555703744457</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555703744457</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix some misaktes">
+      <created>1555705967943</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1555705967943</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40616000" />
+    <option name="totallyTimeSpent" value="42820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,7 +320,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.2934947" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.2980333" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.27987897" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -402,7 +335,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49848714" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
@@ -508,7 +441,9 @@
     <MESSAGE value="zu zeigen correct" />
     <MESSAGE value="change the plot of 1.16" />
     <MESSAGE value="fix bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+    <MESSAGE value="try" />
+    <MESSAGE value="fix some misaktes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some misaktes" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -575,80 +510,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="270">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/v1.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
-          <folding>
-            <element signature="e#197#208#2" expanded="true" />
-            <element signature="e#254#261#2" expanded="true" />
-            <element signature="e#1284#1287#2" expanded="true" />
-            <element signature="e#1302#1307#2" expanded="true" />
-            <element signature="e#1331#1334#2" expanded="true" />
-            <element signature="e#1428#1432#2" expanded="true" />
-            <element signature="e#1501#1504#2" expanded="true" />
-            <element signature="e#1517#1522#2" expanded="true" />
-            <element signature="e#1951#1956#2" expanded="true" />
-            <element signature="e#2023#2028#2" expanded="true" />
-            <element signature="e#2611#2618#2" expanded="true" />
-            <element signature="e#2621#2624#2" expanded="true" />
-            <element signature="e#2640#2647#2" expanded="true" />
-            <element signature="e#2650#2653#2" expanded="true" />
-            <element signature="e#2746#2751#2" expanded="true" />
-            <element signature="e#2854#2860#2" expanded="true" />
-            <element signature="e#2963#2968#2" expanded="true" />
-            <element signature="e#3407#3412#2" expanded="true" />
-            <element signature="e#3415#3429#2" expanded="true" />
-            <element signature="e#3577#3581#2" expanded="true" />
-            <element signature="e#3586#3590#2" expanded="true" />
-            <element signature="e#3601#3608#2" expanded="true" />
-            <element signature="e#3611#3614#2" expanded="true" />
-            <element signature="e#4136#4142#2" expanded="true" />
-            <element signature="e#4200#4204#2" expanded="true" />
-            <element signature="e#4209#4213#2" expanded="true" />
-            <element signature="e#4246#4249#2" expanded="true" />
-            <element signature="e#4280#4284#3" expanded="true" />
-            <element signature="e#4325#4329#3" expanded="true" />
-            <element signature="e#4448#4452#2" expanded="true" />
-            <element signature="e#4528#4533#2" expanded="true" />
-            <element signature="e#4722#4729#2" expanded="true" />
-            <element signature="e#4732#4735#2" expanded="true" />
-            <element signature="e#4797#4801#3" expanded="true" />
-            <element signature="e#4827#4831#3" expanded="true" />
-            <element signature="e#4924#4929#2" expanded="true" />
-            <element signature="e#4942#4947#2" expanded="true" />
-            <element signature="e#4956#4961#2" expanded="true" />
-            <element signature="e#5008#5012#2" expanded="true" />
-            <element signature="e#5023#5038#2" expanded="true" />
-            <element signature="e#5054#5058#2" expanded="true" />
-            <element signature="e#5067#5082#2" expanded="true" />
-            <element signature="e#5104#5108#2" expanded="true" />
-            <element signature="e#5958#5961#2" expanded="true" />
-            <element signature="e#6031#6038#3" expanded="true" />
-            <element signature="e#6039#6047#3" expanded="true" />
-            <element signature="e#6092#6099#3" expanded="true" />
-            <element signature="e#6111#6114#3" expanded="true" />
-            <element signature="e#6162#6173#3" expanded="true" />
-            <element signature="e#6184#6195#3" expanded="true" />
-            <element signature="e#6201#6212#3" expanded="true" />
-            <element signature="e#6213#6217#3" expanded="true" />
-            <element signature="e#6222#6226#3" expanded="true" />
-            <element signature="e#6229#6240#3" expanded="true" />
-            <element signature="e#6247#6254#2" expanded="true" />
-            <element signature="e#6257#6260#2" expanded="true" />
-            <element signature="e#6276#6280#2" expanded="true" />
-            <element signature="e#6312#6323#2" expanded="true" />
-            <element signature="e#6330#6341#2" expanded="true" />
-            <element signature="e#6398#6402#2" expanded="true" />
-            <element signature="e#6414#6430#2" expanded="true" />
-            <element signature="e#6600#6611#2" expanded="true" />
-            <element signature="e#6623#6634#2" expanded="true" />
-          </folding>
+        <state relative-caret-position="10115">
+          <caret line="639" selection-start-line="639" selection-end-line="639" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/v4.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
