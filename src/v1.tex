@@ -613,8 +613,10 @@ $$ \sum_{k=0}^{\infty} {a_k}  $$
 
 \begin{example}
 geometrische Reihe $ \sum_{k=0}^{\infty} {q^k} $
-ist für $$ {|q|} < 1 $$ konvergent . wert der Reihe für $ {|q|} < 1 $  $\sum_{k=0}^{\infty} {q^k}= \frac{1}{1-q} $ für
-$ {|q|} < 1 $  konvergent , werte der Reihe für
+ist für $|q|<1$ konvergent . wert der Reihe für $|q|<1$ : 
+ist für $$ {|q|} < 1 $$ konvergent . wert der Reihe für $ {|q|} < 1 $  $\sum_{k=0}^{\infty} {q^k}= \frac{1}{1-q} $ für 
+$$ \sum_{k=0}^{\infty} {q^k}= \frac{1}{1-q}$$ für $|q| < 1 $ 
+$ {|q|} < 1 $  konvergent , werte der Reihe für 
 $$ {|q|} <1 : \sum_{k=0}^n{q^k}= \dots $$
 \begin{equation}
 \begin{aligned}
@@ -622,8 +624,9 @@ S_n = q^0 + q^1 + \dots + q^n | *q \\
 -q S_n = q^1 + q^2 + \dots + q^{n+1} \\
 (1-q)S_n=q^0 - q^n+1 \\
 S_n = \frac{1-q^{n+1}}{1-q} = \frac{1}{1-q}(1-q)^{n+1}\\
-\Rightarrow lim_{n \to \infty}{S_n} = \frac{1}{1-q} \times
+\Rightarrow lim_{n \to \infty}{S_n} = \frac{1}{1-q} \times 
 \lim_{n \to \infty}{((1-q)^{n+1})}\\
+=\frac{1}{1-q}(1- \lim_{n \to \infty}{q^{n+1}})
 =\frac{1}{1-q}(1- \lim_{n \to \infty}{q^{n+1}})
 \end{aligned}
 \end{equation}
