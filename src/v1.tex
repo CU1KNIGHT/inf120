@@ -3,10 +3,10 @@
 %% 19/04/12
 %%
 
-\chapter{Folge und Reihen:}
-\section{Folgen und Reihen}
+\chapter{Folge und Reihen}
+\section{Folgen}
 \numberwithin{equation}{theorem}
-\begin{definition}
+\begin{definition}[Folgen]
     Ein folge ist eine Abbildung
 
     \[ f: \mathbb{N} \rightarrow \underbrace{\mathbf{M}}_{Menge} : \mathrm{n} \mapsto \underbrace{X_n}_{folgenglied} \]
@@ -14,9 +14,9 @@
 \end{definition}
 \begin{remark}
 
-    \begin{align}	\mathbb{M} &= \mathbb{R} \quad reelewert Folge  \notag \\
-    M&= \mathbb{C} \quad	 Komplexewetig folge  \notag \\
-    \mathbb{M}&= \mathbb{R}^n \quad vertical folge \notag
+    \begin{align}	\mathbf{M} &= \mathbb{R} \quad \text{reelewert Folge} \notag \\
+    \mathbf{M}&= \mathbb{C} \quad	\text{komplexwertig Folge}   \notag \\
+    \mathbf{M}&= \mathbb{R}^n \quad \text{vertical Folge} \notag
     \end{align}
 
 
@@ -27,68 +27,71 @@
 
     \item[Bezeichnung]
 
-    \quad $(X_n)$ \space \text{mit} \space $ \left( X_n =  \right) \frac{n}{n+1} $
+    \quad $(X_n)$ \space \text{mit} \space $ \left( X_n   \right)$=$ \frac{n}{n+1} $
     \\ \\ Aufzählung der folglieder: 0 , $\frac{1}{2}$ ,$\frac{2}{3}$ , $\frac{3}{4}$ , \dots
-    \begin{remark}
-        zuweten wird $\mathbb{N}$ durch $\mathbb{N}$ {0,1 \dots} erstellt.
 
-
-    \end{remark}
-    \begin{tikzpicture}
-        \begin{axis}[
-        xlabel= $x$,
-        ylabel= {$y$}]
-            \addplot { x/(x+1)};
-        \end{axis}
-    \end{tikzpicture}
 \end{description}
+\begin{remark}
+    zuwerten wird $\mathbb{N}$ durch $\mathbb{N}$ {0,1 \dots} erstellt.
+
+
+\end{remark}
+\begin{tikzpicture}
+    \begin{axis}[
+    ymin = -1,
+    ymax = 1,
+    xmin = -1,
+    xmax = 5,
+    axis x line=center,
+    axis y line=center]
+    \addplot[samples at={1.5,...,4.5},only marks,mark size=1] { x/(x+1)};
+    \end{axis}
+\end{tikzpicture}
 \begin{example}
     \[\]
     \begin{enumerate}
 
-        \item Konstante Folge $(X_n)$ mit \quad $X_n = a \in \mathbb{M },a \dots$ \\
-        \[ X_n = a \in \mathbb{M} \]
+        \item Konstante Folge $(X_n)$ mit \quad $X_n = a \in \mathbf{M },a \dots$ \\
+        \[ X_n = a \in \mathbf{M} \]
         \item Harmonische Folge $(X_n)$  mit $X_n$ =  $\frac{1}{n+1}$ \quad$ n \geq 1$
-        \item Geometrische folge $(X_n)$ mit $X_n = q^n \:. \: q \in \mathbb{R}, \dots $
+        \item Geometrische folge $(X_n)$ mit $X_n = q^n \:, \: q \in \mathbb{R}, \dots $
         \item Fibonaccifolge $(X_n)$ mit
         \[ X_n =\frac{1}{\sqrt{5}} \Big(  \big( \frac{1+ \sqrt{5}}{2} \big)^n - \big( \frac{1- \sqrt{5}}{2}\big)^n   \Big)    \]
 
         \item Fibonacci folgen $(X_n)$
         \begin{align}
             X_0 &=0 \notag \\X_1 &= 1 \notag \\
-            X_n+1 &= X_n+X_n-1 (n>0)  \notag
+            X_n+1 &= X_n+X_{n-1} \quad (n>0)  \notag
         \end{align}
 
         \item conway  folge
         \[ 1, 11 ,21 , 1211, 111217, 312211 \dots \]
 
-        \item folge aller Primzahlen:- \[ 2, 3 ,5 ,7 ,11, 13 , \dots \]
+        \item folge aller Primzahlen: \[ 2, 3 ,5 ,7 ,11, 13 , \dots \]
 
     \end{enumerate}
 \end{example}
 
 \section{Rechnen mit Folgen }
 \begin{align*}
-    M  = \mathbb{R} \quad oder \quad M = \mathbb{C} \\
-    (X_n)+(y_n) := (X_n+y_n)\\
-    K(X_n):=(KX_n)\in \mathbb{R} \quad  oder \quad \in  \mathbb{C}
+    ( M  = \mathbb{R} \quad & oder \quad M = \mathbb{C} ) \\
+    (X_n)+(y_n) &:= (X_n+y_n)\\
+    K(X_n)&:=(KX_n)\in \mathbb{R} \quad  oder \quad \in  \mathbb{C}
 \end{align*}
 \begin{remark}
-    \[\]
+
     Die Folge bildet ein Vektorraum.
 \end{remark}
+\newpage
 
+\begin{definition}$ \newline$
+        \begin{enumerate}
 
-\begin{definition}
-
-
-    \begin{enumerate}
-
-        \mbox{}\item Eine reellwertige Funktion ist in der Mathematik eine Funktion, deren Funktionswerte reelle Zahlen sind.
+        \item Eine reellwertige Funktion ist in der Mathematik eine Funktion, deren Funktionswerte reelle Zahlen sind.
 
         \item Eine reellwertige heißt beschränkt wenn gilt
 
-        \[	\exists r \in \mathbb{R}_+ , \forall r \in \mathbb{N}: \underbrace{|x|}_{\text{ Betrag einer reellen oder komplexer Zahl}} \leqq r   \]
+        \[	\exists r \in \mathbb{R}_+ , \forall r \in \mathbb{N}: \underbrace{|X_n|}_{\mathclap{\text{Betrag einer reellen oder komplexer Zahl}}} \leqq r   \]
 
     \end{enumerate}
 \end{definition}
@@ -98,11 +101,7 @@
     \[-1 ,\quad \frac{1}{2}, \quad \frac{-1}{3}, \quad \frac{1}{4} ,\quad \frac{-1}{5},\dots \]
 \end{example}
 
-\begin{remark}
 
-    $(X_n)$ ist beschränkt mit $r = 1$ denn $|(-1)^n \frac{1}{n}|=|\frac{1}{n}| \leqq 1  $
-
-\end{remark}
 
 \begin{tikzpicture}
     \begin{axis}[
@@ -112,13 +111,19 @@
     xmax = 3,
     axis x line=center,
     axis y line=center]
+        \addplot[dashed, name path =A] coordinates {(-3,1) (3,1)};
         \addplot[samples at={-3,...,3},only marks,mark size=1]{(-1)^x*(1/x)};
     \end{axis}
 \end{tikzpicture}
-\begin{example}
-    \[  (X_n) mit X_n = (-1)^n \frac{1}{n}+1 \quad \text{bechränkt r = 3/2}\]
+\begin{remark}
 
-    \[-1/3 \quad \leq X_n \leq 3/2 \quad \forall n \in \mathbb{N} \]
+    $(X_n)$ ist beschränkt mit $r = 1$ denn $|(-1)^n \frac{1}{n}|=|\frac{1}{n}| \leqq 1 \hookleftarrow r $
+
+\end{remark}
+\begin{example}
+    \[  (X_n) \text{ mit  } X_n = (-1)^n \quad \frac{1}{n}+1 \quad \text{bechränkt r = 3/2}\]
+
+    \[ -3/2 \quad \leq X_n \leq 3/2 \quad \forall n \in \mathbb{N} \]
     %
     \begin{tikzpicture}
         \begin{axis}[
@@ -128,31 +133,31 @@
         xmax = 4,
         axis x line=center,
         axis y line=center]
-            \addplot[samples at={-3,...,3},only marks,mark size=1][ domain=(-1/3):(3/2)] {((-1)^x)*(1/x)+1};
+            \addplot[dashed, name path =A] coordinates {(-4,3/2) (4,3/2)};
+            \addplot[dashed,samples at={0,...,3},only marks,mark size=1][ domain=(0):(2)] {log10(3*x + 1)};
         \end{axis}
     \end{tikzpicture}
 \end{example}
-\vfil
-\vfil
+
 \begin{example}{Standard:}\\
 
 {Die folge}
-$ \bigg(\big(1 + \frac{1}{n} \big)^n \bigg)^\infty$
+$ \bigg(\big(1 + \frac{1}{n} \big)^n \bigg)^\infty_{n=1}$
 {ist beschränkt durch 3}\\
 
-Zu Zeigen:
+Zu zeigen: \quad $ -3 \leq X_n \leq 3 \quad \text{für alle} \quad n \in \mathbb{N} $
 
-\[ -3 \leq X_n \leq 3 \quad \text{für alle} \quad n \in \mathbb{N} \]
+
 \[ { (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^k . b^{n .k} = \sum_{k=0}^{n} \binom{n}{k} a^{n.k} b^k }  \]
 \[  \binom{n}{k} = \frac{n!}{k!(n-k!)} =  \frac{n(n-1) -(n-k-1))}{k!} \]
-\[  \sum_{K=0}^{n} \frac{1}{k} = 1+ \frac{1}{2} + \frac{1}{2.3} + \frac{1}{2.3.4} + \dots \]
+\[  \sum_{K=1}^{n} \frac{1}{k} = 1+ \frac{1}{2} + \frac{1}{2.3} + \frac{1}{2.3.4} + \dots \]
 \end{example}
 
 
 \section{geometrische Summen Formel (Tafelwerk)}
 \begin{definition}
 
-    Die Folge $(X_n)$ heißt monoton $\Big\{ wachsend fallend \Big\}$
+    Die Folge $(X_n)$ heißt monoton $\Big\{ \text{wachsend fallend} \Big\}$
     \[ wenn \quad gilt: \forall n \in \mathbb{N}:
     \left\{
     \begin{array}{ll}
@@ -161,16 +166,17 @@ Zu Zeigen:
     \end{array}
     \right. \]
     \text{man spricht von Streng monotonie}
-    $ wenn \leq durch > und \geq durch < \dots  $
+    $ wenn \leqq durch > und \geqq durch < \dots  $
 \end{definition}
 \begin{remark}
-    \[ X_n \leq X_{n+1} \ \Leftrightarrow  X_n - X_{n+1} \geq 0 \quad \Leftrightarrow  \frac{x_n}{X_{n+1}} \leq 1 \]
+    \[ X_n \leq X_{n+1} \ \Leftrightarrow  X_n - X_{n+1} \leq 0 \quad \Leftrightarrow  \frac{X_n}{X_{n+1}} \leq 1 \]
 \end{remark}
 
 \begin{example}
 
 
-    \[	(X_n) mit X_0 := 1 , X_{n+1} := \sqrt{X_n +6} \]
+    \[	(X_n) \text{ mit }\quad X_0  := 1 \quad, X_{n+1}   := \sqrt{X_n +6} \]
+    \text{ist Streng monoton wachsend Beweis mit Vollständiger Induktion}
     \paragraph{Standard Bsp:}
     $ \big( \big(1+ \frac{1}{n} \big)^n \big) $ ist streng monoton wachsend
 \end{example}
@@ -182,20 +188,20 @@ Zu Zeigen:
             monoton & ja & nein  \\
             \hline
             \rule{0pt}{3ex}
-            Beschränktkeit & $\frac{1}{n}$ & $(-1)^n$ \\
-            nein & (n) & $(n)^n$ \\
+            Beschränkkeit & $(\frac{1}{n})$ & $(-1)^n$ \\
+            nein & (n) & $(-1)^n$ \\
             \hline
         \end{tabular}
     \]
 
 \end{remark}
 \begin{definition}
-    $(X_n)$ heißt $\boldsymbol{Konvergenz}$ wenn $(X_n)$ ein grenzwert hat.
-    $(X_n)$ heißt $\boldsymbol{Divergrnz}$ wenn sie keinen grenzwert hat.
+    $(X_n)$ heißt $\boldsymbol{Konvergenz}$ wenn $(X_n)$ ein grenzwert hat.\\
+    $(X_n)$ heißt $\boldsymbol{Divergenz}$ wenn sie keinen grenzwert hat.
 \end{definition}
-\begin{definition}(grenzwert)
-a $\in$ $\mathbb{R}$ heißt grenzwert von $(X_n)$, wenn gilt:
-\[ \underbrace{\forall > 0 }_{beliebes \; klein} \quad \underbrace{\exists \mathbb{N} \in \mathbb{N}}_{beliebes \;  klein \; \underbrace{\Rightarrow |X_n -a|< \varepsilon}_{a- \varepsilon \leq X_n \leq a+\varepsilon } } , \forall n \in \mathbb{N} : m \geq \mathbb{N}  \]
+\begin{definition}[grenzwert]
+ $ a \in$ $\mathbb{R}$ heißt grenzwert von $(X_n)$, wenn gilt:
+\[ \underbrace{\forall \epsilon > 0 }_{beliebes \; klein} \quad \underbrace{\exists \mathbf{N} \in \mathbb{N}}_{beliebes \;  klein \; \underbrace{\Rightarrow |X_n -a|< \varepsilon}_{a- \varepsilon \leq X_n \leq a+\varepsilon } } , \forall n \in \mathbb{N} : m \geq \mathbb{N}  \]
 \[ \text{Sei  } \varepsilon > 0 ; \varepsilon \text{  fest} \]
 \[ \text{alle folglieder$ X_n$ mit n } \geq \mathbb{N} \curvearrowright \]
 \begin{tikzpicture}[scale=1.1],
@@ -212,14 +218,18 @@ axis x line=bottom,
 yticklabels={,, $ a - \varepsilon$, a , $a + \varepsilon$ },xtick={1,...,10},
 xticklabels={,,N,n},
 ]
-    %\addplot {|x-a|<0};
+
     \addplot[dashed, name path =A] coordinates {(0,1) (5.5,1)};
 
 
     \addplot[thick, samples=50, smooth,domain=0:6,magenta, name path=V] coordinates {(3,-2)(3,3)};
     \addplot[dashed, name path =B] coordinates {(0,-1) (5.5,-1)};
     \addplot[gray, pattern=north west lines] fill between[of=A and B, soft clip={domain=3:6}];
-    \addplot[samples at={0,...,5},only marks,mark size=1] {sin(x)};
+    \addplot[samples at={0,...,5},only marks,mark size=1] { 1/x };
+    \addplot[samples at={0,...,5},only marks,mark size=1] { (1-x)/x^2 };
+   
+
+
 
 \end{axis}
 \end{tikzpicture}%
@@ -315,7 +325,7 @@ xticklabels={,,N,n},
 \end{remark}
 
 \begin{example}
-    $X_n = \frac{1}{3} + \big(\frac{11-n}{9-n}\big)^9$\\
+    $X_n = \frac{1}{3} + \big(\frac{11-n}{9+n}\big)^9$\\
 
 
     Behauptung: $\lim\limits_{n \rightarrow \infty}{x_n}=\frac{-2}{3}$
@@ -355,7 +365,7 @@ xticklabels={,,N,n},
 
     \begin{gather}
         =\Bigg(
-        \frac{\lim\limits_{n \rightarrow \infty}{11} \times \lim\limits_{n \rightarrow \infty}{(\frac{1}{n}-1)}}{\lim\limits_{n \rightarrow \infty}{9 \times \lim\limits_{n \rightarrow \infty}{(\frac{1}{n}+1)} } }   \Bigg)^9
+        \frac{\lim\limits_{n \rightarrow \infty}{11} \times \lim\limits_{n \rightarrow \infty}{(\frac{1}{n})-1}}{\lim\limits_{n \rightarrow \infty}{9 \times \lim\limits_{n \rightarrow \infty}{(\frac{1}{n})+1} } }   \Bigg)^9
     \end{gather}
 
     \begin{gather}
@@ -465,8 +475,8 @@ $(X_n)$ beschränkt von Monotonie $\Rightarrow$ $(X_n)$ konvergent.
     denn $ x_n = 0 \leq \frac{a_n}{n!} \leq y_n$
     , gesucht! $\underbrace{y_n}_{\lim\limits_{n \rightarrow \infty}{y_n}=0}$  für hinreichend großes n.
 
-    \begin{equation}
-        \begin{aligned}
+    \begin{equation}     
+    \begin{aligned}   
             \frac{a^n}{n!} = \frac{a}{n} \times \frac{a^{n-1}}{(n-1)!} \\ \leq
             \frac{1}{2} \times
             \frac{a^{n-1}}{(n-1)!} \\ =
@@ -577,16 +587,43 @@ Reihen sind spezielle Folgen , alle konvergent oder divergent.
 
 \begin{definition}
 Für eine konvergente Reihen wird der Grenzwert auch wert der Reihe genannt.\\
-Schreibweise :  $\lim\limits_{n \rightarrow \infty}{S_n}= $
+
+\subsection{Schreibweise} :  $\lim\limits_{n \rightarrow \infty}{S_n}= $
 $$\lim\limits_{n \rightarrow \infty}{ \sum_{k=0}^{n} {a_k} }  $$ 
 bzw 
 $$ \sum_{k=0}^{\infty} {a_k}  $$
 \end{definition}
- 
+
+\begin{example}{Teleskopreihe} 
+\begin{equation}
+\begin{aligned}
+\sum_{k=1}^\infty(\frac{1}{k}-\frac{1}{k+1}) \text{in Grenzwert der Reihe ist}\\ 
+\sum_{k=1}^\infty(\frac{1}{k}-\frac{1}{k-1})=1 \\
+\lim_{n \to \infty}{S_n} = \lim_{n \to \infty}{\sum_{k=1}^n(\frac{1}{k}- \frac{1}{k-1}) }\\
+= lim_{n \to \infty}{(\frac{-1}{2})+\frac{1}{2}(\frac{1}{3} + \frac{1}{3})(-\frac{1}{4})+) \dots +(\frac{1}{n})-\frac{1}{n+1}}\\
+= lim_{n \in \infty}{(1- \frac{1}{n+1})}= 1-0 =1 
+\end{aligned}
+\end{equation}
+\end{example}
+
 \begin{example}
-geometrische Reihe $$ \sum_{k=0}^{\infty} {q^k} $$
-ist für $|q|<1$ konvergent . wert der Reihe für $|q|<1$ : 
-$$ \sum_{k=0}^{\infty} {q^k}= \frac{1}{1-q}$$ für $|q| < 1 $ 
+geometrische Reihe $ \sum_{k=0}^{\infty} {q^k} $
+ist für $$ {|q|} < 1 $$ konvergent . wert der Reihe für $ {|q|} < 1 $  $\sum_{k=0}^{\infty} {q^k}= \frac{1}{1-q} $ für 
+$ {|q|} < 1 $  konvergent , werte der Reihe für 
+$$ {|q|} <1 : \sum_{k=0}^n{q^k}= \dots $$
+\begin{equation}
+\begin{aligned}
+S_n = q^0 + q^1 + \dots + q^n | *q \\
+-q S_n = q^1 + q^2 + \dots + q^{n+1} \\
+(1-q)S_n=q^0 - q^n+1 \\
+S_n = \frac{1-q^{n+1}}{1-q} = \frac{1}{1-q}(1-q)^{n+1}\\
+\Rightarrow lim_{n \to \infty}{S_n} = \frac{1}{1-q} \times 
+\lim_{n \to \infty}{((1-q)^{n+1})}\\
+=\frac{1}{1-q}(1- \lim_{n \to \infty}{q^{n+1}})
+\end{aligned}
+\end{equation}
+\subsection{Rechnen für Reihen}
+konvergent Reihe kann man addieren mit einem Skalar multiplizieren
 \end{example}
 
 
