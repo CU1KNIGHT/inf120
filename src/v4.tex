@@ -1,0 +1,128 @@
+%%
+%% Author: mahmoud
+%% 19/04/18
+%%
+
+
+%fehlend ein Beispie mit g=A 
+%2A=1^2+(1/2)^2
+\begin{example}
+	\[\sum_{R=1}^{\infty} \frac{1}{K} \text{ ist divergent ,denn  } \lim\limits_{\infty} \sum_{K=1}^{n} \frac{1}{k} \text{ ex. nicht } \]
+	
+	\[\frac{1}{1}+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\dots+\frac{1}{16}+\dots+\frac{1}{n}\]
+	
+	\[ > 1+\frac{1}{2}+  \underbrace{\frac{1}{4}+\frac{1}{4}}+\underbrace{\frac{1}{8}+\frac{1}{8}+\frac{1}{8}+\frac{1}{8}}+\frac{1}{10}+\frac{1}{16}+\dots+\frac{1}{n}\] 
+	
+	\[1+\frac{1}{2} + \qquad \frac{1}{2}+   \quad  \qquad \frac{1}{2}  + \dots + \frac{1}{n}  \rightarrow \lim\limits_{n\rightarrow \infty }s_n = \infty \]
+	
+\end{example}
+\section{Allgemeine harmonische Reihe}
+
+				\begin{equation*}
+				\begin{split}
+				 \sum_{K=1}^{\infty} \frac{1}{k^\alpha} \quad( \infty \text{fest}) \qquad
+				& \alpha > 1 \rightarrow \mathbb{R}  \\
+				& \alpha \leqq \rightarrow dev
+				\end{split}
+				\end{equation*}
+ \begin{example}
+ 	\[ \sum_{k=1}^{\infty} \frac{1}{k^2} \qquad \text{ist konvergent}
+ 	\] \\ \text{ Beweis mit Monotoniekriterium für Folge } \\
+		\[ \text{Reihe ist konvergent} \left\{ \begin{array}{ll}
+	   (1) & \mbox{ $\sumIn \frac{1}{k^2} $ \quad ist monoton wachsend};\\
+	   (2) & \mbox{$\sumIn \fracKetwo $ \text{ist beschränkt}}.\end{array} \right. \] 
+	   	
+	   \[ \sumIin \fracKetwo = \frac{1}{1}+\frac{1}{2^2}+\frac{1}{2^2}+\frac{1}{4^2}+\frac{1}{5^2}+  \dots + \frac{1}{8^2}  \]
+	   \[ <  1 + \frac{1}{4}+\underbrace{\frac{1}{2^2}+\frac{1}{2^2}}_{2. \frac{1}{4}}+\underbrace{\frac{1}{4^2}+\dots + \frac{1}{4^2}}_{4.\frac{1}{4^2}}+\]
+	   
+	   \[ 1+\frac{1}{4}+\frac{1}{2}.1+\underbrace{\frac{1}{4}}_{(\frac{1}{2})^2}+\underbrace{\frac{1}{8}}_{(\frac{1}{2})^3} =1+\frac{1}{4}+\frac{\frac{9}{4} }{1-\frac{1}{2}-1} \]
+	   
+ \end{example}
+%photo auf der Tafel
+\section{Expotentiale Reihe}
+
+\[ \sumOin \frac{1}{k!} = \limNin ( 1-\frac{1}{n})^n =:e \text{ist konvergent} \]
+
+ \pgfkeys{/forest,
+	tria/.append style={ellipse, draw},
+}
+	\begin{forest}
+	for tree={l+=0.5cm, s sep+=1cm}
+	[Konvergentkreterium für Reihen 
+	[	für Folge ]
+	[Kreterien für absolute konvergenz [konvergent Reihen] ]
+	[Hauptkriterium ]
+	]
+	\end{forest}
+
+			Hauptkriterium $\sumOin$ $a_k$ konvergent $\rightarrow$ $(a_k)$ Nullfolge
+			$\lim\limits_{k \rightarrow \infty} a_k=0$ $\neq$ $0$ $\Rightarrow$ $(a_k)$  	$\underbrace{null konvergent }_{divergend}$
+			$\lim\limits_{k \rightarrow -\infty} a_k ex.null$
+
+						\begin{example}
+						
+						\[ \sumIin \frac{3k^2+1}{4k^2-1} \quad divergend, \quad ABER \sumIin \fracKone \quad divergend \text{und $\fracKone$ Null folge }  \]
+						
+
+						\end{example}
+\begin{example}
+\[  \sumOin a_k konv. \Rightarrow \underbrace{(a_k Nullfolge) }_{\limKin a_k=0}  \] 
+\[s_n =\sumOn a_k , s_{n+1} =\sum_{k=0}^{n+1} \qquad s_{n+1}=s_n + a_{n+1} \]
+\[s= \limNin s_n= \limNin s_{n+1} \qquad \limNin a_{n+1} = \limNin s_{n+1} - \limNin s_n = s-s=0 \]
+\end{example}
+\section{Kriterium für Alternierende  Reihe}
+\begin{example}{Alternierende }
+	$\sumOin (-1)^k \fracKone$ in konver .................. (fehlend)\\
+	$\sumOin (-1)^k a_k$\\
+	wobei $(a_k)$ einer Streng monoton fallend Nullfolge $\Rightarrow$ ..............(fehlend)
+	mit $ a_k \geqq 0$
+\end{example}
+\begin{definition}[Reihe]
+	
+	\text{Reihe} $\sumOin  a_k$  \text{heiß abslote konvergent \\ wenn} $\sumOin $ $|a_k|$ \text{konvergent ist.
+	}
+\end{definition}
+\begin{example}
+
+\[	\sumIin (-1)^k \fracKone \text{ ist konvergent , aber nicht absolote konvergent } \]
+\[ \sumIin (-1)^k \fracKetwo  \text{ ist kovergend und abslote konvergent } \]
+	
+\end{example}
+\begin{theorem}
+Reihe $\sumOin$ $a_k$ abslot konvergent $\Rightarrow$ Reihe $\sumOin$ $a_k$ ist kovergend	
+\end{theorem}
+\begin{remark}
+	
+Abslote konvergente Reihe kann man multiplizieren wie endliche summen d Reihen null
+\end{remark}
+\section{Quotionkriterium}
+(QK) für (endliche) d\\
+\[\limKin |\frac{a_{k+1}}{a_k}|\] \\$< 1 \Rightarrow \sumOin a_k $ in absolut d\\
+$>1 \Rightarrow $ ist divergend\\
+$=1 $ kriterium ist nicht anwendbar 
+\section{Wurzel kriterium}[WK]
+(WK) für (abslute ) d
+\\ $\limKin \sqrt[k]{|a_k|}$\\
+$<1 \Rightarrow \sumOin a_k$ in (abslute) d\\
+$>1 \Rightarrow$ divergend\\
+$=1 $ kriterium ist nicht anwendbar
+\begin{example}[QK]
+	 \begin{equation*}
+		 \begin{split}
+	    	\sumOin \frac{1}{k!}
+	 	   \limKin |\frac{\frac{1}{(k+1)!}}{\frac{1}{k!}}| &= \limKin \frac{k!}{(k+1)!} \\
+													   	   &=\limNin \frac{1}{k+1}   \\
+													   	   &=0<1 \Rightarrow Reihe ist abs. konv.
+		    \end{split}	 
+		 \end{equation*}     
+	
+\end{example}
+\begin{example}[WK]
+	\begin{equation*}
+	\begin{split}
+	\limKin \sqrt[k]{\frac{1}{k!}}= \limKin \frac{\sqrt[k]{1}}{\sqrt[k]{k!}}=\frac{1}{\limKin \sqrt[k]{k!}}=0\\ <1 \\
+	\Rightarrow R.abs.konv.
+	\end{split}	 
+	\end{equation*}     
+	
+\end{example}
