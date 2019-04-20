@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a11aa28-ded3-403e-ae34-ca1a67fe1668" name="Default Changelist" comment="" />
+    <list default="true" id="7a11aa28-ded3-403e-ae34-ca1a67fe1668" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.loe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.loe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v1.aux" beforeDir="false" afterPath="$PROJECT_DIR$/src/v1.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/v1.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2.aux" beforeDir="false" afterPath="$PROJECT_DIR$/src/v2.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v4.aux" beforeDir="false" afterPath="$PROJECT_DIR$/src/v4.aux" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/auxil/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +30,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2171">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="288">
+              <caret line="192" column="15" selection-start-line="192" selection-start-column="15" selection-end-line="192" selection-end-column="15" />
+              <folding>
+                <element signature="e#168#197#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -27,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/v4.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
+            <state relative-caret-position="2567">
               <caret line="151" column="13" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
               <folding>
                 <element signature="e#208#213#2" expanded="true" />
@@ -74,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/v1.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="618" column="19" selection-start-line="618" selection-start-column="19" selection-end-line="618" selection-end-column="19" />
+            <state relative-caret-position="10404">
+              <caret line="612" column="19" selection-start-line="612" selection-start-column="19" selection-end-line="612" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -128,11 +143,11 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/v1.tex" />
         <option value="$PROJECT_DIR$/src/main.tex" />
-        <option value="$PROJECT_DIR$/src/main.tex" />
         <option value="$PROJECT_DIR$/inf120.iml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/v1.tex" />
         <option value="$PROJECT_DIR$/src/v4.tex" />
+        <option value="$PROJECT_DIR$/src/main.tex" />
       </list>
     </option>
   </component>
@@ -147,22 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="inf120" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inf120" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inf120" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inf120" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
@@ -180,6 +179,22 @@
               <item name="inf120" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="inf120" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="inf120" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inf120" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inf120" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inf120" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -218,6 +233,19 @@
         <compiler-path />
         <compiler-arguments />
         <main-file>C:/Windows/System32</main-file>
+        <aux-dir>true</aux-dir>
+        <out-dir>true</out-dir>
+        <output-format>PDF</output-format>
+        <bib-run-config />
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <compiler-arguments />
+        <main-file>$PROJECT_DIR$/src/main.tex</main-file>
         <aux-dir>true</aux-dir>
         <out-dir>true</out-dir>
         <output-format>PDF</output-format>
@@ -366,7 +394,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44711000" />
+    <option name="totallyTimeSpent" value="44736000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,7 +409,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.30257186" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.3161876" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.27987897" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -573,7 +601,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/v4.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
+        <state relative-caret-position="2567">
           <caret line="151" column="13" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
           <folding>
             <element signature="e#208#213#2" expanded="true" />
@@ -621,15 +649,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/v1.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="618" column="19" selection-start-line="618" selection-start-column="19" selection-end-line="618" selection-end-column="19" />
+        <state relative-caret-position="10404">
+          <caret line="612" column="19" selection-start-line="612" selection-start-column="19" selection-end-line="612" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2171">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="288">
+          <caret line="192" column="15" selection-start-line="192" selection-start-column="15" selection-end-line="192" selection-end-column="15" />
+          <folding>
+            <element signature="e#168#197#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
