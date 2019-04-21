@@ -2,8 +2,8 @@
 %% Author: mahmoud
 %% 19/04/12
 %%
-\chapter{Vorlesung 1}
-\section{Folge und Reihen}
+\chapter{Folge und Reihen}
+\section{Vorlesung 1}
 \subsection{Folge}
 \numberwithin{equation}{theorem}
 \begin{definition}[Folgen]
@@ -206,6 +206,7 @@ Zu zeigen: \quad $ -3 \leq X_n \leq 3 \quad \text{für alle} \quad n \in \mathbb
 \[ \underbrace{\forall \epsilon > 0 }_{beliebes \; klein} \quad \underbrace{\exists \mathbf{N} \in \mathbb{N}}_{beliebes \;  klein \; \underbrace{\Rightarrow |X_n -a|< \varepsilon}_{a- \varepsilon \leq X_n \leq a+\varepsilon } } , \forall n \in \mathbb{N} : m \geq \mathbb{N}  \]
 \[ \text{Sei  } \varepsilon > 0 ; \varepsilon \text{  fest} \]
 \[ \text{alle folglieder$ X_n$ mit n } \geq \mathbb{N} \curvearrowright \]
+
 \begin{tikzpicture}[scale=1.1],
 
 \begin{axis}[
@@ -227,14 +228,13 @@ xticklabels={,,N,n},
     \addplot[thick, samples=50, smooth,domain=0:6,magenta, name path=V] coordinates {(3,-2)(3,3)};
     \addplot[dashed, name path =B] coordinates {(0,-1) (5.5,-1)};
     \addplot[gray, pattern=north west lines] fill between[of=A and B, soft clip={domain=3:6}];
-    \addplot[samples at={0,...,5},only marks,mark size=1] { 1/x };
-    \addplot[samples at={0,...,5},only marks,mark size=1] { (1-x)/x^2 };
+    \addplot[samples at={0,...,5},only marks,mark size=1] { 3/x -1/3};
+    \addplot[samples at={0,...,5},only marks,mark size=1] { ln(x)-2 };
    
 
 
 
 \end{axis}
 \end{tikzpicture}%
-
 
 \end{definition}
