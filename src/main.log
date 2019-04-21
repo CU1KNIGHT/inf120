@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.6)  19 APR 2019 23:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.6)  20 APR 2019 03:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -1984,7 +1984,7 @@ File: pgflibrarypatterns.code.tex 2019/04/04 v3.1.2 (3.1.2)
 ))
 \c@theorem=\count363
 Package hyperref Info: Option `colorlinks' set `true' on input line 91.
- (main.aux (v1.aux) (v4.aux))
+ (main.aux (v123.aux) (v4.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
@@ -2132,13 +2132,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.187 \include{v1}
-                   [1
+l.187 \include{v123}
+                     [1
 
 ]
-\openout2 = `v1.aux'.
+\openout2 = `v123.aux'.
 
- (v1.tex
+ (v123.tex
 Kapitel 1.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 9.
@@ -2150,29 +2150,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--32
  []
 
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 52.
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
+t line 51.
 [2
 
 
-] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+]
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 NOTE: coordinate (0,4Y0.0e0]) has been dropped because it is unbounded (in y). 
 (see also unbounded coords=jump). 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
@@ -2181,9 +2181,9 @@ Missing character: There is no , in font nullfont!
 
 NOTE: coordinate (0,4Y0.0e0]) has been dropped because it is unbounded (in y). 
 (see also unbounded coords=jump). 
-NOTE: coordinate (0,4Y0.0e0]) has been dropped because it is unbounded (in y). 
+NOTE: coordinate (0,3Y0.0e0]) has been dropped because it is unbounded (in y). 
 (see also unbounded coords=jump). 
-Package pgfplots info on input line 239: fill between: activating layered graph
+Package pgfplots info on input line 234: fill between: activating layered graph
 ics
 \pgf@layerbox@axis background=\box114
 \pgf@layerboxsaved@axis background=\box115
@@ -2201,62 +2201,72 @@ ics
 \pgf@layerboxsaved@axis descriptions=\box127
 \pgf@layerbox@axis foreground=\box128
 \pgf@layerboxsaved@axis foreground=\box129
-Package pgfplots info on input line 239: Setting layers 'axis background,axis g
+Package pgfplots info on input line 234: Setting layers 'axis background,axis g
 rid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis
  foreground'...
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 253.
+t line 248.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 270--272
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 
-Overfull \hbox (77.71776pt too wide) detected at line 289
+Overfull \hbox (77.71776pt too wide) detected at line 284
 \U/MnSymbolA/m/n/12  \OT1/cmr/m/n/12 1 \U/MnSymbolD/m/n/12 @ [] \OML/cmm/m/it/
 12 falls Aussage; Widerspruch also ist die Annahme falsch also gilt a \U/MnSymb
 olD/m/n/12   \OML/cmm/m/it/12 b
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--315
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
 
  []
 
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 339.
+line 334.
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
@@ -2266,62 +2276,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--417
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 424--426
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 455--457
+Underfull \hbox (badness 10000) in paragraph at lines 450--452
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--505
+Underfull \hbox (badness 10000) in paragraph at lines 498--500
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--568
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 579--580
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 594--595
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
 
  []
 
@@ -2369,58 +2369,55 @@ showing example
 \tf@loe=\write7
 \openout7 = `main.loe'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
- (main.aux (v1.aux) (v4.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+ (main.aux (v123.aux) (v4.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E820B6021198C82F9B9829B9568FE3EA;1018.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
  ) 
 Here is how much of TeX's memory you used:
- 53030 strings out of 492945
- 1253757 string characters out of 3125365
- 1390825 words of memory out of 3000000
- 55965 multiletter control sequences out of 15000+200000
+ 53027 strings out of 492945
+ 1253811 string characters out of 3125365
+ 1390887 words of memory out of 3000000
+ 55964 multiletter control sequences out of 15000+200000
  560071 words of font info for 114 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,155p,1582b,2148s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{example.1.4} has been referenced but does not exi
-st, replaced by a fixed one
-
-{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/Mn
-SymbolA.enc}{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
-/mnsymbol/MnSymbolD.enc}{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/enc/dvips/mnsymbol/MnSymbolC.enc}{C:/Users/mahmoud/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{C:/Users/mahmoud/AppData/Local
-/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/MnSymbolF.enc} <C:\Users\mahmoud\
-AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1728.pk><C:/Use
-rs/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mnsymbol/MnSymb
-ol12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/mnsymbol/MnSymbol6.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/mnsymbol/MnSymbol8.pfb><C:/Users/mahmoud/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mahmoud/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/User
-s/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcs
-c10.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/mahmoud/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mahmoud/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/ma
-hmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr6.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mahmoud/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/mahmoud/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/User
-s/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
-12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb>
-Output written on main.pdf (22 pages, 357940 bytes).
+{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/
+MnSymbolA.enc}{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
+ps/mnsymbol/MnSymbolD.enc}{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/f
+onts/enc/dvips/mnsymbol/MnSymbolC.enc}{C:/Users/mahmoud/AppData/Local/Programs/
+MiKTeX 2.9/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{C:/Users/mahmoud/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/MnSymbolF.enc} <C:\Users\mahmou
+d\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1728.pk><C:/U
+sers/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mnsymbol/MnSy
+mbol12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/mnsymbol/MnSymbol6.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/mnsymbol/MnSymbol8.pfb><C:/Users/mahmoud/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mahmoud/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Us
+ers/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+csc10.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/mahmoud/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mahmoud/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/
+mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr17.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mahmoud/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/mahmoud/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Us
+ers/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+tt12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (22 pages, 357437 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 187 named destinations out of 1000 (max. 500000)
+ 503 PDF objects out of 1000 (max. 8388607)
+ 185 named destinations out of 1000 (max. 500000)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
