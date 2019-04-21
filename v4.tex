@@ -1,0 +1,166 @@
+%%
+%% Author: mahmoud
+%% 19/04/18
+%%
+
+
+%fehlend ein Beispie mit g=A 
+%2A=1^2+(1/2)^2
+
+\chapter{Vorlesung 4}
+
+\section{Reihen}
+\begin{example}{Zur geometrischen Reihen}\\
+gesucht : A
+\[2A = 1^2 + (\frac{1}{2})^2+(\frac{1}{4})^2 + \dots + (\frac{1}{k})^2 + ... \]\\
+\[= (\frac{1}{4})^0 + (\frac{1}{4})^1+ (\frac{1}{4})^2+(\frac{1}{2^2})^3+(\frac{1}{2^2})^k+ \dots \]\\
+\[9 = \frac{1}{4} = \frac{1}{1- \frac{1}{4}} = \frac{1}{\frac{3}{4}} = \frac{4}{3}= 2A \Rightarrow A = \frac{2}{3}\] 
+\end{example}
+
+\begin{example}
+\begin{equation}
+\begin{aligned}
+0,4 \overline{3} = \frac{3}{4} + \frac{3}{100} + \frac{3}{10000}+ \dots \\
+\frac{4}{10} + \frac{3}{100}(\frac{1}{10})^0 + \frac{1}{10} + \frac{3}{10^2} + \dots \\
+=\frac{4}{10} + \frac{3}{100} \times \frac{1}{1-\frac{1}{10}}\\
+= \frac{4}{10}+ \frac{1}{30} = \frac{12+1}{30}= \frac{13}{30}
+\end{aligned}
+\end{equation}
+wenn $0,4 \overline{3}$ erlaubt wäre, dann,\\
+\[\frac{4}{10} + \frac{9}{100} \times \frac{10}{9} = \frac{4}{10} + \frac{1}{10} = \frac{5}{10} = \frac{1}{2} = 0.5  \]
+\end{example}
+
+\newpage
+\begin{example}
+	\[\sum_{R=1}^{\infty} \frac{1}{K} \text{ ist divergent ,denn  } \lim\limits_{\infty} \sum_{K=1}^{n} \frac{1}{k} \text{ ex. nicht } \]
+	
+	\[\frac{1}{1}+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\dots+\frac{1}{16}+\dots+\frac{1}{n}\]
+	
+	\[ > 1+\frac{1}{2}+  \underbrace{\frac{1}{4}+\frac{1}{4}}+\underbrace{\frac{1}{8}+\frac{1}{8}+\frac{1}{8}+\frac{1}{8}}+\frac{1}{10}+\frac{1}{16}+\dots+\frac{1}{n}\] 
+	
+	\[1+\frac{1}{2} + \qquad \frac{1}{2}+   \quad  \qquad \frac{1}{2}  + \dots + \frac{1}{n}  \rightarrow \lim\limits_{n\rightarrow \infty }s_n = \infty \]
+	
+\end{example}
+\section{Allgemeine harmonische Reihe}
+
+				\begin{equation*}
+				\begin{split}
+				 \sum_{K=1}^{\infty} \frac{1}{k^\alpha} \quad( \infty \text{fest}) \qquad
+				& \alpha > 1 \rightarrow \mathbb{R}  \\
+				& \alpha \leqq \rightarrow dev
+				\end{split}
+				\end{equation*}
+ \begin{example}
+ 	\[ \sum_{k=1}^{\infty} \frac{1}{k^2} \qquad \text{ist konvergent}\]
+ 	
+\begin{beweis}{mit Monotoniekriterium für Folge}  
+		\[ \text{Reihe ist konvergent} \left\{ \begin{array}{ll}
+	   (1) & \mbox{ $\sumIn \frac{1}{k^2} $ \quad ist monoton wachsend};\\
+	   (2) & \mbox{$\sumIn \fracKetwo $ \text{ist beschränkt}}.\end{array} \right. \] 
+	   	
+	   \[ \sumIin \fracKetwo = \frac{1}{1}+\frac{1}{2^2}+\frac{1}{2^2}+\frac{1}{4^2}+\frac{1}{5^2}+  \dots + \frac{1}{8^2}  \]
+	   \[ <  1 + \frac{1}{4}+\underbrace{\frac{1}{2^2}+\frac{1}{2^2}}_{2. \frac{1}{4}}+\underbrace{\frac{1}{4^2}+\dots + \frac{1}{4^2}}_{4.\frac{1}{4^2}}+\]
+	   
+	   \[ 1+\frac{1}{4}+\frac{1}{2}.1+\underbrace{\frac{1}{4}}_{(\frac{1}{2})^2}+\underbrace{\frac{1}{8}}_{(\frac{1}{2})^3} =1+\frac{1}{4}+\frac{\frac{9}{4} }{1-\frac{1}{2}-1} \]
+	   
+ \end{beweis}
+ \end{example}
+%photo auf der Tafel
+\section{Expotentiale Reihe}
+
+\[ \sumOin \frac{1}{k!} = \limNin ( 1-\frac{1}{n})^n =:e \text{ist konvergent} \]
+
+ \pgfkeys{/forest,
+	tria/.append style={ellipse, draw},
+}
+	\begin{forest}
+	for tree={l+=0.5cm, s sep+=1cm}
+	[Konvergentkreterium für Reihen 
+	[	für Folge ]
+	[Kreterien für absolute konvergenz [konvergent Reihen] ]
+	[Hauptkriterium ]
+	]
+	\end{forest}
+
+\section{Hauptkriterium}  
+$$\sum_{k=0}^{\infty}{a_k} \quad \text{konvergent}
+ \Rightarrow (a_k) \text{Nullfolge.}$$ \\
+$$\lim\limits_{k \rightarrow \infty}{a_k} \neq 0 \Rightarrow  \sum_{k=0}^{\infty}{a_k} \quad \underbrace{null konvergent }_{divergend}$$\\
+oder
+			$$\lim\limits_{k \rightarrow -\infty}{ a_k} \quad ex.null$$
+
+						\begin{example}
+						
+						\[ \sumIin \frac{3k^2+1}{4k^2-1} \quad divergend, \quad aber \quad \sumIin \fracKone \quad divergend \quad \text{und $\fracKone$ Null folge }  \]
+						
+
+						\end{example}
+\begin{beweis}
+\[  \sumOin a_k konv. \Rightarrow \underbrace{(a_k Nullfolge) }_{\limKin a_k=0}  \] 
+\[s_n =\sumOn a_k , s_{n+1} =\sum_{k=0}^{n+1} \qquad s_{n+1}=s_n + a_{n+1} \]
+\[s= \limNin s_n= \limNin s_{n+1} \qquad \limNin a_{n+1} = \limNin s_{n+1} - \limNin s_n = s-s=0 \]
+\end{beweis}
+
+\newpage
+\section{Kriterium für Alternierende  Reihe}
+\begin{beweis}{Alternierende }
+	$\sumOin (-1)^k \fracKone$ ist konvergent\\
+	$\sumOin (-1)^k a_k$\\
+	wobei $(a_k)$ einer Streng monoton fallend Nullfolge mit $a_k \geqq 0 $ \\
+	$\Rightarrow$ Die Reihe ist konvergent. Also $\sumOin (-1)^k \fracKone$ ist konvergent.
+
+\end{beweis}
+\begin{definition}[Reihe]
+	
+	\text{Reihe} $\sumOin  a_k$  \text{heiß absolute konvergent wenn} $\sumOin $ $|a_k|$ \text{konvergent ist.
+	}
+\end{definition}
+\begin{example}
+
+\[	\sumIin (-1)^k \fracKone \text{ ist konvergent , aber nicht absolote konvergent } \]
+\end{example}
+
+\begin{example}
+\[ \sumIin (-1)^k \fracKetwo  \text{ ist kovergend und abslote konvergent } \]
+\end{example}
+
+\begin{theorem}
+Reihe $\sumOin$ $a_k$ abslot konvergent $\Rightarrow$ Reihe $\sumOin$ $a_k$ ist kovergend	
+\end{theorem}
+
+\begin{remark}	
+Absolute konvergente Reihe kann man multiplizieren wie endliche summen d Reihen null
+\end{remark}
+
+\section{Quotionkriterium (QK):}
+für endliche Konvergenz\\
+\[\limKin |\frac{a_{k+1}}{a_k}|\] \\$< 1 \Rightarrow \sumOin a_k $ in absolut konvergent \\
+$>1 \Rightarrow $ ist divergent\\
+$=1 $ Kriterium ist nicht anwendbar 
+\section{Wurzel kriterium : WK }
+für (absolute) konvergent 
+\\ $\limKin \sqrt[k]{|a_k|}$\\
+$<1 \Rightarrow \sumOin a_k$ in (absolute) konvergent\\
+$>1 \Rightarrow$ divergent\\
+$=1 $ Kriterium ist nicht anwendbar
+
+\begin{example}[QK]
+	 \begin{equation*}
+		 \begin{split}
+	    	\sumOin \dfrac{1}{k!}
+	 	   \limKin {|d\frac{\frac{1}{(k+1)!}}{\frac{1}{k!}}|} &= \limKin \frac{k!}{(k+1)!} \\
+													   	   &=\limNin \frac{1}{k+1}   \\
+													   	   &=0<1 \Rightarrow  Reihe \quad als \quad konv. 
+		    \end{split}	 
+		 \end{equation*}     
+	
+\end{example}
+\begin{example}[WK]
+	\begin{equation*}
+	\begin{split}
+	\limKin \sqrt[k]{\frac{1}{k!}}= \limKin \frac{\sqrt[k]{1}}{\sqrt[k]{k!}}=\frac{1}{\limKin \sqrt[k]{k!}}=0\\ <1 \\
+	\Rightarrow Reihe \quad als \quad konv.
+	\end{split}	 
+	\end{equation*}     
+	
+\end{example}
