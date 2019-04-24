@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.6)  24 APR 2019 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.6)  24 APR 2019 22:15
 entering extended mode
 **./main.tex
 (main.tex
@@ -2395,10 +2395,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 53101 strings out of 492945
- 1255211 string characters out of 3125365
- 1393691 words of memory out of 3000000
- 56006 multiletter control sequences out of 15000+200000
+ 53109 strings out of 492945
+ 1255441 string characters out of 3125365
+ 1393738 words of memory out of 3000000
+ 56014 multiletter control sequences out of 15000+200000
  560071 words of font info for 114 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,155p,1582b,2148s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2431,7 +2431,7 @@ pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Us
 ers/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (24 pages, 363005 bytes).
+Output written on main.pdf (24 pages, 363422 bytes).
 PDF statistics:
  545 PDF objects out of 1000 (max. 8388607)
  203 named destinations out of 1000 (max. 500000)
