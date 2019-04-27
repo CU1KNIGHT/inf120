@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.6)  24 APR 2019 22:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.6)  27 APR 2019 23:08
 entering extended mode
 **./main.tex
 (main.tex
@@ -1983,32 +1983,33 @@ pgflibrarypatterns.code.tex"
 File: pgflibrarypatterns.code.tex 2019/04/04 v3.1.2 (3.1.2)
 ))
 \c@theorem=\count363
-Package hyperref Info: Option `colorlinks' set `true' on input line 93.
- (main.aux (v1.aux) (v2.aux) (v3.aux) (v4.aux))
+Package hyperref Info: Option `colorlinks' set `true' on input line 94.
+ (main.aux (v1.aux) (v2.aux) (v3.aux) (v4.aux)
+(v5.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 124.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 127.
 
 
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    ... okay on input line 127.
 
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp
 -pdf.mkii"
@@ -2083,7 +2084,7 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.16} (current compat level: 1.12).
 
 \AtBeginShipoutBox=\box113
-Package hyperref Info: Link coloring ON on input line 124.
+Package hyperref Info: Link coloring ON on input line 127.
 
 ("C:\Users\mahmoud\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref
 .sty"
@@ -2095,9 +2096,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count370
 )
-LaTeX Info: Redefining \ref on input line 124.
-LaTeX Info: Redefining \pageref on input line 124.
-LaTeX Info: Redefining \nameref on input line 124.
+LaTeX Info: Redefining \ref on input line 127.
+LaTeX Info: Redefining \pageref on input line 127.
+LaTeX Info: Redefining \nameref on input line 127.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -2124,7 +2125,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 181--187
+Underfull \hbox (badness 10000) in paragraph at lines 184--190
 
  []
 
@@ -2132,7 +2133,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.189 \include{v1}
+l.192 \include{v1}
                    [1
 
 ]
@@ -2227,70 +2228,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--34
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
+ []
+
+
+Overfull \hbox (1.47673pt too wide) detected at line 51
+\U/MnSymbolA/m/n/12  \OT1/cmr/m/n/12 1 \U/MnSymbolD/m/n/12 @ [] []  \OML/cmm/m
+/it/12 a \U/MnSymbolD/m/n/12   \OML/cmm/m/it/12 b
  []
 
 [7
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Overfull \hbox (1.47673pt too wide) detected at line 55
-\U/MnSymbolA/m/n/12  \OT1/cmr/m/n/12 1 \U/MnSymbolD/m/n/12 @ [] []  \OML/cmm/m
-/it/12 a \U/MnSymbolD/m/n/12   \OML/cmm/m/it/12 b
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--83
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
 Package hyperref Info: bookmark level for unknown schreibweise defaults to 0 on
- input line 86.
+ input line 81.
 [8]
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 108.
+line 103.
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-) [10]
+[10])
 \openout2 = `v3.aux'.
 
  (v3.tex
@@ -2373,35 +2369,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
  []
 
 [19]) [20]
-showing definition
-(main.loe)
-showing example
+\openout2 = `v5.aux'.
+
+ (v5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+Package hyperref Info: bookmark level for unknown rechnen defaults to 0 on inpu
+t line 44.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+
+ []
+
 [21
 
 
-] (main.loe) [22
+]
+Missing character: There is no , in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
+
+ []
+
+Missing character: There is no , in font nullfont!
+[22]
+Missing character: There is no , in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--182
+
+ []
+
+[23]
+Missing character: There is no , in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+Missing character: There is no , in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--244
+
+ []
+
+[24]
+Missing character: There is no , in font nullfont!
+
+Overfull \hbox (61.14597pt too wide) in paragraph at lines 293--294
+[][] 
+ []
+
+[25]
+Overfull \hbox (17.55669pt too wide) detected at line 325
+[]
+ []
+
+Missing character: There is no , in font nullfont!
+Package pgfplots info on input line 362: fill between: activating layered graph
+ics
+Package pgfplots info on input line 362: Setting layers 'axis background,axis g
+rid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis
+ foreground'...
+) [26]
+showing definition
+(main.loe)
+showing example
+[27
+
+
+] (main.loe) [28
 
 ]
 \tf@loe=\write7
 \openout7 = `main.loe'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
- (main.aux (v1.aux) (v2.aux) (v3.aux) (v4.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
+ (main.aux (v1.aux) (v2.aux) (v3.aux) (v4.aux) (v5.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4054CF62D771B3913E26FE864428BACB;1272.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
+(rerunfilecheck)             Checksum: 38F164F2DD188B32F762F56B729ADE8C;1436.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 53109 strings out of 492945
- 1255441 string characters out of 3125365
- 1393738 words of memory out of 3000000
- 56014 multiletter control sequences out of 15000+200000
- 560071 words of font info for 114 fonts, out of 3000000 for 9000
+ 53295 strings out of 492945
+ 1258941 string characters out of 3125365
+ 1417886 words of memory out of 3000000
+ 56158 multiletter control sequences out of 15000+200000
+ 561148 words of font info for 117 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,20n,155p,1582b,2148s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 128i,20n,155p,1582b,2252s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/
 MnSymbolA.enc}{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/mnsymbol/MnSymbolD.enc}{C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/f
@@ -2427,13 +2507,14 @@ onts/cm/cmr17.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr6.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mahmoud/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/mahmoud/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Us
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Us
 ers/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-tt12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (24 pages, 363422 bytes).
+ti8.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmtt12.pfb><C:/Users/mahmoud/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (30 pages, 405334 bytes).
 PDF statistics:
- 545 PDF objects out of 1000 (max. 8388607)
- 203 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 627 PDF objects out of 1000 (max. 8388607)
+ 238 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 
