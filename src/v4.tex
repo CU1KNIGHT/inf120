@@ -6,6 +6,29 @@
 
 %fehlend ein Beispie mit g=A 
 %2A=1^2+(1/2)^2
+
+\section{Reihen}
+\begin{example}{Zur geometrischen Reihen}\\
+gesucht : A
+\[2A = 1^2 + (\frac{1}{2})^2+(\frac{1}{4})^2 + \dots + (\frac{1}{k})^2 + ... \]\\
+\[= (\frac{1}{4})^0 + (\frac{1}{4})^1+ (\frac{1}{4})^2+(\frac{1}{2^2})^3+(\frac{1}{2^2})^k+ \dots \]\\
+\[9 = \frac{1}{4} = \frac{1}{1- \frac{1}{4}} = \frac{1}{\frac{3}{4}} = \frac{4}{3}= 2A \Rightarrow A = \frac{2}{3}\] 
+\end{example}
+
+\begin{example}
+\begin{equation}
+\begin{aligned}
+0,4 \overline{3} = \frac{3}{4} + \frac{3}{100} + \frac{3}{10000}+ \dots \\
+\frac{4}{10} + \frac{3}{100}(\frac{1}{10})^0 + \frac{1}{10} + \frac{3}{10^2} + \dots \\
+=\frac{4}{10} + \frac{3}{100} \times \frac{1}{1-\frac{1}{10}}\\
+= \frac{4}{10}+ \frac{1}{30} = \frac{12+1}{30}= \frac{13}{30}
+\end{aligned}
+\end{equation}
+wenn $0,4 \overline{3}$ erlaubt wäre, dann,\\
+\[\frac{4}{10} + \frac{9}{100} \times \frac{10}{9} = \frac{4}{10} + \frac{1}{10} = \frac{5}{10} = \frac{1}{2} = 0.5  \]
+\end{example}
+
+
 \begin{example}
 	\[\sum_{R=1}^{\infty} \frac{1}{K} \text{ ist divergent ,denn  } \lim\limits_{\infty} \sum_{K=1}^{n} \frac{1}{k} \text{ ex. nicht } \]
 	
@@ -72,14 +95,15 @@
 \end{example}
 \section{Kriterium für Alternierende  Reihe}
 \begin{example}{Alternierende }
-	$\sumOin (-1)^k \fracKone$ in konver .................. (fehlend)\\
+	$\sumOin (-1)^k \fracKone$ ist konvergent\\
 	$\sumOin (-1)^k a_k$\\
-	wobei $(a_k)$ einer Streng monoton fallend Nullfolge $\Rightarrow$ ..............(fehlend)
-	mit $ a_k \geqq 0$
+	wobei $(a_k)$ einer Streng monoton fallend Nullfolge mit $a_k \geqq 0 $ \\
+	$\Rightarrow$ Die Reihe ist konvergent. Also $\sumOin (-1)^k \fracKone$ ist konvergent.
+
 \end{example}
 \begin{definition}[Reihe]
 	
-	\text{Reihe} $\sumOin  a_k$  \text{heiß abslote konvergent \\ wenn} $\sumOin $ $|a_k|$ \text{konvergent ist.
+	\text{Reihe} $\sumOin  a_k$  \text{heiß absolute konvergent wenn} $\sumOin $ $|a_k|$ \text{konvergent ist.
 	}
 \end{definition}
 \begin{example}
@@ -112,7 +136,7 @@ $=1 $ kriterium ist nicht anwendbar
 	    	\sumOin \frac{1}{k!}
 	 	   \limKin |\frac{\frac{1}{(k+1)!}}{\frac{1}{k!}}| &= \limKin \frac{k!}{(k+1)!} \\
 													   	   &=\limNin \frac{1}{k+1}   \\
-													   	   &=0<1 \Rightarrow Reihe ist abs. konv.
+													   	   &=0<1 \Rightarrow  Reihe \quad als \quad konv. 
 		    \end{split}	 
 		 \end{equation*}     
 	
@@ -121,7 +145,7 @@ $=1 $ kriterium ist nicht anwendbar
 	\begin{equation*}
 	\begin{split}
 	\limKin \sqrt[k]{\frac{1}{k!}}= \limKin \frac{\sqrt[k]{1}}{\sqrt[k]{k!}}=\frac{1}{\limKin \sqrt[k]{k!}}=0\\ <1 \\
-	\Rightarrow R.abs.konv.
+	\Rightarrow Reihe \quad als \quad konv.
 	\end{split}	 
 	\end{equation*}     
 	

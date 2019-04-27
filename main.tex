@@ -51,8 +51,8 @@
 
 
 
-%% Created defnintions 
-\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+%% Created defnintions
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
 
 
 
@@ -83,6 +83,7 @@
 \newtheorem{example}[theorem]{Beispiel}
 \newtheorem{beweis}[theorem]{Beweis}
 \newtheorem{schreibweise}[theorem]{Schreibweise}
+\newtheorem{rechnen}[theorem]{Berechnung}
 
 
 
@@ -119,7 +120,9 @@
 \newcommand{\limKin}{\lim\limits_{k \rightarrow \infty}}
 
 
-
+%created defintions
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+    \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 
 \begin{document}
 	\selectlanguage{german}
@@ -184,12 +187,13 @@ Mitschrift zur Vorlesung Sommer Semester 2019  \\[\bigskipamount]
     \newline \newline
     \vornameE \ \nameE \newline
     \vornameS  \ \nameS
-    
-    
+
+
 \include{v1}
 \include{v2}
 \include{v3}
 \include{v4}
+\include{v5}
 \listoftheorems[ ignoreall,show={definition}]
 \listoftheorems[ignoreall,show={example}]
 \end{document}
