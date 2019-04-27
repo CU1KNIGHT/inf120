@@ -21,5 +21,7 @@
 \contentsline {section}{\numberline {1.14}Kriterium f\IeC {\"u}r Alternierende Reihe}{19}{section.1.14}% 
 \contentsline {section}{\numberline {1.15}Quotionkriterium (QK):}{19}{section.1.15}% 
 \contentsline {section}{\numberline {1.16}Wurzel kriterium : WK }{19}{section.1.16}% 
-\contentsline {chapter}{List of Theorems}{21}{chapter*.5}% 
-\contentsline {chapter}{List of Theorems}{22}{chapter*.6}% 
+\contentsline {section}{\numberline {1.17}Vorlesung 5}{21}{section.1.17}% 
+\contentsline {subsection}{\numberline {1.17.1}Rechnenregln f\IeC {\"u}r Funktionen (GWS anwenden)}{25}{subsection.1.17.1}% 
+\contentsline {chapter}{List of Theorems}{26}{chapter*.9}% 
+\contentsline {chapter}{List of Theorems}{27}{chapter*.10}% 
