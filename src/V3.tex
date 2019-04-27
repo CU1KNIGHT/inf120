@@ -1,10 +1,6 @@
-\section{Vorlesung 3}
 
-\begin{example}
-
-\end{example}
 \begin{equation}
-    \lim\limits_{n \rightarrow \infty}{\frac{11+n}{9-n}}\quad ? \\
+    \lim\limits_{n \rightarrow \infty}{\frac{11+1}{9-n}}\quad ? \\
     \\\quad x_n = \frac{11+1}{9-n}=\frac{n}{n} \frac{\frac{11}{n}+1}{\frac{9}{n}-1}
 \end{equation}
 
@@ -49,8 +45,8 @@
     denn $ x_n = 0 \leq \frac{a_n}{n!} \leq y_n$
     , gesucht! $\underbrace{y_n}_{\lim\limits_{n \rightarrow \infty}{y_n}=0}$  für hinreichend großes n.
 
-    \begin{equation}     
-    \begin{aligned}   
+    \begin{equation}
+        \begin{aligned}
             \frac{a^n}{n!} = \frac{a}{n} \times \frac{a^{n-1}}{(n-1)!} \\ \leq
             \frac{1}{2} \times
             \frac{a^{n-1}}{(n-1)!} \\ =
@@ -76,7 +72,7 @@
         \begin{aligned}
             &=
             \lim\limits_{n \rightarrow \infty}{(\frac{1}{2})^{n-k}} \times
-            \underbrace{\frac{a^k}{k!}}_{Konst} \\
+            \underbrace{\frac{a^l}{k!}}_{Konst} \\
             &=
             \lim\limits_{n \rightarrow \infty}{(\frac{1}{2})^{n}} \times
             \underbrace{\lim\limits_{n \rightarrow \infty}{(\frac{1}{2})^{-k}}}_{\in \mathbb{R}} \times
@@ -94,21 +90,21 @@
 \section{Grenzwerte rekursive definierte Folgen:}
 
 man kann oft durch lösen "Fixpunktgleichung" berechnen.\\
-$x_0 \quad , x_{n+1}= ln(x_n)$
+$x_0 \quad , x_n+1 = ln(x_n)$
 
 \begin{example}
-\[(x_n) \quad x_0 = \frac{7}{5} \quad,\quad x_{n+1}= \frac{1}{3}(x_n^2+2)  \]
+\[(x_n) \quad x_0 = \frac{7}{5} \quad,\quad x_n+1= \frac{1}{3}(x_n^2+2)  \]
 
 Ü $(x_n)$ ist monoton fallend , beschränkt , konvergent . 
 
 \[\lim\limits_{n \rightarrow \infty}{x_n}=a \quad,\quad 
-\lim\limits_{n \rightarrow \infty}{x_{n+1}}=a \]
+\lim\limits_{n \rightarrow \infty}{x_n+1}=a \]
 
 \begin{equation*}
 \begin{aligned}
-\lim\limits_{n \rightarrow \infty}{x_{n+1}} 
+\lim\limits_{n \rightarrow \infty}{x_n+1} 
 = \linebreak  
-\lim\limits_{n \rightarrow \infty}{\frac{1}{3}(x_n^2 + 2)=
+\lim\limits_{n \rightarrow \infty}{\frac{1}{3}(x_n^2 + 2)
 \frac{1}{3}} \lim\limits_{n \rightarrow \infty}{(x_n^2 + 2)}
 =
 \frac{1}{3} (\lim\limits_{n \rightarrow \infty}{(x_n))^2 + 2)}
@@ -133,21 +129,21 @@ Dann $\underbrace{\lim\limits_{n \rightarrow \infty}{x_{n-1}}= }_{a}$ $\lim\limi
 \end{example}
 
 \begin{remark}
-Der Nachweis der konvergent der rekursiv definierte Folge darf nicht weggelassen werden, denn Z.B $x_0=2$ , $x_{n+1}=x_n^2$ \quad \quad \quad 2 , 4 ,16 ,256 , $\dots $ divergent gegen + $\infty$  \\
+Der Nachweis der konvergent der rekursiv definierte Folge darf nicht weggelassen werden, denn Z.B $x_0=2$ , $x_n+1=x_n^2$ \quad \quad \quad 2 , 4 ,16 ,256 , $\dots $ divergent gegen + $\infty$  \\
 
 Annahme: $\lim\limits_{n \rightarrow \infty}{x_n}= a $ 
 $\underbrace{\quad \lim\limits_{n \rightarrow \infty}{x_{n+1}}}_{a}$ = 
-$\underbrace{\lim\limits_{n \rightarrow \infty}{x_n^2}}_{a^2} \Rightarrow a \in \{ 0,1 \}$
+$\underbrace{\lim\limits_{n \rightarrow \infty}{x_n^2}}_{a} \Rightarrow a \in \{ 0,1 \}$
 \end{remark}  
 
 %new 
  
 \newpage
 \section{Reihen :}
-\begin{definition}[Unendliche Reihen]
+\begin{definition}
 Sei $(a_n)$ eine reellefolge (komplexwertig) Folge\\
 $$\sum_{k = 0}^{n} {a_k} = a_a , a_1, \dots , a_n , $$
- n-k heißt Partialsumme.
+heißt n-k heißt partielle Summe.
 $(S_n)$ heißt unendliche Reihe.
 
 schriebweise : $(S_n)^\infty =$ bsw 
@@ -159,46 +155,16 @@ $(S_n)$ $$ \bigg( \sum_{l=0}^{n} {a_l} \bigg)$$ bzw
 Reihen sind spezielle Folgen , alle konvergent oder divergent. 
 \end{remark}
 
-\begin{definition}[wert der Reihe]
+\begin{definition}
 Für eine konvergente Reihen wird der Grenzwert auch wert der Reihe genannt.\\
-
-\begin{schreibweise}
- :  $\lim\limits_{n \rightarrow \infty}{S_n}= $
+Schreibweise :  $\lim\limits_{n \rightarrow \infty}{S_n}= $
 $$\lim\limits_{n \rightarrow \infty}{ \sum_{k=0}^{n} {a_k} }  $$ 
 bzw 
 $$ \sum_{k=0}^{\infty} {a_k}  $$
-\end{schreibweise}
-
 \end{definition}
-
-\begin{example}{Teleskopreihe} 
-\begin{gather*}
-\sum_{k=1}^\infty(\frac{1}{k}-\frac{1}{k+1}) \text{in Grenzwert der Reihe ist}\\ 
-\sum_{k=1}^\infty(\frac{1}{k}-\frac{1}{k-1})=1 \\
-\lim_{n \to \infty}{S_n} = \lim_{n \to \infty}{\sum_{k=1}^n(\frac{1}{k}- \frac{1}{k-1}) }\\
-= \limNin{(\frac{-1}{2})+\frac{1}{2}(\frac{1}{3} + \frac{1}{3})(-\frac{1}{4})+) \dots +(\frac{1}{n})-\frac{1}{n+1}}\\
-= \limNin{(1- \frac{1}{n+1})}= 1-0 =1 
-\end{gather*}
-\end{example}
-
+ 
 \begin{example}
-geometrische Reihe $ \sum_{k=0}^{\infty} {q^k} $
-ist für $$ {|q|} < 1 $$ konvergent . wert der Reihe für $ {|q|} < 1 $  $\sum_{k=0}^{\infty} {q^k}= \frac{1}{1-q} $ für 
-$ {|q|} < 1 $  konvergent , werte der Reihe für 
-$$ {|q|} <1 : \sum_{k=0}^n{q^k}= \dots $$
-
-\begin{gather*}
-S_n = q^0 + q^1 + \dots + q^n | *q \\
--q S_n = q^1 + q^2 + \dots + q^{n+1} \\
-(1-q)S_n=q^0 - q^{n+1} \\
-S_n = \frac{1-q^{n+1}}{1-q} = \frac{1}{1-q}(1-q)^{n+1}\\
-\Rightarrow lim_{n \to \infty}{S_n} = \frac{1}{1-q} \times 
-\lim_{n \to \infty}{((1-q)^{n+1})}\\
-=\frac{1}{1-q}(1- \lim_{n \to \infty}{q^{n+1}})=\frac{1}{1-q}
-\end{gather*}
-
-\subsection{Rechnen für Reihen}
-konvergent Reihe kann man addieren oder subtrahieren mit einem Skalar multiplizieren
-wie endliche Summen.
-aber das gilt im Allgemein nicht für das Multiplizieren  
+geometrische Reihe $$ \sum_{k=0}^{\infty} {q^k} $$
+ist für $|q|<1$ konvergent . wert der Reihe für $|q|<1$ : 
+$$ \sum_{k=0}^{\infty} {q^k}= \frac{1}{1-q}$$ für $|q| < 1 $ 
 \end{example}

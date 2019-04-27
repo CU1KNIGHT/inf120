@@ -1,11 +1,3 @@
-\section{vorlesung 2}
-\begin{text}
-    ist die folge beschränkt , monoton ?\\
-
-    $(x_n)$ konvergierend : $\iff \exists a \in\mathbb{R} \quad \forall \epsilon > 0 \quad \exists n \quad \in N \quad \forall n \in N \quad \\
-    n \geq N \Rightarrow |x_n - a |< \epsilon $
-\end{text}
-
 
 \begin{theorem}
 
@@ -13,45 +5,41 @@
 
 \end{theorem}
 
-
-
-\begin{beweis}
+\begin{proof}
     Sei a eine Grenzwert von $(x_n)$ , b eine Grenzwert von $(x_n)$ \\
     d.h sei $\epsilon > 0$,$\epsilon$ beliebig , $\epsilon$ fest \\
-
 
     \begin{equation}
         \exists  N_a \quad \forall n \geq N_a : |x_n-a|< \epsilon
     \end{equation}
-    
 
     \begin{equation}
         \exists  N_b \quad \forall n \geq N_b : |x_n-b|< \epsilon
     \end{equation}
 
-    Sei max $\{N_a,N_b\}=N$
+    Sei max ${N_a,N_b}=N$
     dann gilt : \\
     \begin{equation}
         n \geq N \Rightarrow |x_n - a| < \epsilon
     \end{equation}
-    
     und \begin{equation}
             |x_n -b| < \epsilon \Rightarrow |x_n -a|+|x_n - b|< 2\epsilon
     \end{equation}\\
-Annahme :- a $\neq$ b , d.h $|a-b|\neq 0 $
-    \begin{gather*}
-    |a-b|=|a+0-b|\\
-    =|(a-x_n)+(x_n-b)| \leq |x_n - a|+|x_n-b|< 2 \epsilon \\
-    also \quad |a - b|< 2 \epsilon
-\end{gather*}
-  wähle Z.B  \[\epsilon = \frac{|a-b|}{3}
-        \quad
-         \text{dann gilt}\ :|a-b|< \frac{2 \ |a-b|}{3}\]\\
- 
-        \[ \Rightarrow 1 < \frac{2}{3} \quad  \text{ falls  Aussage, Widerspruch  also  ist  die  Annahme  falsch  also  gilt }\ \quad a=b\]
-\end{beweis}
-\newpage
 
+    Annahme :- a $\neq$ b , d.h $|a-b|\neq 0 $
+    \[|a-b|=|a+0-b|
+    =|(a-x_n)+(x_n-b)| \leq |x_n - a|+|x_n-b|< 2 \epsilon \]
+    also $|a - b|< 2 \epsilon$
+
+
+    \begin{example}
+        \[\epsilon = \frac{|a-b|}{3}
+        \quad \text{dann gilt}\ :|a-b|< \frac{2 \ |a-b|}{3}\]\\
+
+        \[ \Rightarrow 1 < \frac{2}{3} \quad falls \quad Aussage, Widerspruch \quad also \quad ist \quad die \quad Annahme \quad falsch \quad also \quad gilt \quad a=b\]
+
+    \end{example}
+\end{proof}
 
 \begin{example}
 
@@ -59,10 +47,9 @@ Annahme :- a $\neq$ b , d.h $|a-b|\neq 0 $
 
 \end{example}
 
-\begin{beweis}
+\begin{proof}
     Sei $\epsilon > 0 , \epsilon belibig , \epsilon fest$
-    gesucht : N mit $n \geq$ N \\
-    hat den Grenzwert 0
+    gesucht : N mit $n \geq$ N
 
     \begin{gather}
         \Rightarrow |x_n-a|= |\frac{1}{n} =0|=\frac{1}{n}<\epsilon
@@ -70,21 +57,19 @@ Annahme :- a $\neq$ b , d.h $|a-b|\neq 0 $
 
     wähle N:= $\lceil \frac{1}{\epsilon} \rceil +1$
 
-\end{beweis}
+\end{proof}
 
 \begin{example}
     $\epsilon = \frac{1}{100}$ , gesucht N mit $n \geq N$
     $\Rightarrow \frac{1}{n} < \frac{1}{100}$ wähle $N=101$\\
 
 
-    \begin{schreibweise}
-    $x_n$ hat den Grenzwert a Limes
+    Schreibweise: $x_n$ hat den Grenzwert a Limes
     $\lim\limits_{n \rightarrow \infty}{x_n}=a$
     $x_n$ geht gegen a für n gegen Unendlich.
-    \end{schreibweise}
 \end{example}
 
-\begin{definition}[Nullfolge]
+\begin{definition}
     $x_n$ heißt Nullfolge ,wenn $\lim\limits{x_n}=0$ gilt.
 \end{definition}
 
@@ -95,10 +80,11 @@ Annahme :- a $\neq$ b , d.h $|a-b|\neq 0 $
 \end{remark}
 
 \begin{example}
-    $x_n = \dfrac{1}{3} + \big(\dfrac{11-n}{9-n}\big)^9$\\
-Behauptung: $\lim\limits_{n \rightarrow \infty}{x_n}=\dfrac{-2}{3}$
+    $x_n = \frac{1}{3} + \big(\frac{11-n}{9-n}\big)^9$\\
 
-\newpage
+
+    Behauptung: $\lim\limits_{n \rightarrow \infty}{x_n}=\frac{-2}{3}$
+
     \begin{lemma}
         \begin{gather}
             \lim\limits_{n \rightarrow \infty}{x_n+y_n}=
@@ -134,7 +120,7 @@ Behauptung: $\lim\limits_{n \rightarrow \infty}{x_n}=\dfrac{-2}{3}$
 
     \begin{gather}
         =\Bigg(
-        \frac{\lim\limits_{n \rightarrow \infty}{11} \times \lim\limits_{n \rightarrow \infty}{(\frac{1}{n})-1}}{\lim\limits_{n \rightarrow \infty}{9 \times \lim\limits_{n \rightarrow \infty}{(\frac{1}{n})+1} } }   \Bigg)^9
+        \frac{\lim\limits_{n \rightarrow \infty}{11} \times \lim\limits_{n \rightarrow \infty}{(\frac{1}{n}-1)}}{\lim\limits_{n \rightarrow \infty}{9 \times \lim\limits_{n \rightarrow \infty}{(\frac{1}{n}+1)} } }   \Bigg)^9
     \end{gather}
 
     \begin{gather}
@@ -142,13 +128,11 @@ Behauptung: $\lim\limits_{n \rightarrow \infty}{x_n}=\dfrac{-2}{3}$
     \end{gather}
 \end{example}
 
-\begin{definition}[Unendliche Grenzwert]
+\begin{definition}
     Eine Folge $(x_n)$ hat den unendliche Grenzwert $\infty$, wenn gilt : \\
     \[\forall r \in \mathbb{R} \quad \exists N \in N \quad \forall n \geq N : x_n > r \]
 
-\begin{schreibweise}
-$\lim\limits_{n \rightarrow \infty}{x_n}= \infty$
-\end{schreibweise}
+    Schreibweise : $\lim\limits_{n \rightarrow \infty}{x_n}= \infty$
 \end{definition}
 
 \begin{remark}
@@ -160,7 +144,7 @@ $\lim\limits_{n \rightarrow \infty}{x_n}= \infty$
 \end{remark}
 
 \begin{remark}
-    gilt $\lim\limits_{n \rightarrow \infty}{x_n}= \infty$ dann schreibt man $\lim\limits_{n \rightarrow \infty}{-x_n}= -\infty$
+    gilt $\lim\limits_{n \rightarrow \infty}{x_n}= \infty$ dann schreibt man $\lim\limits_{n \rightarrow \infty}{x_n}= -\infty$
 \end{remark}
 
 \begin{example}
@@ -173,7 +157,10 @@ $\lim\limits_{n \rightarrow \infty}{x_n}= \infty$
                                                     ex. nicht ,\quad q\leq -1
     \end{cases}$
 \end{example}
+
 \vfil
+\vfil
+
 
 \section{Konvergenzkriterien}
 (zum Beweis der Existenz eine Grenzwert, nicht zum berechnen von Grenzwert) \\
@@ -190,12 +177,11 @@ wenn $(x_n)$ beschränkt ist können wir fragen ob $(x_n)$    konvergent.\\
 
 $(x_n)$ beschränkt von Monotonie $\Rightarrow$ $(x_n)$ konvergent.
 
-\begin{example} %2.17 
+\begin{example} %كانت ريمارك وصارت مثال
 
 $\Big((-1)^n \times\frac{1}{n} \Big)$ konvergent (Nullfolge) diese Folge ist beschränkt aber nicht Monoton 
-$$ \lim_{n \to \infty}{\Big( \big(1 + \frac{1}{n}\big)^n \Big)} $$  existiert. Diese ist beschränkt und monoton. \\
-$$\Rightarrow \lim_{n \to \infty}{(1+\frac{1}{n})^n}$$ 
+$$lim_{n \to \infty}{\Big( \bigg(1 + \frac{1}{n}\bigg)^n) \Big)} $$  existiert. Diese ist beschränkt und monoton. \\
+$$\Rightarrow lim_{n \to \infty}{(1+\frac{1}{n})^n}$$ 
 existiert. 
-$$\lim_{n \to \infty}{(1+\frac{a}{n})=e^a}$$
-\end{example}
-\newpage
+$$lim_{n \to \infty}{(1+\frac{a}{n})=e^a}$$
+ \end{example}

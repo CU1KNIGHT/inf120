@@ -12,7 +12,6 @@
 \usepackage{verbatim}
 \usepackage{url}
 \usepackage{amsmath,amsthm,amssymb,amsfonts}
-\usepackage{amsthm}
 \usepackage[nottoc]{tocbibind}
 \usepackage{mathtools}
 \usepackage{mathabx}
@@ -62,6 +61,7 @@
 %%
 %created theorem
 \swapnumbers
+
 \theoremstyle{plain} %Text ist Kursiv
 \newtheoremstyle{break}% name
 {}%         Space above, empty = `usual value'
@@ -81,9 +81,6 @@
 \newtheorem{remark}[theorem]{Bemerkung}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Beispiel}
-\newtheorem{beweis}[theorem]{Beweis}
-\newtheorem{schreibweise}[theorem]{Schreibweise}
-\newtheorem{rechnen}[theorem]{Berechnung}
 
 
 
@@ -120,9 +117,7 @@
 \newcommand{\limKin}{\lim\limits_{k \rightarrow \infty}}
 
 
-%created defintions 
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-    \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
 
 \begin{document}
 	\selectlanguage{german}
@@ -189,11 +184,10 @@ Mitschrift zur Vorlesung Sommer Semester 2019  \\[\bigskipamount]
     \vornameS  \ \nameS
     
     
-\include{v1}
-\include{v2}
-\include{v3}
+\include{v123}
+%\include{v2}
+%\include{v3}
 \include{v4}
-\include{v5}
 \listoftheorems[ ignoreall,show={definition}]
 \listoftheorems[ignoreall,show={example}]
-\end{document}
+ \end{document}
