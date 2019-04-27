@@ -267,8 +267,33 @@ Polynomfunktion , rationale Funktionen, Winkelfunktionen , Potenzfunktionen , Wu
 \begin{align*}
 f : D \rightarrow \mathbb{R} : x \rightarrow \frac{1}{x} = x^{-1} \text{ist stetig auf dem gesamten  Defintionsbereich } D = \mathbb{R}   \backslash \{0\}  
 \end{align*}
-\end{example}
 
+\begin{tikzpicture}[scale=1],
+
+\begin{axis}[xlabel=$x$,
+ylabel= $y$,
+height=12cm,
+width=17.5cm,
+ymax=5,
+ymin=-3,
+xmin=-3,
+xmax=3,
+axis y line=center,
+axis x line=center,
+]
+\addplot[domain= -3:-0.01] {1/x};
+\addplot[domain= 0.01:3] {1/x};
+\draw [red,  -stealth    ] (-0.5,0.7) -- (-0.1,0.1) node [left,pos=0] {kein intervall im  Definition Bereich};
+\addplot[mark=*,fill=white] coordinates {(0,0)};
+\addplot[ very thick,mark options={solid},blue,domain= 0.8:2.3] {1/x};
+\addplot[ very thick,mark options={solid},blue,domain= 0.8:2.3] {0};
+\draw [blue,  -stealth    ] (0.5,-2) -- (1.2,-0.6) node [below,pos=0] { intervall };
+
+\end{axis}
+\end{tikzpicture}
+
+\end{example}
+\newpage
 \begin{beweis}
 Sei $ a \in D = \mathbb{R} \backslash \{0 \}$ (d.h a $\neq 0$) 
 \begin{align*}
@@ -292,6 +317,7 @@ f(a)  &= \frac{1}{a} \tag{1} \\
 \lim\limits_{n \rightarrow \infty}{(f(n) \pm g(n))} =\lim\limits_{n \rightarrow \infty}{f(n)} \pm  \lim\limits_{n \rightarrow \infty}{g(n)} 
 \end{gather*}
 
+
 \begin{theorem}
 \begin{gather}
 f: D \Rightarrow \mathbb{R} , \quad D \subseteq \mathbb{R} \text{ ist in } a \in D \text{ Stetig }
@@ -300,5 +326,42 @@ f: D \Rightarrow \mathbb{R} , \quad D \subseteq \mathbb{R} \text{ ist in } a \in
 \end{theorem}
 %fehlende Skizze
   
+\begin{tikzpicture}[scale=1.2],
 
+\begin{axis}[
+height=6cm,
+width=10cm,
+ymax=11,
+ymin=0,
+xmin=0,
+xmax=6.5,
+axis y line=left,
+axis x line=bottom,
+ytick={1,...,10},
+yticklabels={ ,$f(a)-\epsilon$ ,,,,$f(x)$,,,$f(a)+\epsilon$},
+xtick={1,...,5},
+xticklabels={,,$a-\delta$,$a$,$a+\delta$}
+]
+\addplot[dashed] coordinates {(0,2) (2,2)};
+\addplot[dashed] coordinates {(2,0) (2,2)};
+\addplot[blue,dashed] coordinates {(0,3) (3,3)};
+\addplot[blue,dashed] coordinates {(3,0) (3,3)};
+\addplot[dashed] coordinates {(0,5) (4,5)};
+\addplot[dashed] coordinates {(4,0) (4,5)};
+\addplot[blue,dashed] coordinates {(0,9) (5,9)};
+\addplot[blue,dashed] coordinates {(5,0) (5,9)};
+
+\addplot[black,domain=1:9,name path=A]  { 2^(\x-2)+1  } node at (5.5, 8.5) {f};
+\addplot[very thick,blue,name path=B,domain= 3:5] {0};
+\addplot[blue,very thick] coordinates {(0,3) (0,9)};
+\addplot[gray, pattern=north west lines] fill between[of=A and B, soft clip={domain=3:5}];
+\legend{$qeg \; \epsilon$, $gce \; \delta$}
+
+
+
+\end{axis}
+\end{tikzpicture}
+ 
+ 
+ 
  
