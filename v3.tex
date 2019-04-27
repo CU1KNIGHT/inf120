@@ -4,7 +4,7 @@
 
 \end{example}
 \begin{equation}
-    \lim\limits_{n \rightarrow \infty}{\frac{11+1}{9-n}}\quad ? \\
+    \lim\limits_{n \rightarrow \infty}{\frac{11+n}{9-n}}\quad ? \\
     \\\quad x_n = \frac{11+1}{9-n}=\frac{n}{n} \frac{\frac{11}{n}+1}{\frac{9}{n}-1}
 \end{equation}
 
@@ -76,7 +76,7 @@
         \begin{aligned}
             &=
             \lim\limits_{n \rightarrow \infty}{(\frac{1}{2})^{n-k}} \times
-            \underbrace{\frac{a^l}{k!}}_{Konst} \\
+            \underbrace{\frac{a^k}{k!}}_{Konst} \\
             &=
             \lim\limits_{n \rightarrow \infty}{(\frac{1}{2})^{n}} \times
             \underbrace{\lim\limits_{n \rightarrow \infty}{(\frac{1}{2})^{-k}}}_{\in \mathbb{R}} \times
@@ -137,7 +137,7 @@ Der Nachweis der konvergent der rekursiv definierte Folge darf nicht weggelassen
 
 Annahme: $\lim\limits_{n \rightarrow \infty}{x_n}= a $ 
 $\underbrace{\quad \lim\limits_{n \rightarrow \infty}{x_{n+1}}}_{a}$ = 
-$\underbrace{\lim\limits_{n \rightarrow \infty}{x_n^2}}_{a} \Rightarrow a \in \{ 0,1 \}$
+$\underbrace{\lim\limits_{n \rightarrow \infty}{x_n^2}}_{a^2} \Rightarrow a \in \{ 0,1 \}$
 \end{remark}  
 
 %new 
@@ -147,7 +147,7 @@ $\underbrace{\lim\limits_{n \rightarrow \infty}{x_n^2}}_{a} \Rightarrow a \in \{
 \begin{definition}[Unendliche Reihen]
 Sei $(a_n)$ eine reellefolge (komplexwertig) Folge\\
 $$\sum_{k = 0}^{n} {a_k} = a_a , a_1, \dots , a_n , $$
-heißt n-k heißt partielle Summe.
+ n-k heißt Partialsumme.
 $(S_n)$ heißt unendliche Reihe.
 
 schriebweise : $(S_n)^\infty =$ bsw 
@@ -172,15 +172,13 @@ $$ \sum_{k=0}^{\infty} {a_k}  $$
 \end{definition}
 
 \begin{example}{Teleskopreihe} 
-\begin{equation}
-\begin{aligned}
+\begin{gather*}
 \sum_{k=1}^\infty(\frac{1}{k}-\frac{1}{k+1}) \text{in Grenzwert der Reihe ist}\\ 
 \sum_{k=1}^\infty(\frac{1}{k}-\frac{1}{k-1})=1 \\
 \lim_{n \to \infty}{S_n} = \lim_{n \to \infty}{\sum_{k=1}^n(\frac{1}{k}- \frac{1}{k-1}) }\\
-= lim_{n \to \infty}{(\frac{-1}{2})+\frac{1}{2}(\frac{1}{3} + \frac{1}{3})(-\frac{1}{4})+) \dots +(\frac{1}{n})-\frac{1}{n+1}}\\
-= lim_{n \in \infty}{(1- \frac{1}{n+1})}= 1-0 =1 
-\end{aligned}
-\end{equation}
+= \limNin{(\frac{-1}{2})+\frac{1}{2}(\frac{1}{3} + \frac{1}{3})(-\frac{1}{4})+) \dots +(\frac{1}{n})-\frac{1}{n+1}}\\
+= \limNin{(1- \frac{1}{n+1})}= 1-0 =1 
+\end{gather*}
 \end{example}
 
 \begin{example}
@@ -188,17 +186,17 @@ geometrische Reihe $ \sum_{k=0}^{\infty} {q^k} $
 ist für $$ {|q|} < 1 $$ konvergent . wert der Reihe für $ {|q|} < 1 $  $\sum_{k=0}^{\infty} {q^k}= \frac{1}{1-q} $ für 
 $ {|q|} < 1 $  konvergent , werte der Reihe für 
 $$ {|q|} <1 : \sum_{k=0}^n{q^k}= \dots $$
-\begin{equation}
-\begin{aligned}
+
+\begin{gather*}
 S_n = q^0 + q^1 + \dots + q^n | *q \\
 -q S_n = q^1 + q^2 + \dots + q^{n+1} \\
 (1-q)S_n=q^0 - q^{n+1} \\
 S_n = \frac{1-q^{n+1}}{1-q} = \frac{1}{1-q}(1-q)^{n+1}\\
 \Rightarrow lim_{n \to \infty}{S_n} = \frac{1}{1-q} \times 
 \lim_{n \to \infty}{((1-q)^{n+1})}\\
-=\frac{1}{1-q}(1- \lim_{n \to \infty}{q^{n+1}})
-\end{aligned}
-\end{equation}
+=\frac{1}{1-q}(1- \lim_{n \to \infty}{q^{n+1}})=\frac{1}{1-q}
+\end{gather*}
+
 \subsection{Rechnen für Reihen}
 konvergent Reihe kann man addieren oder subtrahieren mit einem Skalar multiplizieren
 wie endliche Summen.
