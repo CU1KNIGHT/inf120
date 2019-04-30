@@ -1,0 +1,163 @@
+\section{Vorlesung 6}
+\[|x-a| < \delta \]
+\begin{equation}
+\\|x-a| = \begin{cases}
+	x-a , \: x-a \geq 0  \\
+	-(x-a),\:  x-a<0 \\
+	\end{cases}
+ = \begin{cases}
+x-a , x \geq \\
+a-x , x < a \\
+\end{cases}	
+ \begin{cases}
+  x \leq a : x-a < \delta \Rightarrow x < a+\delta \\
+  x<a : a-x < \delta \Rightarrow a-\delta < x	\end{cases} \Rightarrow 
+\end{equation}
+
+
+\begin{equation}
+\\ \begin{cases}
+a \leq x < a+\delta  \\
+a+\delta < x < a \\
+\end{cases}
+\end{equation}
+\subsection{Ergebnis}
+$|x-a|<\delta \Leftrightarrow a-\delta < x < a+ \delta$ \\
+$\Leftrightarrow x \in (a-\delta , a+d ) $ offenes intervall \\
+$|x-a| < \delta$ \\
+
+ %skizze++++++++++++++++++++++++++++++++++++++
+ 
+ x liegt in der $\delta $-Umgebung von a
+	
+\[	|f(x) -f(a)| < \epsilon  \Leftrightarrow f(x)\text{ liegt in der }\epsilon\text{-umgebung con} f(a)
+							 \] \[\Leftrightarrow f(x) \in \left( f(a)-\epsilon , f(a)+ \epsilon \right) \epsilon > o	 \]
+ 
+ %skizze ++++++++++++++++++++++++
+ 
+ \begin{equation}
+ 	I(\frac{1}{e})= I(e^-1)= 1.k   \quad \text{rell}
+ 		I(e^{-n})= I(\underbrace{e^{-1} \dots e^{-1}}_n )= I (e^{-1})+\dots+ I(e^{-1})= k.n 
+ 		\end{equation}
+ 		 \begin{equation}
+ 		\frac{n}{m} \in Q : I ( e^{-\frac{n}{n}})= k. \frac{n}{m}\text{, denn}
+ 		\end{equation}
+ 		\begin{equation}
+ 		kn=I(e^{-n}) = I(e^{-\frac{n}{m} . m})= \underbrace{I ( e^{-\frac{n}{m}} \dots  e^{-\frac{n}{m}} )}_{m}+\dots + I (e^{-\frac{n}{m}})= I(e{-\frac{n}{m}})+ \dots + I(e^{-\frac{n}{m}}) 
+ 		\end{equation}
+ 		\begin{equation}
+ 		r \in \mathbb{R}_+ : I(e^{-r})=?
+  		\end{equation}
+
+\begin{gather*}
+	\limNin \underbrace{q_n}_{\in \mathbb{Q_+}}= r \\
+	I(e^{-r})= I(e^{-\limNin (q_n)})
+	= I (e^{\limNin (-\frac{q}{n})})
+		\overset{\overset{e \: stetig}{\downarrow}}{=} I(\limNin e^{-q_n})	\overset{\overset{I \: stetig}{\downarrow}}{=} \limNin I(e^{-\frac{q}{n}})	
+	= \limNin k.q_n
+	=\overbrace{k.\underbrace{\limNin q_n}}_{r}^{k.r}\\
+	I(\frac{1}{e})= I(e^{-1})= \frac{1}{k} \text{rell} \\
+	I(p)=I(e^{\ln p}) = \underbrace{k}_{>0}(- \ln p) =\underbrace{-k}_{<0} \ln p
+\end{gather*}
+
+%skizze +++++++++++++++++++++++++++++++
+
+\begin{example}
+	D(x)=  
+$	\begin{cases}
+		1, x \in \mathbb{Q} \quad \quad (rational)\\		
+		0, x \in \mathbb{R} \backslash \mathbb{Q} \quad (irrational) 	
+	\end{cases}$\\ \\
+\text{steteig für welche a?}\\
+\text{1. Fall : a rational} \\ 
+\text{2. Fall : a irrational }
+\\ \\ a rational: a fest 
+\\ sei $\varepsilon = \frac{1}{2}$ , beliebig  $\exists \delta > 0 \forall x \in D: |x-a| < \delta \Rightarrow |D(x) -D(a) | < \frac{1}{2}$ 
+Sei $\delta$ beliebig, $\delta$ > 0, $x$ irrational , fest \\
+$|x-a|<d \Rightarrow |0-1| =|11= 1 < \frac{1}{2}$, widerspruch \\
+$\Rightarrow D$ ist nicht stetig, für jede $ a \in \mathbb{R}$  \\
+Sei $\delta >0$ , beliebig, x rational , fest $|x-a| < \delta \Rightarrow |\underbrace{D(x)}_1 -\underbrace{D(a)}_0| < \frac{1}{2}= \varepsilon \Rightarrow 1 < \frac{1}{2} $ Widerspruch \\
+$\Rightarrow$ D ist nicht stetig für jede a $\in \mathbb{R} \backslash \mathbb{Q}$ 
+\end{example}
+\begin{theorem}
+Sei $ f: [a,b] \rightarrow \mathbb{R}$, stetig 
+f besetzt in [a,b] ein globale Maximum und ein golbales Minimum
+\end{theorem}
+\begin{remark}
+Beide (unklar!)veränderung sind wichtig
+\end{remark}
+\begin{remark}
+	[a,k]= {x $\in$ $\mathbb{R}$ | a $\leq$ x $\leq$ b}
+%skizze +++++++++++++++++++++
+%kizze ++++++++++++++++++
+\end{remark}
+\begin{theorem}[ZWS]
+	 Sei $f: [a,b] \rightarrow \mathbb{R}$ stetig , $\frac{x_m}{x_M}$ eine globale Minimale stelle \\ 
+	 eine golbale Maximalestalle\\	
+	 Sei  \^{y}
+	 $ \in $[ $f(x_m) , f(x_M) :$ Dann ex.  \^{x}$ \in $ [a,b] mit  \^{y}$=f($ \^{x} 
+\end{theorem}
+\begin{remark}
+	Jeder zwischenwert wird als Funktionswert angenommen
+\end{remark}
+\begin{theorem}[Nullstellen]
+	Sei $f: $[a,b] $\rightarrow \mathbb{R}$ stetig, $f(a) . f(b) < 0$
+	Dann beliebig f in [a,] eine Nullstell $x_0$ , d.h. $\exists x_0 \in $ [a,b] : $f(x_0)=0$
+	%skizze +++++++++++++++++++  
+\end{theorem}
+\begin{proof}
+%skizze ....
+$f(a) < 0 , f(x) > 0$  (analog für $f(a) > 0 , f(b) <0$)\\
+\\$(\frac{a_1+b_1}{2})=
+\begin{cases}
+ \; 0 , \frac{a_1+b_1}{2}\text{ ist die gesamte Nullstelle}\\
+< 0 \: ,a_2= \frac{a1+a2}{2} , b2=b1\\
+> 0 \:, a_2=a_1 , b_2=\frac{a_1+b_1}{2}
+\end{cases}$
+
+
+ \[\text{usw. } \frac{a_2+b_2}{2}  \text{berechnen}\]
+\[ f(..)  \begin{cases} =0 \\ <0 \\ >0 \end{cases}\]
+ 
+ 
+\begin{forest}
+	for tree={l+=0.5cm, s sep+=1cm}
+	[Betrachte $(a_n)$ 
+	[	Stetigmax ]
+	[beschränkt  ]
+	]
+\end{forest}
+$\Rightarrow konvergent$
+\\
+sei $\underbrace{\limNin a_n=:c}_{ex.}$
+\\
+sei $\underbrace{\limNin a_n=:c}_{ex.}$\\
+$a\leqq \dots \leqq b_2 \leqq b_1 \leqq b$
+ex. $\limNin b_n=2$
+\begin{align*}
+\limNin | a_n-b_n| &= \limNinf \frac{|a-b|}{2^{n-1}}\\
+  				   &=|a-b| \limNin \frac{1}{2^{ n-1}}\\
+  				   &=|a-b|.0\\
+  				   &=0
+\end{align*}
+ \[ \limNin b_n=c \]
+\begin{forest}
+	for tree={l+=0.5cm, s sep+=1cm}
+	[Betrachte $(b_n)$ 
+	[	Stetigmax ]
+	[beschränkt  ]
+	]
+\end{forest}
+$\Rightarrow konvergent$
+
+Falls keine Nullstelle beim bilden von $a_n,b_n$ gefunden wurden\\ \\
+\\
+
+
+	$\begin{rcases}
+	f(c) &=f(\limNin a_n) \overset{\overset{f stetig}{\downarrow}}{=}\limNin f(a_n) \geqq 0 \\
+	\quad =\\
+	f(c)&=f(\limNin b_n)\overset{\overset{f stetig}{\downarrow}}{=} \limNin f(b_n) \leqq 0 \\
+	\end{rcases}$
+$f(c)=0$
+\end{proof}
