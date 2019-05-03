@@ -3,7 +3,7 @@
 % Prof Dr Ulrike Baumann
 
 % Setup document
-\documentclass[a4paper,12pt]{report}
+\documentclass[fleqn,a4paper,12pt]{report}
 
 \usepackage{inputenc,fontenc}
 \usepackage{longtable,tabularx,tabulary,array,booktabs,multicol}
@@ -42,12 +42,12 @@
 
 % Define oftenly used commands
 
-\newcommand{\nameE}{Mohamed}
-\newcommand{\vornameE}{Abdelshafi}
+\newcommand{\nameE}{Abdelshafi}
+\newcommand{\vornameE}{Mohamed}
 \newcommand{\emailE}{m.abdelshafi@mail.de}
 \newcommand{\nameS}{Kiki}
 \newcommand{\vornameS}{Mahmoud}
-\newcommand{\emailS}{mahmoud.kiki@tu-dresden.de}
+\newcommand{\emailS}{Mahmoud.kiki@mailbox.tu-dresden.de}
 
 
 
@@ -118,6 +118,8 @@
 \newcommand{\fracKone}{\frac{1}{k}}   %1/k
 \newcommand{\limNin}{\lim\limits_{n \rightarrow \infty}}
 \newcommand{\limKin}{\lim\limits_{k \rightarrow \infty}}
+\newcommand{\limXin}{\lim\limits_{x \to \infty} }
+\newcommand{\limXo}{\lim\limits_{x \to 0} }
 
 
 %created defintions 
@@ -155,7 +157,7 @@ Mitschrift zur Vorlesung Sommer Semester 2019  \\[\bigskipamount]
         \vfil\vfil\vfil
         Dozent: Prof. Dr. Ulrike Baumann \\
         vorgelegt von\\
-        \item "..." \\
+        \item ... \\
         \item \textsc{\vornameE\ \nameE } \\ \texttt{\emailE} \\  \item
         \textsc{\vornameS\ \nameS \qquad } \\ \texttt{\emailS}  \\
         \item ... \\
@@ -195,7 +197,7 @@ Mitschrift zur Vorlesung Sommer Semester 2019  \\[\bigskipamount]
 \include{v4}
 \include{v5}
 \include{v6}
+\include{v7}
 \listoftheorems[]ignoreall,show={definition}]
 \listoftheorems[ignoreall,show={example}]
-\listoftheorems
 \end{document}
