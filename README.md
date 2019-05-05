@@ -1,10 +1,8 @@
 # inf120
-mathe Mitschrift
-wir schreiben hier die Vorlesungen von INF-120 ( mathe) sommer Semester 2019
+Wir erstellen hier eine Mitschrift für die Vorlesung INF-120 (Mathe) des Sommersemesters 2019 an der Technischen Universität Dresden.
 
-wenn ein Fehler gibt, schreiben Sie es bitte in ein "Issue"
+Wenn du Fehler im Skript findest, erstelle bitte ein Issue.
 
 Liebe Grüße
-
-Mahmoud Kiki  
+Mahmoud Kiki
 Abdelshafi Mohamed
