@@ -3,6 +3,6 @@ Wir erstellen hier eine Mitschrift für die Vorlesung INF-120 (Mathe) des Sommer
 
 Wenn du Fehler im Skript findest, erstelle bitte ein Issue.
 
-Liebe Grüße  
+Liebe Grüße    
 Mahmoud Kiki  
 Abdelshafi Mohamed
