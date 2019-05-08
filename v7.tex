@@ -14,10 +14,11 @@ GWS nicht anwendbar $\underbrace{\limXo(x \ \sin \frac{1}{x}}_{f(x)} \underbrace
 \end{remark}
 \begin{definition}
 	Sei $f: (a,b) \to \mathbb{R} , x_0 \in (a,b) $\\
-	$x_0 \in (a,b) \Leftrightarrow  x_0 \in \mathbb{R} $  und  $ a<s_0 < b ( \Leftrightarrow (skizze  not complate))$\\
+	 $x_0 \in (a,b) \Leftrightarrow  x_0 \in \mathbb{R} $  und  $ a<s_0 < b ( \Leftrightarrow (skizze  not complate))$\\
 	$f$ ist in $x_0$  differenzierbar : $\Leftrightarrow f'(x_0) := \ \underbrace{\lim\limits_{x \rightarrow f(x)}}_{f \neq x_0} \frac{f(x) -f(x_0)}{x-x_0}$ existiert  $(f'(x_0) \in \mathbb{R}) $\\
-	Falls der grenzwert ex., nennt man $f'(x_0)$ die erste Ableitung von $f$ in $x_0$\\
-	Ex. $f'(x_0)$ für alle $x_0 \in (a,b)$ , dann netnnt man $ f':(a,b) \rightarrow \mathbb{R} \longmapsto f'(x_0)$ die erste Abbleitung von $f$
+	Falls der Grenzwert ex., nennt man $f'(x_0)$ die erste Ableitung von $f$ in $x_0$.\\
+	Existiert $f'(x_0)$ für alle $x_0 \in (a,b)$ , dann nennt man $ f':(a,b) \rightarrow \mathbb{R} \longmapsto f'(x_0)$ die erste Ableitung von $f$.
+
 	
 
 \end{definition}
@@ -27,7 +28,9 @@ GWS nicht anwendbar $\underbrace{\limXo(x \ \sin \frac{1}{x}}_{f(x)} \underbrace
 			f'(x_0) =
 		\underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \frac{\frac{1}{x}-\frac{1}{x_0}}{x-x_0}= 
 		\underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \frac{\frac{x_0-x}{x.x_0}}{x-x_0}=
-		\underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \frac{(x_0-x)(-1)}{x-x_0(x-x_0)}=
+
+		\underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \frac{(x_0-x)}{x-x_0(x-x_0)}=
+
 		\underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \underbrace{(-\frac{1}{x_0})}_{konst.}\frac{1}{x}=
 		-\frac{1}{x_0} \underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \frac{1}{x}\\
 		\overset{\overset{\frac{1}{x} stetig F.}{\downarrow}}{=}
@@ -53,3 +56,125 @@ Sei $f$ in $x_0$ d.b $\Rightarrow$ $f'(x_0) = \limXin \frac{f(x) - f(x_0)}{x-x_0
 ...
 %fehlt den Rest von proof
 \end{proof}
+
+\begin{tikzpicture} 
+  \newcommand*\funktion[1]{2*sin(0.5*deg(#1)) + 1.5}% dargestellte Funktion
+  \newcommand*\ableitung[1]{cos(0.5*deg(#1))}% Ableitung der Funktion
+  \newcommand*\tangente[2]{\ableitung{#2}*(#1-#2)+\funktion{#2}}
+
+  \begin{axis}[axis lines=middle,,enlargelimits,
+    xlabel=$x$,xlabel style={anchor=north},xtick=\empty,
+    ylabel=$y$,ylabel style={anchor=east},ytick=\empty
+  ]
+  \addplot[domain=-1:10,samples=200]{\funktion{\x}};
+  \addplot[domain=4:8]{\tangente{\x}{6}};
+  \coordinate (P) at (axis cs:6,{\funktion{6}}) ;
+  \coordinate (Q) at (axis cs:0,{\funktion{6}}) ;
+  \coordinate (R) at (axis cs:6,0) ;
+  \node[coordinate,pin=30:{$(x_0,f(x_0))$}] at (P) {};
+  \draw[red,dotted] (P) -- (Q) node[left] {$f(x_0)$} ;
+  \draw[red,dotted] (P) -- (R) node[below] {$x_0$} ;
+  \end{axis}
+\end{tikzpicture}
+
+Die Linie repräsentiert die Tangente ((T)) an den Grenzwert von $f(x_0)$ im Punkt $(x_0 , f(x_0))$
+
+\begin{gather*}
+(x) = \dfrac{t(x)-t(x_0)}{x - x_0} = \dfrac{f(x)-f(x_0)}{x - x_0}
+\end{gather*}
+
+\subsection{Tangente Gleichung}
+\begin{align*}
+T : t(x) = f(x_0) + f'(x_0)(x-x_0)
+\end{align*}
+
+\begin{remark}
+$f(x)$ gibt die Ableitung der Tangente an den Grenzwert der Funktion $f$ im Punkt $x_0 , f(x_0)$ an.
+\end{remark}
+
+\section{Berechnen an $f'(x)$ Ableitungsregeln:- }
+
+\subsection{Linearität:-}
+Sei $\underbrace{f(x)$ und $f(g)}_{h'(x)}$ gegeben sind , dann wie sieht die Ableitung von $h'(x)$ ?
+
+\[(f(x)+g(x))'=f'(x)+g'(x)\]
+\[ \underbrace{r f(x)'}_{h(x)}=\underbrace{r}_{\in \mathbb{R}}f'(x)\]
+\begin{align*}
+f'(x_0)=\dfrac{f(x)-f(x_0)}{x-x_0} = \lim \dfrac{f(x)-f(x_0)+g(x)-g(x_0)}{x-x_0} = f'(x_0)+g'(x_0)
+\end{align*}
+ 
+\subsection{Produktregel:-}
+\[ (f(x) . g(x))' = f'(x) . g(x) + f(x) . g'(x)  \]
+\subsection{kettenregel:-}
+\begin{align*}
+\underbrace{(f \circ g )'(x)}_{f(g(x))'} = f'(g(x)). g'(x)
+\end{align*}
+\subsection{Quotientenregeln:-}
+In Tafelwerk : \\
+\[ (\dfrac{f}{g})' = \dfrac{f'.g - f.g'}{g^2}\]
+Herleitung :
+\begin{align*}
+\bigg(\dfrac{f(x)}{g(x)}\bigg)' =
+\bigg(f(x)\frac{1}{g(x)}\bigg)'\\
+&=f'(x)\frac{1}{g(x)} + 
+f(x)\bigg(\frac{1}{g(x)}\bigg)'\\
+&=\dfrac{f'(x).g(x)-f(x).g'(x)}{g(x)^2}
+ \end{align*}
+ 
+\begin{remark}[Tafelwerk]
+\[(sin(x))'=cos(x)\]
+\[(cos(x))'= - sin(x)\]
+\end{remark}
+\begin{example}
+\begin{align*}
+(tan(x))' &= \bigg( \dfrac{sin(x)}{cos(x)}\bigg)'\\
+ &=  \dfrac{cos(x)cos(x)-sin(x)(-sin(x))}{(cos(x))^2}\\
+ &=\dfrac{(cos(x))^2+(sin(x))^2}{(cos(x))^2}\\
+ &= \dfrac{1}{(cos(x))^2}\\
+ &= 1 + (tan(x))^2
+\end{align*}
+\end{example} 
+\subsection{Ableitung der Umkehrfunktion $f^-1$ zu $f$ }
+\begin{definition}
+Ist $ y = f(x) $ eine umkehrbare differenzierbare Funktion, dann ist die Umkehrfunktion $ x = g(y)$ differenzierbar und es gilt: 
+$g'(y)= \frac{1}{f'(g(y)}$ oder $\frac{dx}{dy}= \frac{1}{\frac{dy}{dx}}$ für $f'(x)\neq 0$.
+Überlicherweise verraucht man die Variablen $x , y$ and schreibt $y = g(x)$ und $y'=g'(x)$. 
+\end{definition}
+
+\begin{example}
+$f(x)=e^x$\\
+$f'(x)=e^x$\\
+
+\begin{proof}
+Der Beweis ist einfach.Man geht wider von der Definition der Ableitung aus:
+\begin{align*}
+f'(x)= \lim_{h \to 0}{\frac{f(x+h)-f(x)}{h}}= \lim_{h \to 0}{\frac{e^{x+h}-e^x}{h}}
+\end{align*}
+Nutzt man die Potenzregln $e^{x+h}=e^x.e^h$ so ergibt sich : 
+\begin{align*}
+f'(x)= \lim_{h \to 0}{\frac{e^x.e^h-e^x}{h}}=e^x \lim_{h \to 0}{\frac{e^h-1}{h}}=1
+\end{align*}
+und weil $\lim_{h \to 0}{\frac{e^h-1}{h}}=1$ dann Also $f'(e^x)=e^x$
+\end{proof}
+\end{example}
+
+\begin{remark}
+\begin{align*}
+f \circ f^{-1} = f^{-1} \circ f &= \quad \text{identisch}\\
+e^{ln(x)} &= x \quad | \text{Abb} \\
+e^{ln(x)}.(ln(x))' &= 1\\
+\Rightarrow ln(x)'&= \frac{1}{e^{lnx}}= \frac{1}{x}
+\end{align*}
+\end{remark}
+
+\begin{example}
+\begin{align*}
+f(x)=e^x\\
+f'(x)=e^x\\
+f^{-1}(x)=lnx\\
+(f^{-1}(x))'=(lnx)=\frac{1}{x}
+\end{align*}
+\end{example}
+
+\end{proof}
+
