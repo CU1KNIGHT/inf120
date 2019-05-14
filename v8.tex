@@ -46,6 +46,61 @@ $ x = \frac{3}{2} $ einsetzen
 \begin{gather*}
 \sum_{k=1}^{\infty}{\big(\frac{-2}{3}\big)^k} \frac{1}{k} \big( \frac{3}{2} \big)^k = \sum_{k=1}^{\infty}{(-1)^k} \frac{1}{k} \text{ kon.}
 \end{gather*}
-
-
 \end{example}
+
+\begin{example}
+\[ \sum_{k=1}^{\infty}{(\frac{-2}{3})^k} \frac{1}{k} (x-7)^k  \text{ ist für } x \in (7- \frac{3}{2}, 7 + \frac{3}{2}) \text{ abs konvergent }\]
+\end{example}
+
+\begin{definition}
+Sei $\sum_{k=0}^{\infty}{a_k(x-x_0)^k}$ eine P.R . dann ex. ein r $\in \mathbb{R} \geq 0 $ oder $ x = \infty $ , so dass die P.R für alle x mit $ |x-x_0| \leq r $ oder $x \in \mathbb{R} $ absolut konvergent ist. Dieser ( r )  heißt \textbf{Konvergenzradius} der PR
+\end{definition}
+
+\begin{remark}
+Der konvergenzradius r ist unabhängig von Mittelpunkt $X_0$  
+\end{remark}
+
+\begin{remark}
+Jede PR ist für $x = x_0$ abs . konvergent , denn $\sum_{k=0}^{\infty}{a_k(x-x_0)^k} = \sum_{k=0}^{\infty}{a_k 0^k} = 0$\\
+Sei $\sum_{k=0}^{\infty}{a_k(x-x_0)^k}$ eine Reihe mit konvergenzradius r Dann kann eine Funktion f definieren \\
+ \[f : ( x_0 - r \quad ,\quad x_0 +r ) \rightarrow \mathbb{R} : \underbrace{x \longmapsto \sum_{k=0}^{\infty}{a_k(x-x_0)^k}}_{\text{Grenzwert der PR}}  \]
+\end{remark} 
+
+\begin{remark}
+wegen der abs Konvergenz ist diese Funktion f 
+- Stetig auf $( x_0 - r , x_0 + r)$ bsw. $\mathbb{R}$\\
+- beliebig oft differenzierbar. 
+\end{remark}
+
+\begin{remark}
+Analog kann man PR über $\mathbb{C}$ definieren.
+Z.B $\sum_{k=0}^{\infty}{\frac{z^k}{k!}}(z \in \mathbb{C})$ 
+$\sum_{k=0}^{\infty}{\frac{1}{k!}(z-0)^k}$ ist für ..... abs. konvergent.
+Quotienten Kriterium : 
+\begin{align*}
+\lim_{k \to \infty}{\bigg| \dfrac{\frac{z^k+1}{(k+1)!}}{\frac{z^k}{k!}}\bigg|} = \lim_{k \to \infty}{\bigg|\dfrac{z^{k+1 \times k!}}{z^k(k+1)!}} = \lim{\frac{|z|}{k+1}} = \underbrace{|z|\times \lim_{k \to \infty}{\frac{1}{k+1}}}_{0}<0
+\end{align*} 
+
+exp : $\mathbb{C} \rightarrow \mathbb{C} , Z \longmapsto  \underbrace{\sum_{k=0^{\infty}}{\frac{z^k}{k!}}}_{\underbrace{\text{exp(z)}}_{e^z}}$
+
+$Z = exp(i \varphi)= e ^{i \varphi}$.
+\begin{align*}
+e ^{i \varphi} &= \sum_{k=0}^{\infty}{\frac{(i \varphi)^k}{k!}} = \frac{(i \varphi)^0}{0!} + \frac{(i \varphi)^1}{1!} + \frac{(i \varphi)^2}{2!} + \frac{(i \varphi)^3}{3!} + \frac{(i \varphi)^4}{4!} + \frac{(i \varphi)^5}{5!}\\
+ &= 1 +  i \frac{\varphi^1}{1!} - \frac{\varphi^2}{2!} - \frac{\varphi^3}{3!} - \frac{\varphi^4}{4!} - \frac{\varphi^5}{5!} \dots \\
+ &= \underbrace{\sum_{k=0}^{\infty}{(-1)^k \frac{\varphi^{2k}}{(2k)!}}}_{cos(\varphi)} + i \times \underbrace{\sum_{k=0}^{\infty}{(-1)^k \frac{\varphi^{2k+1}}{(2k+1)!}}}_{sin(\varphi)}
+\end{align*}
+\end{remark}
+\textbf{Approximation} stetiger Funktionen $f(x)$ durch \textbf{Taylorpolynom} $p_n(x)$ :\\
+(1) \\
+$$f(x) \approx f(x_0)+f'(x_0).(x-x_0)^1$$\\
+$= t(x)$ Tangente an den Graph von $f(x)$ in Punkt $(x_0 , f(x_0) = p_1(x)$
+ 
+lineare Approximation $(n=1)$
+Linearisierung\\
+fehlende Skizze !!! 
+
+\begin{remark}
+\[ f(x_0)= p_1(x_0) \]
+\[ f'(x_0)= p_1'(x_0) \]
+\end{remark}
+(2) 
