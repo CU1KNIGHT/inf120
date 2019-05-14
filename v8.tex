@@ -1,0 +1,51 @@
+\section{Vorlesung 8}
+\begin{definition}
+Eine Reihe $\sum_{K=0}^{\infty}{a_k (x - X_0)^k} $ heißt Potenzreihe Dabei gilt $a_0,a_1 \dots \in \mathbb{R} , x_0 \in \mathbb{R} ,$ x ist eine reelle veränderlich $x_0$ heißt Mittelpunkt der Potenzreihe.    
+\end{definition}
+
+\begin{remark}
+$(f_k(x))_{k=0}^{\infty}$ mit $f_k(x) = a_k(x-x_0)^k$. Folge von Funktionen $f_k(x)$
+\begin{align*}
+k &= 0 ,f_0(x) = a_0(x-x_0)^0 = a_0 \times 1 = a_0\\
+k &= 1 ,f_1(x) = a_1(x-x_0)^1\\
+k &= 2 ,f_2(x) = a_2(x-x_0)^2
+\end{align*}
+$ \big( \sum_{K=0}^{n}{f_n(x)} \big)_{n=0}^{\infty} $ Folge von Partielle Summen , Reihe $\sum_{K=0}^{\infty}{f_k(x)}$
+\begin{gather*}
+f_0(x)\\
+f_0(x) + f_1(x)\\
+f_0(x) + f_1(x) + f_2(x)
+\end{gather*}
+\end{remark}
+
+\begin{remark}
+wir fragen nicht nach der Konvergenz dieser Folge sondern für welche x ist diese Folge konvergent 
+\end{remark}
+
+\begin{example}
+$$ \sum_{K=0}^{\infty}{(\frac{-2}{3})^k}\frac{1}{k}(x-0)^k $$
+für welche $ x \in \mathbb{R} $ konvergent ?\\
+Wurzelkriterium für absolute konvergent : 
+
+\begin{align*}
+&= \lim_{k \to \infty}{\sqrt[k]{\text{die potentzreihe}}} \\ &= 
+\lim_{k \to \infty}{\frac{2}{3} \sqrt[k]{\frac{1}{k}}}|x| \\ &= 
+\frac{2}{3}|x|.\frac{1}{1}=\frac{2}{3}|x|<1\\
+\text{PR  abs. konv. } \Leftrightarrow |x| < \frac{3}{2}
+\end{align*}
+Wurzelkriterium:
+\begin{gather*}
+\frac{2}{3}|x|>1 \Leftrightarrow |x|
+> \frac{3}{2} \Leftrightarrow \text{PR div } 
+\end{gather*}
+$ x = \frac{-3}{2} $ einsetzen  
+\begin{gather*}
+\sum_{k=1}^{\infty}{\big(\frac{-2}{3}\big)^k} \frac{1}{k} \big( \frac{-3}{2} \big)^k = \sum_{k=1}^{\infty}{\frac{1}{k}} \text{ div}
+\end{gather*}
+$ x = \frac{3}{2} $ einsetzen  
+\begin{gather*}
+\sum_{k=1}^{\infty}{\big(\frac{-2}{3}\big)^k} \frac{1}{k} \big( \frac{3}{2} \big)^k = \sum_{k=1}^{\infty}{(-1)^k} \frac{1}{k} \text{ kon.}
+\end{gather*}
+
+
+\end{example}
