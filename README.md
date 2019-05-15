@@ -3,7 +3,9 @@ Wir erstellen hier eine Mitschrift für die Vorlesung INF-120 (Mathe) des Sommer
 
 Wenn du Fehler im Skript findest, erstelle bitte ein Issue
 pdf herunterzuladen hier:
-https://github.com/CU1KNIGHT/inf120/blob/master/main.pdf
+[INF_120-1](https://github.com/CU1KNIGHT/inf120/blob/master/main.pdf
+)  
+
 
 Liebe Grüße 
   
