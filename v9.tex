@@ -1,0 +1,49 @@
+\section{Vorlesung 9}
+\subsection{Taylor-Polynom $P_n(x)$ von $f(x)$}
+// fehlnde tabele
+\begin{align*}
+p_n(x) &= \underbrace{f(0) + f'(0)(x-0)}_{t(x) \text{ lineare Approximation }}  + \frac{f''(0)}{2!}(x-0)^2 + \frac{f'''(0)}{3!}(x-0)^3 + \dots\\
+&= -1 + 0 x + \frac{2}{2!} x^2 + 0 = -1 + x^2 = f(x)
+\end{align*}
+Das Polynom ist bei der Entwicklung zu einem Taylor-Polynom zum selben Polynom zurückgekommen
+
+\begin{align*}
+p_n(x)&= f(1) + f'(1)(x-1)+ \dots \\
+&= 0 + 2(x-1) + \frac{2}{2!}(x-1)^2 + 0 \\
+&= 2x -2 + x^2 -2x +1 = x^2 -1
+\end{align*} 
+
+\begin{example}
+gegeben : $f(x) = \frac{e^x}{cos(x)}$  gesucht : $p_2(x)$ für $x_0=0$\\
+Methode des Impliziten Differenzieren 
+\begin{gather*}
+f(x) cos(x) + f(x)(-sin(x)) = e^x \quad | \quad \text{abl.} \\
+f'(x) cos(x) + f(x)(-sin(x))= e^x \quad | \quad \text{abl.} \\
+f''(x)cos(x) + f'(x)(-sin(x))+ f'-(x)(-sin(x)) + f(x)(- cos(x)) = e^x \\
+f(0)cos(0) = e^0 \Rightarrow f(0) = 1\\
+f'(0)\times 1 + f(0) \times 0 = 1 \Rightarrow f'(0) = 1\\
+f''(0)\times 1 + f(0) \times (-1) = 1 \Rightarrow f''(0) = 2\\
+p_2(x) = 1 + 1 x + \frac{2}{2!}x^2 = 1 + x + x^2\\
+f(x) = \frac{1}{x+1}
+\end{gather*}
+\end{example}
+
+\begin{example}
+$f^k(x) = (-1)^k \frac{k!}{(1+x)^{k+1}}$\\
+$\textbf{Induktionsanfang}$ 
+\[ f^0(x) = f(x) = \frac{1}{1+x} = (-1)^0 \frac{0!}{(x+1)^{0+1}} = 1 \frac{1}{x+1} = \frac{1}{x+1} \text{w.A}\]
+$\textbf{Induktionsschritt}$\\
+$\textbf{Induktionsvoraussetzung}$\\
+Es gelte $f^k(x)=(-1)^k\frac{k!}{(x +1)^{k+^1}}$ für $k \in \mathbb{N}$\\
+$\textbf{Induktionsbehauptung}$ : Dann gilt \\
+\[ f^{(k+1)}(x)= (-1)^{(k+1)} \frac{(k+1)!}{(x+1)^{(k+2)}}\]
+\textbf{Induktionsbeweis}\\
+$(\dots \dots)$\\
+\begin{align*}
+f^{(f+1)}(x) = (f^x(x))' &= \big((-1)^k \frac{k!}{(x+1)^{(k+1)}}\big )' \\
+&= (-1)^k k! (x+1)^{-(k+1)}\\
+&= (-1)^k k! (-(k+1)(x+1))^{-(k+^2)}\\
+&= (-1)^{k+1} (k+1)! \frac{1}{(x+1)^{t+2}} \Rightarrow \text{ Ind Beh . ist dann bewiesen. }\\
+\text{Die behauptung gilt für alle } k \in \mathbb{N}
+\end{align*}
+\end{example}
