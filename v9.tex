@@ -1,6 +1,17 @@
 \section{Vorlesung 9}
+\begin{example}
+$f: \mathbb{R} \rightarrow \mathbb{R} : x \mapsto x^2-1 $ gesucht
+\end{example}
 \subsection{Taylor-Polynom $P_n(x)$ von $f(x)$}
-// fehlnde tabele
+\begin{center}
+\begin{tabular}{ c c c }
+$f(x)= x^2-1$  & $f(0) = 1 $     & $f(1) = 0$ \\ 
+$f'(x) = 2x $  & $f'(0) = 0 $    & $f'(1) = 2$ \\  
+$f''(x) = 2 $  & $f''(0) = 2 $   & $f''(1) = 2$  \\
+$f'''(x) = 0 $ & $f'''(0) = 0 $  & $f'''(1) = 0$  
+\end{tabular}
+\end{center}
+
 \begin{align*}
 p_n(x) &= \underbrace{f(0) + f'(0)(x-0)}_{t(x) \text{ lineare Approximation }}  + \frac{f''(0)}{2!}(x-0)^2 + \frac{f'''(0)}{3!}(x-0)^3 + \dots\\
 &= -1 + 0 x + \frac{2}{2!} x^2 + 0 = -1 + x^2 = f(x)
@@ -100,5 +111,5 @@ Dann gilt :
 \[ C \times a(x) = \sum_{k=0}^{\infty}{c.a_k(x-x_0)^k} \text{ für } x \in (x_0 -r , x_0+r) c \in \mathbb{R} \]
 \[ a(x) . b(x) = \sum_{k=0}^{\infty}{(a_0 b_k + a_1 b_{k-1}+ \dot + \dots +a_kb_0)(x- x_0)^k} \]
 \[ \frac{1}{b(x)} \text{ für } b(x)\neq 0 \text{ kann mit der Methode unbestimmten koeffizienten } \]
-\end{example}
+
 
