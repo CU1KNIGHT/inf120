@@ -1,0 +1,138 @@
+\section{Vorlesung 8}
+\begin{definition}
+Eine Reihe $\sum_{K=0}^{\infty}{a_k (x - X_0)^k} $ heißt Potenzreihe Dabei gilt $a_0,a_1 \dots \in \mathbb{R} , x_0 \in \mathbb{R} ,$ x ist eine reelle veränderlich $x_0$ heißt Mittelpunkt der Potenzreihe.    
+\end{definition}
+
+\begin{remark}
+$(f_k(x))_{k=0}^{\infty}$ mit $f_k(x) = a_k(x-x_0)^k$. Folge von Funktionen $f_k(x)$
+\begin{align*}
+k &= 0 ,f_0(x) = a_0(x-x_0)^0 = a_0 \times 1 = a_0\\
+k &= 1 ,f_1(x) = a_1(x-x_0)^1\\
+k &= 2 ,f_2(x) = a_2(x-x_0)^2
+\end{align*}
+$ \big( \sum_{K=0}^{n}{f_n(x)} \big)_{n=0}^{\infty} $ Folge von Partielle Summen , Reihe $\sum_{K=0}^{\infty}{f_k(x)}$
+\begin{gather*}
+f_0(x)\\
+f_0(x) + f_1(x)\\
+f_0(x) + f_1(x) + f_2(x)
+\end{gather*}
+\end{remark}
+
+\begin{remark}
+wir fragen nicht nach der Konvergenz dieser Folge sondern für welche x ist diese Folge konvergent 
+\end{remark}
+
+\begin{example}
+$$ \sum_{K=0}^{\infty}{(\frac{-2}{3})^k}\frac{1}{k}(x-0)^k $$
+für welche $ x \in \mathbb{R} $ konvergent ?\\
+Wurzelkriterium für absolute konvergent : 
+
+\begin{align*}
+&= \lim_{k \to \infty}{\sqrt[k]{\text{die potentzreihe}}} \\ &= 
+\lim_{k \to \infty}{\frac{2}{3} \sqrt[k]{\frac{1}{k}}}|x| \\ &= 
+\frac{2}{3}|x|.\frac{1}{1}=\frac{2}{3}|x|<1\\
+\text{PR  abs. konv. } \Leftrightarrow |x| < \frac{3}{2}
+\end{align*}
+Wurzelkriterium:
+\begin{gather*}
+\frac{2}{3}|x|>1 \Leftrightarrow |x|
+> \frac{3}{2} \Leftrightarrow \text{PR div } 
+\end{gather*}
+$ x = \frac{-3}{2} $ einsetzen  
+\begin{gather*}
+\sum_{k=1}^{\infty}{\big(\frac{-2}{3}\big)^k} \frac{1}{k} \big( \frac{-3}{2} \big)^k = \sum_{k=1}^{\infty}{\frac{1}{k}} \text{ div}
+\end{gather*}
+$ x = \frac{3}{2} $ einsetzen  
+\begin{gather*}
+\sum_{k=1}^{\infty}{\big(\frac{-2}{3}\big)^k} \frac{1}{k} \big( \frac{3}{2} \big)^k = \sum_{k=1}^{\infty}{(-1)^k} \frac{1}{k} \text{ kon.}
+\end{gather*}
+
+\end{example}
+
+\begin{example}
+\[ \sum_{k=1}^{\infty}{(\frac{-2}{3})^k} \frac{1}{k} (x-7)^k  \text{ ist für } x \in (7- \frac{3}{2}, 7 + \frac{3}{2}) \text{ abs konvergent }\]
+\end{example}
+
+\begin{definition}
+Sei $\sum_{k=0}^{\infty}{a_k(x-x_0)^k}$ eine P.R . dann ex. ein r $\in \mathbb{R} \geq 0 $ oder $ x = \infty $ , so dass die P.R für alle x mit $ |x-x_0| \leq r $ oder $x \in \mathbb{R} $ absolut konvergent ist. Dieser ( r )  heißt \textbf{Konvergenzradius} der PR
+\end{definition}
+
+\begin{remark}
+Der konvergenzradius r ist unabhängig von Mittelpunkt $X_0$  
+\end{remark}
+
+\begin{remark}
+Jede PR ist für $x = x_0$ abs . konvergent , denn $\sum_{k=0}^{\infty}{a_k(x-x_0)^k} = \sum_{k=0}^{\infty}{a_k 0^k} = 0$\\
+Sei $\sum_{k=0}^{\infty}{a_k(x-x_0)^k}$ eine Reihe mit konvergenzradius r Dann kann eine Funktion f definieren \\
+ \[f : ( x_0 - r \quad ,\quad x_0 +r ) \rightarrow \mathbb{R} : \underbrace{x \longmapsto \sum_{k=0}^{\infty}{a_k(x-x_0)^k}}_{\text{Grenzwert der PR}}  \]
+\end{remark} 
+
+\begin{remark}
+wegen der abs Konvergenz ist diese Funktion f 
+- Stetig auf $( x_0 - r , x_0 + r)$ bsw. $\mathbb{R}$\\
+- beliebig oft differenzierbar. 
+\end{remark}
+
+\begin{remark}
+Analog kann man PR über $\mathbb{C}$ definieren.
+Z.B $\sum_{k=0}^{\infty}{\frac{z^k}{k!}}(z \in \mathbb{C})$ 
+$\sum_{k=0}^{\infty}{\frac{1}{k!}(z-0)^k}$ ist für ..... abs. konvergent.
+Quotienten Kriterium : 
+\begin{align*}
+\lim_{k \to \infty}{\bigg| \dfrac{\frac{z^k+1}{(k+1)!}}{\frac{z^k}{k!}}\bigg|} = \lim_{k \to \infty}{\bigg|\dfrac{z^{k+1 \times k!}}{z^k(k+1)!}} = \lim{\frac{|z|}{k+1}} = \underbrace{|z|\times \lim_{k \to \infty}{\frac{1}{k+1}}}_{0}<0
+\end{align*} 
+
+exp : $\mathbb{C} \rightarrow \mathbb{C} , Z \longmapsto  \underbrace{\sum_{k=0^{\infty}}{\frac{z^k}{k!}}}_{\underbrace{\text{exp(z)}}_{e^z}}$
+
+$Z = exp(i \varphi)= e ^{i \varphi}$.
+\begin{align*}
+e ^{i \varphi} &= \sum_{k=0}^{\infty}{\frac{(i \varphi)^k}{k!}} = \frac{(i \varphi)^0}{0!} + \frac{(i \varphi)^1}{1!} + \frac{(i \varphi)^2}{2!} + \frac{(i \varphi)^3}{3!} + \frac{(i \varphi)^4}{4!} + \frac{(i \varphi)^5}{5!}\\
+ &= 1 +  i \frac{\varphi^1}{1!} - \frac{\varphi^2}{2!} - \frac{\varphi^3}{3!} - \frac{\varphi^4}{4!} - \frac{\varphi^5}{5!} \dots \\
+ &= \underbrace{\sum_{k=0}^{\infty}{(-1)^k \frac{\varphi^{2k}}{(2k)!}}}_{cos(\varphi)} + i \times \underbrace{\sum_{k=0}^{\infty}{(-1)^k \frac{\varphi^{2k+1}}{(2k+1)!}}}_{sin(\varphi)}
+\end{align*}
+\end{remark}
+\textbf{Approximation} stetiger Funktionen $f(x)$ durch \textbf{Taylorpolynom} $p_n(x)$ :\\
+(1) \\
+$$f(x) \approx f(x_0)+f'(x_0).(x-x_0)^1$$\\
+$= t(x)$ Tangente an den Graph von $f(x)$ in Punkt $(x_0 , f(x_0) = p_1(x)$
+ 
+lineare Approximation $(n=1)$
+Linearisierung\\
+fehlende Skizze !!! 
+
+\begin{remark}
+\[ f(x_0)= p_1(x_0) \]
+\[ f'(x_0)= p_1'(x_0) \]
+\end{remark}
+
+(2)\\
+Approximation von f(x) durch Taylor-Polynome $p_n(x)$ von Grad $\leq$ n in der Umgebung com $x_0$
+\[ \underbrace{f(x) \approx p_1(x) + 
+\frac{f''(x_0)}{2!}(x-x_0)^2 +
+\frac{f''(x_0)}{3!}(x-x_0)^3 \dots
+\frac{f^n(x_0)}{n!}(x-x_0)^n}_{p_n(x)}\]
+\[f'(x_0) = \frac{f'(x_0)}{1!} \]
+\[f(x_0) = f^0(x_0) = \frac{f^0(x_0)}{0!}\]
+
+\begin{remark}
+Taylor-Polynom $P_n(x)$ von Polynomfunktionen $f(x)$ von Grad n stimmen mit  $f(x)$ 
+\end{remark}
+
+\begin{align*}
+f(x) &= \frac{1}{1+x} \approx \dots \text{ an der stelle } x_0 = 0\\
+f'(x) &= ((1+x)^{-1})' = \frac{-1}{(1+x)^2} = -(1+x)^{-2}\\
+f''(x) &= 1 \times 2 \frac{1}{(1+x)^3} = 1 \times 2(1+x)^{-3}\\
+f'''(x) &= 1 \times 2 \times 3 \frac{1}{(1+x)^4} = 
+1 \times 2 \times 3 (1+x)^{-4} \text{ usw.}\\
+f^k(x) &= (-1)^k.k!\frac{1}{1+x}^k \text{ beweis durch vollst. Induktion }\\
+f^k(0) &= (-1)^k k!\\
+p_n(x) &= \sum_{k=0}^{n}{\frac{f^k(0)}{k!}} (x-0)^k =
+\sum_{k=0}^{n}{\frac{(-1)^k k!}{k!}} x^k = 
+\sum_{k=0}^{n}{(-1)^k x^k}\\
+f(x) &= \frac{1}{1+x} = \underbrace{(-1)^0 x^0}_{1}-x^1 + x^2 - x^3 \dots \\
+\{ -x^n , n \text{ ungerade } \} \\
+\{ x^n , n \text{ gerade } \}
+\end{align*}
+
+
+

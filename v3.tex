@@ -5,7 +5,7 @@
 \end{example}
 \begin{equation}
     \lim\limits_{n \rightarrow \infty}{\frac{11+n}{9-n}}\quad ? \\
-    \\\quad x_n = \frac{11+1}{9-n}=\frac{n}{n} \frac{\frac{11}{n}+1}{\frac{9}{n}-1}
+    \\\quad x_n = \frac{11+n}{9-n}=\frac{n}{n} \frac{\frac{11}{n}+1}{\frac{9}{n}-1}
 \end{equation}
 
 \begin{equation}
@@ -13,16 +13,16 @@
 \end{equation}
 
 \begin{equation}
-    \lim\limits_{n \rightarrow \infty}{\bigg(\frac{9}{n}+1\bigg)}=-1
+    \lim\limits_{n \rightarrow \infty}{\bigg(\frac{9}{n}-1\bigg)}=-1
 \end{equation}
 
 \begin{equation}
     \lim\limits_{n \rightarrow \infty}{(x_n)}= \frac{1}{-1}=-1
 \end{equation}
 
-\begin{lemma}
-    Seien $(x_n)=(y_n)$ Folgen auf $\lim\limits_{n \rightarrow \infty}{(x_n)}= \lim\limits_{n \rightarrow \infty}{(y_n)}= a$ und es gelte
-    $x_n \leq z_n \leq y_n$ für "fest alle " $n \in \mathbb{N}$\\
+\begin{lemma}[Quetschlemma]
+    Seien $(x_n),(y_n)$ Folgen mit $\lim\limits_{n \rightarrow \infty}{(x_n)}= \lim\limits_{n \rightarrow \infty}{(y_n)}= a$ und es gelte
+    $x_n \leq z_n \leq y_n$ für "fast alle"  $n \in \mathbb{N}$\\
 
     Dann gilt für die Folge $(Z_n) \lim\limits_{n \rightarrow \infty}{(z_n)}=a$
 \end{lemma}

@@ -45,17 +45,19 @@ wenn $0,4 \overline{3}$ erlaubt wäre, dann,\\
 
 				\begin{equation*}
 				\begin{split}
-				 \sum_{K=1}^{\infty} \frac{1}{k^\alpha} \quad( \infty \text{fest}) \qquad
-				& \alpha > 1 \rightarrow \mathbb{R}  \\
-				& \alpha \leqq \rightarrow dev
+				 \sum_{K=1}^{\infty} \frac{1}{k^\alpha} \quad( \infty \quad \text{fest} ,\quad mit \quad \alpha \in \mathbb{R}) \qquad
+				&\text{falls} \quad \alpha \geq 1 \rightarrow \text{konvergent}  \\
+				&\text{falls} \quad \alpha \leq 1 \rightarrow \text{Divergent} 
 				\end{split}
 				\end{equation*}
  \begin{example}
- 	\[ \sum_{k=1}^{\infty} \frac{1}{k^2} \qquad \text{ist konvergent}\]
+ 	\[ \sum_{k=1}^{\infty} \frac{1}{k^2} \qquad \text{ist konvergent}\]\\
+ 	\[ \sum_{k=1}^{\infty} \frac{1}{k^{\frac{1}{2}}} \qquad \text{ist Divergent}\]
  	
-\begin{beweis}{mit Monotoniekriterium für Folge}  
+\begin{beweis}[Monotoniekriterium]
+{mit Monotoniekriterium für Folge}  
 		\[ \text{Reihe ist konvergent} \left\{ \begin{array}{ll}
-	   (1) & \mbox{ $\sumIn \frac{1}{k^2} $ \quad ist monoton wachsend};\\
+	   (1) & \mbox{ $\sumIn \frac{1}{k^2} $ \quad ist monoton wachsend}.\\
 	   (2) & \mbox{$\sumIn \fracKetwo $ \text{ist beschränkt}}.\end{array} \right. \] 
 	   	
 	   \[ \sumIin \fracKetwo = \frac{1}{1}+\frac{1}{2^2}+\frac{1}{2^2}+\frac{1}{4^2}+\frac{1}{5^2}+  \dots + \frac{1}{8^2}  \]
@@ -68,7 +70,7 @@ wenn $0,4 \overline{3}$ erlaubt wäre, dann,\\
 %photo auf der Tafel
 \section{Expotentiale Reihe}
 
-\[ \sumOin \frac{1}{k!} = \limNin ( 1-\frac{1}{n})^n =:e \text{ist konvergent} \]
+\[ \sumOin \frac{1}{k!} = \limNin ( 1-\frac{1}{n})^n =: e \quad \text{ist konvergent} \]
 
  \pgfkeys{/forest,
 	tria/.append style={ellipse, draw},
@@ -82,9 +84,8 @@ wenn $0,4 \overline{3}$ erlaubt wäre, dann,\\
 	]
 	\end{forest}
 
-\section{Hauptkriterium}  
-$$\sum_{k=0}^{\infty}{a_k} \quad \text{konvergent}
- \Rightarrow (a_k) \text{Nullfolge.}$$ \\
+\section{Hauptkriterium}
+$$ \star \quad \text{konvergent die Reihe} \quad \sum_{k=0}^{\infty}{a_k} \quad \text{dann ist} \quad (a_k) \quad\text{Nullfolge.}$$ \\
 $$\lim\limits_{k \rightarrow \infty}{a_k} \neq 0 \Rightarrow  \sum_{k=0}^{\infty}{a_k} \quad \underbrace{null konvergent }_{divergend}$$\\
 oder
 			$$\lim\limits_{k \rightarrow -\infty}{ a_k} \quad ex.null$$
@@ -96,71 +97,86 @@ oder
 
 						\end{example}
 \begin{beweis}
-\[  \sumOin a_k konv. \Rightarrow \underbrace{(a_k Nullfolge) }_{\limKin a_k=0}  \] 
-\[s_n =\sumOn a_k , s_{n+1} =\sum_{k=0}^{n+1} \qquad s_{n+1}=s_n + a_{n+1} \]
-\[s= \limNin s_n= \limNin s_{n+1} \qquad \limNin a_{n+1} = \limNin s_{n+1} - \limNin s_n = s-s=0 \]
+\[  \sumOin a_k \quad (konvergent) \Rightarrow \underbrace{(a_k) \quad Nullfolge }_{\limKin a_k=0}  \] 
+\[s_n =\sumOn a_k \quad ,\quad s_{n+1} =\sum_{k=0}^{n+1}{a_k} \quad ,\quad s_{n+1}= s_n + s_{n+1} \] \\
+\[ s = \limNin s_n= \limNin s_{n+1}  \quad ,\quad \limNin s_{n+1} = \limNin s_{n+1} - \limNin s_n = s-s=0 \]
 \end{beweis}
 
 \newpage
 \section{Kriterium für Alternierende  Reihe}
-\begin{beweis}{Alternierende }
-	$\sumOin (-1)^k \fracKone$ ist konvergent\\
-	$\sumOin (-1)^k a_k$\\
+\begin{beweis}[Alternierende Reihe]
+	$$\sumOin (-1)^k \fracKone \text{ist konvergent }$$
+	$$ \sumOin (-1)^k a_k $$
 	wobei $(a_k)$ einer Streng monoton fallend Nullfolge mit $a_k \geqq 0 $ \\
-	$\Rightarrow$ Die Reihe ist konvergent. Also $\sumOin (-1)^k \fracKone$ ist konvergent.
+	$\Rightarrow$ Die Reihe ist konvergent. $$ Also \sumOin (-1)^k \fracKone \quad \text{ist konvergent.} $$ 
 
 \end{beweis}
 \begin{definition}[absolute Reihe]
 	
-	\text{Reihe} $\sumOin  a_k$  \text{heißt absolute konvergent wenn} $\sumOin $ $|a_k|$ \text{konvergent ist.
-	}
+$$ \text{Eine Reihe}  \sumOin  a_k \quad \text{heißt absolute konvergent wenn} \sumOin |a_k| \text{konvergent ist.
+	}$$
 \end{definition}
 \begin{example}
 
 \[	\sumIin (-1)^k \fracKone \text{ ist konvergent , aber nicht absolote konvergent } \]
+
+\[ \sumIin (-1)^k \fracKetwo  \text{ ist kovergend und \textbf{absolute} konvergent } \]
 \end{example}
 
-\begin{example}
-\[ \sumIin (-1)^k \fracKetwo  \text{ ist kovergend und abslote konvergent } \]
-\end{example}
 
 \begin{theorem}
-Reihe $\sumOin$ $a_k$ abslot konvergent $\Rightarrow$ Reihe $\sumOin$ $a_k$ ist kovergend	
+$$ Reihe \sumOin a_k \quad \text{absolut konvergent} \quad \Rightarrow \quad \text{Reihe} \sumOin a_k \quad \text{ist Konvergent} $$	
 \end{theorem}
 
 \begin{remark}	
-Absolute konvergente Reihe kann man multiplizieren wie endliche summen d Reihen null
+absolute konvergente Reihe kann man multiplizieren wie endliche summen. (aber konvergente Reihen nicht !)
 \end{remark}
 
-\section{Quotionkriterium (QK):}
-für endliche Konvergenz\\
-\[\limKin |\frac{a_{k+1}}{a_k}|\] \\$< 1 \Rightarrow \sumOin a_k $ in absolut konvergent \\
-$>1 \Rightarrow $ ist divergent\\
-$=1 $ Kriterium ist nicht anwendbar 
-\section{Wurzel kriterium : WK }
-für (absolute) konvergent 
-\\ $\limKin \sqrt[k]{|a_k|}$\\
-$<1 \Rightarrow \sumOin a_k$ in (absolute) konvergent\\
-$>1 \Rightarrow$ divergent\\
-$=1 $ Kriterium ist nicht anwendbar
+\section{Quotienkriterium (QK):}
+Für absolute  Konvergenz , wenn gilt:\\
+
+\begin{align*}
+\limKin \bigg|\frac{a_{k+1}}{a_k} \bigg|
+\begin{cases}
+< 1 \Rightarrow  \sum_{k=0}^{\infty} \quad \text{ist absolut konvergent}\\
+> 1 \Rightarrow \quad \text{ist divergent)}\\
+= 1 \Rightarrow \quad \text{Kriterium ist nicht anwendbar} 
+\end{cases}
+\end{align*}
+
+\section{Wurzel Kriterium : WK }
+Die Reihe $\sumOin a_k$ ist  \textbf{absolute} konvergent genau wenn $\Leftrightarrow$ :
+\begin{align*}
+\limKin \sqrt[k]{|a_k|}
+\begin{cases}
+< 1 \Rightarrow \sumOin a_k \quad \text{ist absolut konvergent}\\
+> 1 \Rightarrow \quad \text{ist divergent}\\
+= 1 \Rightarrow \quad \text{Kriterium ist nicht anwendbar} 
+\end{cases}
+\end{align*}
 
 \begin{example}[QK]
-	 \begin{equation*}
-		 \begin{split}
-	    	\sumOin \dfrac{1}{k!}
-	 	   \limKin {|d\frac{\frac{1}{(k+1)!}}{\frac{1}{k!}}|} &= \limKin \frac{k!}{(k+1)!} \\
-													   	   &=\limNin \frac{1}{k+1}   \\
-													   	   &=0<1 \Rightarrow  Reihe \quad als \quad konv. 
-		    \end{split}	 
-		 \end{equation*}     
+	    \begin{gather*}
+	    	\sumOin \dfrac{1}{k!}\\
+	 	   \limKin {\bigg|\frac{\frac{1}{(k+1)!}}{\frac{1}{k!}}\bigg|}  \\
+	 	   = \limKin \frac{k!}{(k+1)!} \\
+													   	   =\limKin \frac{1}{k+1} = 0   \\
+													   	  d.h \quad <1 \Rightarrow \quad \text{Die Reihe ist absoulte Konvergent.}  
+		    \end{gather*}     
 	
 \end{example}
 \begin{example}[WK]
-	\begin{equation*}
-	\begin{split}
-	\limKin \sqrt[k]{\frac{1}{k!}}= \limKin \frac{\sqrt[k]{1}}{\sqrt[k]{k!}}=\frac{1}{\limKin \sqrt[k]{k!}}=0\\ <1 \\
-	\Rightarrow Reihe \quad als \quad konv.
-	\end{split}	 
-	\end{equation*}     
+	\begin{gather*}
+	\limKin \sqrt[k]{\big|\frac{1}{k!}\big|} \\
+=\limKin \frac{\sqrt[k]{1}}{\sqrt[k]{k!}}
+=\\
+	\frac{1}{\limKin \sqrt[k]{k!}}=0 <1 \\
+	\text{Die Reihe is absolut konvergent.}
+	\end{gather*}	 
+	     
 	
 \end{example}
+
+
+
+ 
