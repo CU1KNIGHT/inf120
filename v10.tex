@@ -1,0 +1,71 @@
+\section{Vorlesung 10}
+\section{spezielle Ableitungen }
+\begin{gather*}
+f(x) = x^x \quad x,0\\
+ln(f(x)) = \underbrace{ln x^x}_{x ln x } \Rightarrow \frac{1}{p(x)}f'(x) = 1 \times lnx + \underbrace{x \frac{1}{x}}_{1}\\
+\Rightarrow f'(x) = \underbrace{x^x }_{f(x)}(ln x + 1) \text{ logarithmisches Differenzieren }\\
+f(x) = x^x = e^{lnx^x} = e^{xlnx} \Rightarrow f'(x)= \underbrace{e^{xlnx}}_{x^x}(xlnx)' = x^x (lnx + 1) 
+\end{gather*}
+\begin{align*}
+(sin(hx))'&= cos(hx)\\
+(cos(hx))'&= -(sin(hx))\\
+cos(hx):&= \frac{e^x + e^{-x}}{2} \text{kosinus Hyp.}\\
+sin(hx):&= \frac{e^x + e^{-x}}{2}\\
+\text{ fehlende skitzze}
+\end{align*}
+gesucht: \textbf{Taylor-Reihe Entwicklung} für $cos(hx)$\\
+\begin{align*}
+e^x &= \sum_{ k = 0 }^{ \infty }{ \frac{x^k}{k!} }\\
+e^{-x} &= \sum_{ k = 0 }^{\infty}{\frac{(-x)^k}{k!}}\\
+&= \sum_{ k = 0 }^{\infty}{(-1)^k\frac{x^k}{k!}}
+\end{align*}
+Reihe ist konvergent für alle $ x \in \mathbb{R}$ \\
+\[cos(hx) = \frac{e^x + e^{-x}}{2}\]
+\begin{gather*}
+\rightsquigarrow cos(hx)= \frac{1}{2}(1+\frac{x}{1!}+ \frac{x^2}{2!} + \frac{x^3}{3!}+\frac{x^4}{4!} + \dots )\\
++(1-\frac{x}{1!}+ \frac{x^2}{2!} + \frac{x^3}{3!}+\frac{x^4}{4!} + \dots)\\
+=1 + \frac{x^2}{2!}+ 1 + \frac{x^4}{4!} = \sum_{k=0}^{\infty}{\frac{x^{2k}}{(2k)!}}
+\end{gather*}
+\section{Spezielle Grenzwerte}
+\subsection{Regeln von Bernoulli l'Hospital -}
+Seien $ f(x) $ , $g(x)$ reelle , zweimal stetig dereferenzierbare Funktionen auf $(a,b)$ und $p(x_0) = g(x_0) = 0$\\
+gesucht: $$\lim_{x \to x_0}{\frac{f(x)}{g(x)}}$$\\
+\begin{align*}
+\dfrac{f(x)}{g(x)} &=
+\dfrac{f(x_0) + f'(x_0)(x - x_0)+ \frac{1}{2} \times f''(z_f)(x-x_0)^2}
+{g(x_0) + g'(x_0) + (x - x_0) + \frac{1}{2} \times g''(z_g)(x - x_0)^2 }\\
+&= \dfrac{x - x_0}{x - x_0} \times 
+\lim_{x \to x_0}
+{ \dfrac 
+{f'(x_0) + \frac{1}{2} f''(z_f \times 0)}
+{g'(x_0) + \frac{1}{2} g''(z_g \times 0)} 
+} \\
+&= \lim_{x \to x_0}{\frac{f'(x_0)}{g'(x_0)}} 
+\end{align*}
+falls dieser existiert :
+\[\rightsquigarrow \lim_{x \to x_0}{\frac{f(x)}{g(x)}} \Rightarrow
+\lim_{x \to x_0}{\frac{f'(x)}{g'(x)}} \]  falls der Grenzwert existiert 
+\begin{example}
+\begin{gather*}
+\lim_{x \to 0}{\frac{sin x}{x}} \\
+\rightsquigarrow \lim_{x \to 0}{\frac{(sin x)'}{(x)'}}\\
+= \lim_{x \to 0}{\frac{cos x}{(1)}} = cos(0) = 1
+\end{gather*}
+\end{example}
+\begin{example}
+\begin{align*}
+\lim_{x \to 0}{\dfrac{e^x - sin(x) + cos(x)-2}{x^3cos(x)}} 
+\frac{0}{0} \\
+= \lim_{x \to 0 }{\frac{e^x - cos(x) - sin(x)}{3x^2 cos(x)-x^3(-sin(x))}} \dots \dots &= \frac{1}{3}
+\end{align*}
+\end{example}
+\begin{remark}
+Diese Methode kann man durch anwenden für $x \to + \infty$ , $x \to - \infty$ . und für $\frac{\infty}{\infty}$ , $\frac{-\infty}{-\infty}$ , $\frac{+\infty}{-\infty}$ , $\frac{-\infty}{+\infty}$\\
+\[ \lim_{x \to x_0 \ \pm \infty}{\frac{f(x)}{g(x)}}\frac{0}{0}= 
+\lim_{x \to x_0 \ \pm \infty}{\frac{f'(x)}{g'(x)}}\frac{0}{0} \]
+falls der Grenzwert existiert. 
+\end{remark}
+\begin{remark}
+Man kann durch geeignetes Umformen auch Grenzwerte vom Typ $0.\infty $ berechnen , sowie $0^0 , 1^0 , 1^0$
+\end{remark}
+ 
