@@ -47,7 +47,7 @@ Reihe ist absolut konvergent für alle $ x \in \mathbb{R}$ \\
 \end{gather*}
 \section{Spezielle Grenzwerte}
 \subsection{Regeln von Bernoulli l'Hospital -}
-Seien $ f(x) $ , $g(x)$ reelle , zweimal stetig dereferenzierbare Funktionen auf $(a,b)$ und $f(x_0) = g(x_0) = 0$\\
+Seien $ f(x) $ , $g(x)$ reelle , zweimal stetig differenzierbare Funktionen auf $(a,b)$ und $f(x_0) = g(x_0) = 0$\\
 gesucht: $$\lim_{x \to x_0}{\frac{f(x)}{g(x)}}$$\\
 \begin{align*}
 \dfrac{f(x)}{g(x)} &=
@@ -94,3 +94,49 @@ $\lim\limits_{x \rightarrow 0+} x \ lnx=$\\
 $\lim\limits_{x \rightarrow 0}x^2=\lim\limits_{x \rightarrow 0}e \ lnx^x= \lim\limits_{x \rightarrow 0}e^{xlnx}=e^{\lim\limits_{x \rightarrow 0} xlnx}=e^0=1 \\ \\
 \lim\limits_{x \rightarrow 0}x^{\frac{1}{lnx}}= \lim\limits_{x \rightarrow 0} e^{\frac{1}{lnx}lnx}= \lim\limits_{x \rightarrow 0} e^1=e$
 \end{example}
+\begin{example}
+	\begin{align*} 
+	\limXin (1+\frac{1}{x})^x &=\limXin e^{\ln(1+\frac{1}{x})^x} \\	&=\limXin e^{x \ln (1+\frac{1}{x})}\\
+	&=e \limXin x \ln (1+\frac{1}{x})= \dots = e^1=e \\	
+	\text{(Nebenrechnung) NR }\limXin x \ln (1+\frac{1}{x})=& \limXin\frac{\ln (1+\frac{1}{x})}{\frac{1}{x}} = \limXin \frac{\frac{1}{1+\frac{1}{x}}(1+\frac{1}{x})'}{(\frac{1}{x})'}= \limXin \frac{1}{1+\frac{1}{x}}=\frac{1}{1}=1\\
+	\text{also auch } \limXin (1+\frac{1}{n})=e \\
+	e^x = \sum_{k=0}^{\infty} \frac{x^k}{k!} \overbrace{\longrightarrow}^{x=1} e^1 =e= \sumOin \frac{1^k}{k!}= \sumOin \frac{1}{k!}
+	\end{align*}
+\end{example}
+\section{Integral}
+\begin{align*}
+	f(x)>0 auf [a,b]
+	\\
+	\underline{S_p}= \sumIin f_k (x_k - x_{k-n})und f_k =\min \{ f(x) | \in [x_{k-1},x_K ] \} \\
+	\overline{S_p}= \sumIin f_k (x_k - x_{k-n})und \overline{f_k} =\max \dots \\
+	\underbrace{ \lim\limits_{||p|| \rightarrow 0} \underline{S_p}}_{(1) ex.}\underbrace{=}_{(3)} \lim\limits_{||p|| \rightarrow 0 } \overline{S_p}= \underbrace{\int_a^b f(x) \mathrm{d}x}_{Integral von f(x) auf [a,b]}
+\end{align*}
+%skizze
+\begin{example}
+$ 	D(x)=\begin{cases} 
+		0  \\    
+		1 \\  
+	\end{cases} auf[0,1]$
+	%skizze
+	 \t{skizze fehlt!}
+\end{example}
+\begin{remark}
+	In jeder relle Intervall liegen rationale und irrationale Zahlen
+	%skizze
+\end{remark}
+Riemann : $\lim \underline{S_p} \overset{\overset{ex. irrationale Zahl im Int.}{\downarrow}}{=} \lim \sum (x_k- x_{k-1})= \lim 0=0$
+
+\[  \neq\]
+$\lim \overline{S_p}= \lim \sum (x_k-x_{k-1}))> 0$ \\
+ \\ Das Riemann - Integral von D(x) ex. nicht 
+
+ \section{Lebague-Integral }
+ skizze fehlt!\\
+ %skizze!
+ \begin{align*}
+ \phi(x) treppenfunktion \int_a^b \phi(x) = \sumIn c_k (x_k - x_{k-1} ) 
+(\phi_k (x) \text{Folge von Treppenfunktion  auf} [a,b] \backslash \\ \underbrace{M}_{NullMenge   z.B.  \phi 
+\int_a^b D(x)\mathrm{d}x=0} \\
+\underbrace{\limKin \phi_k (x)}_{ex.}= f(x) \\
+\underbrace{\limKin \int_a^b \phi(x)  }_{ex.}=\underbrace{\int_a^b f(x) \mathrm{d}x }_{\text{Lebague-Integral}}
+\end{align*}
