@@ -7,10 +7,7 @@ Approximation von Funktionen \\
 Potenzreihen\\
 Taylorreihen\\
 fourierreihen\\
-Näherungsweise Berechnung \\
-
-
-
+Näherungsweise Berechnung
 \begin{definition}
 $ f : \mathbb{D} \rightarrow \mathbb{R} $
 heißt reelle Funktion in einer reellen veränderlichen  
@@ -233,14 +230,15 @@ node [midway, xshift=-0.5mm, yshift=1mm,auto, swap, outer sep=9pt,font=\tiny]{Sp
 \end{axis}
 \end{tikzpicture}
 
-
-$$
-f(x) = \underbrace{sgn(x)}_{sprung}  =  \left\{\begin{array}{lr}
-       + 1 , & x \geq 0\\
-        -1 , & x < 0 
-        \end{array}\right\} 
-$$
-\\
+\begin{definition}[ sgn(x)]
+Die Vorzeichenfunktion oder \textbf{Signumfunktion} (von lateinisch signum ‚Zeichen‘) ist in der Mathematik eine Funktion, die einer reellen oder komplexen Zahl ihr Vorzeichen zuordnet.\\
+Die reelle Signumfunktion bildet von der Menge der reellen Zahlen in die Menge \{-1,0,1\} ab und wird in der Regel wie folgt definiert:
+$$ f(x) = \underbrace{sgn(x)}_{sprung}  =  \left\{\begin{array}{lr}
++ 1 , & x \geq 0\\
+0 , & x = 0 \\
+-1 , & x < 0 
+        \end{array}\right\}$$ 
+\end{definition}
 $$
 \neq \left\{\begin{array}{lr}
   \lim\limits_{x \rightarrow 0^-}{f(x)} = -1 \quad \text{ex.} \\
@@ -248,13 +246,12 @@ $$
         \end{array}\right\} \lim\limits_{x \rightarrow 0}{f(x)} \quad \text{ex. nicht , O heißt Sprungstelle}
 $$  
 \end{example}
-
+\newpage
 \begin{definition}
 \begin{align*}
 f : \rightarrow \mathbb{R} , \quad D \subseteq \mathbb{R} \quad \text{heißt \textbf{stetig} , wenn f für alle } a \in D \quad \textbf{stetig} 
 \end{align*}
 \end{definition}
-\newpage
 \begin{example}
 elementare Funktionen und deren Verfügungen sind stetig auf dem gesamten Definitionsbereich. \\
 $\textbf{Z.B}$ \\
@@ -302,18 +299,20 @@ f(a)  &= \frac{1}{a} \tag{1} \\
 \lim_{n \to \infty}{\frac{1}{x}} \tag{2}
 \end{align*} 
 
-\begin{gather*}
-\text{Sei} \quad x_n \quad \text{eine beliebige Folge und }\quad x_n \in \underbrace{D}_{\mathbb{R}\backslash \{ 0 \}}  \quad \text{und}\quad 
-  \lim_{n \to \infty}{x_n}=a , \\
-  \lim_{n \to \infty}{f(x_n)} =  \lim_{n \to \infty}{\frac{1}{x_1}} = 
-  \frac{\lim\limits_{n \rightarrow \infty}{1}}{\lim\limits_{n \rightarrow \infty}{x_2}} = \\ 
-\frac{1}{a} \in \mathbb{R} \quad \text{ex.}
-\end{gather*}
+\begin{align*}
+\text{Sei} \quad x_n \quad \text{eine beliebige Folge und }\quad x_n \in \underbrace{D}_{\mathbb{R}\backslash \{ 0 \}}  \quad \text{und}\quad \lim_{n \to \infty}{x_n}= a
+\end{align*}
+\begin{align*}
+\lim_{n \to \infty}{f(x_n)}
+&=  \lim_{n \to \infty}{\frac{1}{x_1}} \\
+&= \frac{\lim\limits_{n \rightarrow \infty}{1}}{\lim\limits_{n \rightarrow \infty}{x_2}} \\
+&= \frac{1}{a} \in \mathbb{R} \quad \text{ex.}
+\end{align*}
 \end{beweis}  
 \subsection{Rechnenregln für Funktionen (GWS anwenden)}
 %fehlende Skizze 
 \begin{gather*} 
-\lim\limits_{x \rightarrow \infty}{(f(x) \pm g(x))} =\lim\limits_{x \rightarrow \infty}{f(x)} \pm  \lim\limits_{x \rightarrow \infty}{g(x)} , \text{wo bei} g(x)\neq 0  \\
+\lim\limits_{x \rightarrow \infty}{(f(x) \pm g(x))} =\lim\limits_{x \rightarrow \infty}{f(x)} \pm  \lim\limits_{x \rightarrow \infty}{g(x)} , \text{ wo bei } g(x)\neq 0  \\
 \lim\limits_{n \rightarrow \infty}{(f(n) \pm g(n))} =\lim\limits_{n \rightarrow \infty}{f(n)} \pm  \lim\limits_{n \rightarrow \infty}{g(n)} 
 \end{gather*}
 
@@ -356,12 +355,5 @@ xticklabels={,,$a-\delta$,$a$,$a+\delta$}
 \addplot[blue,very thick] coordinates {(0,3) (0,9)};
 \addplot[gray, pattern=north west lines] fill between[of=A and B, soft clip={domain=3:5}];
 \legend{$qeg \; \epsilon$, $gce \; \delta$}
-
-
-
 \end{axis}
 \end{tikzpicture}
- 
- 
- 
- 
