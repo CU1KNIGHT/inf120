@@ -105,11 +105,10 @@ $\lim\limits_{x \rightarrow 0}x^2=\lim\limits_{x \rightarrow 0}e \ lnx^x= \lim\l
 \end{example}
 \section{Integral}
 \begin{align*}
-	f(x)>0 auf [a,b]
-	\\
-	\underline{S_p}= \sumIin f_k (x_k - x_{k-n})und f_k =\min \{ f(x) | \in [x_{k-1},x_K ] \} \\
-	\overline{S_p}= \sumIin f_k (x_k - x_{k-n})und \overline{f_k} =\max \dots \\
-	\underbrace{ \lim\limits_{||p|| \rightarrow 0} \underline{S_p}}_{(1) ex.}\underbrace{=}_{(3)} \lim\limits_{||p|| \rightarrow 0 } \overline{S_p}= \underbrace{\int_a^b f(x) \mathrm{d}x}_{Integral von f(x) auf [a,b]}
+f(x)>0 \text{ auf } [a,b]\\
+\underline{S_p}= \sumIin f_k (x_k - x_{k-n})und f_k =\min \{ f(x) | \in [x_{k-1},x_K ] \} \\
+\overline{S_p}= \sumIin f_k (x_k - x_{k-n})und \overline{f_k} =\max \dots \\
+\underbrace{ \lim\limits_{||p|| \rightarrow 0} \underline{S_p}}_{(1) ex.}\underbrace{=}_{(3)} \lim\limits_{||p|| \rightarrow 0 } \overline{S_p}= \underbrace{\int_a^b f(x) \mathrm{d}x}_{Integral von f(x) auf [a,b]}
 \end{align*}
 %skizze
 \begin{example}
@@ -130,13 +129,13 @@ Riemann : $\lim \underline{S_p} \overset{\overset{ex. irrationale Zahl im Int.}{
 $\lim \overline{S_p}= \lim \sum (x_k-x_{k-1}))> 0$ \\
  \\ Das Riemann - Integral von D(x) ex. nicht 
 
- \section{Lebague-Integral }
+\subsection{Lebague-Integral }
  skizze fehlt!\\
  %skizze!
- \begin{align*}
- \phi(x) treppenfunktion \int_a^b \phi(x) = \sumIn c_k (x_k - x_{k-1} ) 
-(\phi_k (x) \text{Folge von Treppenfunktion  auf} [a,b] \backslash \\ \underbrace{M}_{NullMenge   z.B.  \phi 
-\int_a^b D(x)\mathrm{d}x=0} \\
+\begin{align*}
+\phi(x) treppenfunktion \int_a^b \phi(x) = \sumIn c_k (x_k - x_{k-1} ) 
+(\phi_k (x) \\
+\text{ Folge von Treppenfunktion auf } [a,b] \backslash  \underbrace{M}_{NullMenge   z.B.  \phi \int_a^b D(x)\mathrm{d}x=0} \\
 \underbrace{\limKin \phi_k (x)}_{ex.}= f(x) \\
 \underbrace{\limKin \int_a^b \phi(x)  }_{ex.}=\underbrace{\int_a^b f(x) \mathrm{d}x }_{\text{Lebague-Integral}}
 \end{align*}
