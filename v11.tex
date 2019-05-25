@@ -7,14 +7,14 @@ $A(x)$ gilt für fast alle $x \in \mathbb{R}$ bzw. $x \in \{ a , b\} $
 \begin{definition}[Nullmenge]
 Die Menge $M \subseteq \mathbb{R}$ heißt \textbf{Nullmenge}, wenn gilt :\\
 für alle $\epsilon > 0$ existiert Intervalle $ ]_1 , ]_2 , \dots \subseteq \mathbb{R}$ sodass :\\
-1) $M \subseteq \cup_{k=1}^{\infty} J_k = J_1 \cup J_2 \cup \dots$\\
+1) $$ M \subseteq \bigcup_{k=1}^{\infty} J_k = J_1 \cup J_2 \cup \dots $$\\
 2) $ \sum_{k=1}^{\infty}|J_k| \leq \epsilon$ wobei $|J_k|$ die Lage des Intervalls $J_k$ bezeichnet.
 \end{definition}
 \begin{remark}
 ab zählbar viele Intervalle endlich viele
 ab zählbar unendlich viele
 \end{remark}
-\begin{example}
+\begin{example}[1] 
 Die Menge $ M = \{ x_1 , x_2 , x_3 \}, |M| = 3$ Die Behauptung : M ist eine Nullmenge .  
 \end{example}
 \begin{proof}
@@ -32,3 +32,57 @@ Abzählbar endliche Mengen sind Nullmengen.
 Sei $ M = \{ x_1 , x_2 , x_3 , \dots \}$ und sei $\epsilon > 0 $ beliebig und fest. Dann :
 fehlende Skizze !!! 
 \end{proof}
+\textbf{Gesamtlänge berechnen}
+\begin{align*}
+\sum_{k=1}^{\infty}{\frac{\epsilon}{2^k}} &= \epsilon \sum_{k=1}^{\infty}{\frac{1}{2^k}}\\
+&= \epsilon (\dfrac{1}{1-\frac{1}{2}}-1)\\
+&= \epsilon(2-1)= \epsilon
+\end{align*}
+Intervalle $J_k = [x_k - \dfrac{\epsilon}{2^{k+1}}, x_k + \dfrac{\epsilon}{2^{k+1}}](k=1,2,\dots)$ erfüllen (1)und (2).
+\begin{remark}
+Es gilt überabzählbar Mengen , die Nullmenge sind \textbf{Z.B} die \textbf{[Cantor-Menge]}.
+\end{remark}
+\begin{definition}[Cantor-Menge]
+Unter der Cantor-Menge versteht man in der Mathematik eine bestimmte Teilmenge der Menge der reellen Zahlen.\\
+\textbf{Schnitte von Intervallen}\\
+Die Cantormenge lässt sich mittels folgender Iteration konstruieren:
+Man beginnt mit dem abgeschlossenen Intervall $[0,1]$ der reellen Zahlen von 0 bis 1. 
+\end{definition}
+\[ \int_{a}^{b} f(x) dx = \int_{a}^{c} f(x) dx + \int_{c}^{b} f(x) dx \text{ für alle } x \in \mathbb{R} \]
+\begin{definition}
+$$ \int_{b}^{c} f(x) dx = - \int_{c}^{b} f(x) dx $$ 
+\end{definition}
+\subsection{Mittelwertsatz der Integralrechnung}
+Sei $f : [a,b]$ stetige Funktion  dann existiert ein $ z \in [a,b]$ mit $\int_{a}^{b} f(x) dx = f(z) \times (a-b)$
+fehlende Skizze !!
+\subsection{Hauptsatz der Differenzial und Integralrechnung }
+Sei $ f : [a , b] \rightarrow \mathbb{R} $ ein stetige Funktion , und sei $ \widetilde{F} : [a , b] \rightarrow \mathbb{R	}$ . $ x \longmapsto \int_{a}^{x} f(t) dt $
+Dann ist $\widetilde{F}$ auf $(a,b)$ differenzierbar  und es gilt $\widetilde{F}'$ für alle $x \in (a , b)$
+\begin{proof}
+Sei $x_0 \in (a,b)$ beliebig und fest 
+\begin{align*}
+\widetilde{F}'(x_0) &= \lim_{x \to x_0 }{\frac{\widetilde{F}(x)-\widetilde{F}(x_0)}{x - x_0}}\\
+&= \lim_{x \to x_0 }{\dfrac{\int_{a}^{x} f(t) dt - \int_{a}^{x_0} f(t) dt}{x - x_0}}\\
+&= \lim_{x \to x_0 }{\dfrac{\int_{a}^{x_0} f(t) dt + \int_{x_0}^{a} f(t) dt - \int_{a}^{x_0} f(t) dt}{x - x_0}}\\
+&= \lim_{x \to x_0 }{\dfrac{\int_{x_0}^{x} f(t) dt}{x -x_0}}
+\end{align*}
+laut \textbf{Mittelwertsatz} existiert $z \in (x_0,x)$ mit
+\begin{align*} 
+ \widetilde{F}'(x_0) &= \lim_{ z \to x_0}{\frac{f(z)( x - x_0 )}{ x - x_0}}\\
+&= \lim_{z \to x_0}{f(z)} \underbrace{=}_{\text{f ist stetig}} f(x_0) 
+\end{align*}
+\end{proof}
+\begin{remark}
+$\widetilde{F}$ ist eine spezielle Stammfunktion.
+\end{remark}
+\begin{definition}[Stammfunktion]
+eine Funktion heißt \textbf{Stammfunktion} zu $f(x)$ im Intervall $(a , b)$ , wenn gilt :
+\[ F'(x) = f(x) \text{ für alle } x \in (a , b) \]
+\end{definition}
+\begin{remark}
+\begin{align*}
+F'_1(x) = F'_2(x) = f(x) &\Rightarrow 
+F'_2(x)-F'_1(x) = 0\\
+&\Rightarrow (F_2(x) - F_1(x))'=0 \text{ für alle x }
+\end{align*}
+\end{remark}
