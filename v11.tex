@@ -83,6 +83,48 @@ eine Funktion heißt \textbf{Stammfunktion} zu $f(x)$ im Intervall $(a , b)$ , w
 \begin{align*}
 F'_1(x) = F'_2(x) = f(x) &\Rightarrow 
 F'_2(x)-F'_1(x) = 0\\
-&\Rightarrow (F_2(x) - F_1(x))'=0 \text{ für alle x }
+&\Rightarrow (F_2(x) - F_1(x))'=0 \text{ für alle  } x \in (a,b) \quad \big\} f_2(x) - f_1(x) = c const\\
+&\Rightarrow F_2(x) = F_1(x) + c , \quad c \in \mathbb{R}
 \end{align*}
 \end{remark}
+\begin{definition}
+Die Mengen aller Stammfunktion $F(x)$ zu $f(x)$ heißt \textbf{unbestimmtes Integral}.
+\end{definition}
+\begin{remark}[unbestimmtes Integral]
+Das unbestimmte Integral ist \textbf{kein} Integral.\\
+\subsection{Schreibweise}
+\[ \int f(x)dx = \{ F(x) | F'(x) = f(x) \} \]
+bzw
+\[ \int {f(x)dx} = F(x) + c , \quad c \in \mathbb{R} \text{ falls  } F'(x) = f(x) \] 
+\end{remark}
+\subsection{Hauptsatze der Differenzial - und Integralrechnung 2}
+Sei $f:[a ,b] \rightarrow \mathbb{R}$ und $f$ stetig\\
+Sei $F(x)$ eine Stammfunktion zu $f$ , Dann gilt
+\[ \int_{a}^{b} f(x) dx = F(b)-F(a) \]
+\begin{proof}
+\begin{align*}
+\underbrace{\int_{a}^{b} f(x)dx}_{:= f(t)dt} = \i\underbrace{\int_{a}^{b} f(t)dt}_{\widetilde{F}(b)} - \underbrace{\int_{a}^{a} f(t)dt}_{\widetilde{F}(a)}\\
+\textbf{ Note! }\widetilde{F}(x) = F(x) + c \quad: c \in \mathbb{R}\\
+ = (F(b)+c) - (F(a)+c) = F(b)- F(a)
+\end{align*}
+\end{proof}
+\begin{remark}
+\begin{gather*}
+f \underbrace{\longrightarrow}_{ableiten} f'\\
+f' \underbrace{\longrightarrow}_{integrieren} f \\
+\int {f'(x)dx} = F(x) + c  \quad c \in \mathbb{R}
+\end{gather*}
+\begin{example}
+\begin{gather*}
+\int{x^k dx} = \frac{x^{k+1} }{ k+1 } + c , \quad c \in \mathbb{R}\\
+\int{\frac{1}{1+x^2}dx} = arctan(x) + x , \quad c \in \mathbb{R}
+\end{gather*}
+\end{example}
+\end{remark}
+\subsection{Integrationsregeln entstehen aus Ableitungsregeln}
+\begin{enumerate}
+\item \[(F(x) + G(x))' = F'(x) + G'(x) \Rightarrow \int f(x)dx + \int g(x)dx. \] 
+\item \[\int K \times f(x)dx = K \int f(x)dx \]
+\item \[\bigg( \frac{1}{a} \times F(ax+b)\bigg)'=\frac{1}{a} \times F'(ax+b)\times a = F'(ax+b)\]
+\item \[ \int F' (ax+b) dx = \frac{1}{a} \times F(ax+b)+ c , \quad c \in \mathbb{R} \]
+\end{enumerate}
