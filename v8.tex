@@ -91,8 +91,8 @@ e ^{i \varphi} &= \sum_{k=0}^{\infty}{\frac{(i \varphi)^k}{k!}} = \frac{(i \varp
  &= \underbrace{\sum_{k=0}^{\infty}{(-1)^k \frac{\varphi^{2k}}{(2k)!}}}_{cos(\varphi)} + i \times \underbrace{\sum_{k=0}^{\infty}{(-1)^k \frac{\varphi^{2k+1}}{(2k+1)!}}}_{sin(\varphi)}
 \end{align*}
 \end{remark}
-\textbf{Approximation} stetiger Funktionen $f(x)$ durch \textbf{Taylorpolynom} $p_n(x)$ :\\
-(1) \\
+\begin{enumerate}
+\item \textbf{Approximation} stetiger Funktionen $f(x)$ durch \textbf{Taylorpolynom} $p_n(x)$ :
 $$f(x) \approx f(x_0)+f'(x_0).(x-x_0)^1$$\\
 $= t(x)$ Tangente an den Graph von $f(x)$ in Punkt $(x_0 , f(x_0) = p_1(x)$
  
@@ -105,15 +105,14 @@ fehlende Skizze !!!
 \[ f'(x_0)= p_1'(x_0) \]
 \end{remark}
 
-(2)\\
-Approximation von f(x) durch Taylor-Polynome $p_n(x)$ von Grad $\leq$ n in der Umgebung com $x_0$
+\item Approximation von f(x) durch Taylor-Polynome $p_n(x)$ von Grad $\leq$ n in der Umgebung com $x_0$
 \[ \underbrace{f(x) \approx p_1(x) + 
 \frac{f''(x_0)}{2!}(x-x_0)^2 +
 \frac{f''(x_0)}{3!}(x-x_0)^3 \dots
 \frac{f^n(x_0)}{n!}(x-x_0)^n}_{p_n(x)}\]
 \[f'(x_0) = \frac{f'(x_0)}{1!} \]
 \[f(x_0) = f^0(x_0) = \frac{f^0(x_0)}{0!}\]
-
+\end{enumerate}
 \begin{remark}
 Taylor-Polynom $P_n(x)$ von Polynomfunktionen $f(x)$ von Grad n stimmen mit  $f(x)$ 
 \end{remark}
@@ -133,6 +132,3 @@ f(x) &= \frac{1}{1+x} = \underbrace{(-1)^0 x^0}_{1}-x^1 + x^2 - x^3 \dots \\
 \{ -x^n , n \text{ ungerade } \} \\
 \{ x^n , n \text{ gerade } \}
 \end{align*}
-
-
-
