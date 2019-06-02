@@ -2,7 +2,7 @@
 \begin{remark}
 Aussage $A(x)$ gilt für alle $x \in \mathbb{R}$ bzw. $x \in \{ a , b\}$\\
 Aussage $A(x)$ gilt für alle $x \in \mathbb{R}$ ohne $ M$ bzw. $x \in \{ a , b \}$ ohne $\underbrace{M}_{Nullmenge} $\\
-$A(x)$ gilt für fast alle $x \in \mathbb{R}$ bzw. $x \in \{ a , b\} $  
+kurz: $A(x)$ gilt für $\underbrace{\text{fast alle}}_{\text{fast überall} }$ $x \in \mathbb{R}$ bzw. $x \in \{ a , b\} $  
 \end{remark}
 \begin{definition}[Nullmenge]
 Die Menge $M \subseteq \mathbb{R}$ heißt \textbf{Nullmenge}, wenn gilt :\\
@@ -23,14 +23,17 @@ wähle $J_k$ = $[x_k - \frac{\epsilon}{6}, x_k + \frac{\epsilon}{6}]$
 Dann gilt : $|\exists_k|=\frac{\epsilon}{3}$  $x_k \in J_k$ und (1) , (2).
 \end{proof}  
 \begin{remark}
-Endliche Mengen sin Nullmenge.
+Endliche Mengen sind Nullmenge.
 \end{remark}
 \begin{remark}
 Abzählbar endliche Mengen sind Nullmengen.
 \end{remark}
 \begin{proof}
-Sei $ M = \{ x_1 , x_2 , x_3 , \dots \}$ und sei $\epsilon > 0 $ beliebig und fest. Dann :
-fehlende Skizze !!! 
+Sei $ M = \{ x_1 , x_2 , x_3 , \dots \}$ und sei $\epsilon > 0 $ beliebig und fest.\\
+
+
+
+[ Dann :fehlende Skizze !!! ]
 \end{proof}
 \textbf{Gesamtlänge berechnen}
 \begin{align*}
@@ -41,6 +44,37 @@ fehlende Skizze !!!
 Intervalle $J_k = [x_k - \dfrac{\epsilon}{2^{k+1}}, x_k + \dfrac{\epsilon}{2^{k+1}}](k=1,2,\dots)$ erfüllen (1)und (2).
 \begin{remark}
 Es gilt überabzählbar Mengen , die Nullmenge sind \textbf{Z.B} die \textbf{[Cantor-Menge]}.
+
+\begin{figure}
+	
+\centering
+\begin{tikzpicture}[xscale=10,yscale=1]
+\def\gen|#1|
+{
+	\if 0#1
+	\path[fill] (0,0) rectangle (1,.1) ;
+	\else
+	\begin{scope}[xscale=1/3,yshift=-1cm]
+	\pgfmathtruncatemacro{\k}{#1-1}
+	\gen|\k|
+	\begin{scope}[xshift=2cm]
+	\gen|\k|
+	\end{scope}
+	\end{scope}
+	\fi
+}
+\foreach \k in {0,...,3}
+{
+	\gen|\k|
+}
+
+
+\end{tikzpicture}
+	\caption{cantor-Menge}
+	die nicht gelöchte punkte bilden die Cantor-Menge
+\end{figure}
+
+
 \end{remark}
 \begin{definition}[Cantor-Menge]
 Unter der Cantor-Menge versteht man in der Mathematik eine bestimmte Teilmenge der Menge der reellen Zahlen.\\
@@ -53,8 +87,32 @@ Man beginnt mit dem abgeschlossenen Intervall $[0,1]$ der reellen Zahlen von 0 b
 $$ \int_{b}^{c} f(x) dx = - \int_{c}^{b} f(x) dx $$ 
 \end{definition}
 \subsection{Mittelwertsatz der Integralrechnung}
-Sei $f : [a,b]$ stetige Funktion  dann existiert ein $ z \in [a,b]$ mit $\int_{a}^{b} f(x) dx = f(z) \times (a-b)$
-fehlende Skizze !!
+Sei $f : [a,b]$ stetige Funktion  dann existiert ein $ z \in [a,b]$ mit $\int_{a}^{b} f(x) dx = f(z) \times (a-b)$\\ \\
+\begin{tikzpicture}
+\begin{axis}[
+axis y line = left,
+axis x line = middle,
+xtick       = {0,2,3.8},
+xticklabels = {$b$,$x$,$a$},
+ytick       = {3},
+yticklabels = {$f(x)$},
+samples     = 160,
+domain      = 0:3.8,
+xmin = -1, xmax = 5,
+ymin = -5, ymax = 10,
+]
+\addplot[name path=poly, black, thick, mark=none, ] {-x^3+5*(x^2)-3*x+0.5};
+\addplot[name path=line, gray, no markers, line width=1pt] {3};
+\draw [thick, brown, decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-10pt](0,-1) -- (3.8,-1) node[black,midway,yshift=-0.6cm] {\footnotesize $b-a$};
+\addplot fill between[ 
+of = poly and line, 
+split, % calculate segments
+every even segment/.style = {orange!70},
+every odd segment/.style  = {gray!60}
+];
+\end{axis}
+\end{tikzpicture}
+
 \subsection{Hauptsatz der Differenzial und Integralrechnung }
 Sei $ f : [a , b] \rightarrow \mathbb{R} $ ein stetige Funktion , und sei $ \widetilde{F} : [a , b] \rightarrow \mathbb{R	}$ . $ x \longmapsto \int_{a}^{x} f(t) dt $
 Dann ist $\widetilde{F}$ auf $(a,b)$ differenzierbar  und es gilt $\widetilde{F}'$ für alle $x \in (a , b)$
@@ -97,10 +155,31 @@ Das unbestimmte Integral ist \textbf{kein} Integral.\\
 bzw
 \[ \int {f(x)dx} = F(x) + c , \quad c \in \mathbb{R} \text{ falls  } F'(x) = f(x) \] 
 \end{remark}
-\subsection{Hauptsatze der Differenzial - und Integralrechnung 2}
+\subsection{2. Hauptsatze der Differenzial- und Integralrechnung}
 Sei $f:[a ,b] \rightarrow \mathbb{R}$ und $f$ stetig\\
 Sei $F(x)$ eine Stammfunktion zu $f$ , Dann gilt
 \[ \int_{a}^{b} f(x) dx = F(b)-F(a) \]
+
+	\centering
+	\begin{tikzpicture}[scale=1.3],\begin{axis}[
+	axis y line = left,
+	axis x line = bottom,
+	xtick       = {-0.5,1},
+	xticklabels = {$b$,$a$},
+	ytick       = \empty,
+	samples     = 160,
+	domain      = -0.5:2,
+	xmin = -4, xmax = 4,
+	ymin = 0, ymax = 3,
+	]
+
+	\addplot[color=red,domain=-4:4,samples=100] {sqrt(2*pi)*exp(-x^2/2)};
+
+	\addplot[color=red,fill=red, pattern=north east lines,  domain=-0.5:1,samples=100] {sqrt(2*pi)*exp(-x^2/2)} \closedcycle;
+
+	\end{axis}
+	\end{tikzpicture}
+
 \begin{proof}
 \begin{align*}
 \underbrace{\int_{a}^{b} f(x)dx}_{:= f(t)dt} = \i\underbrace{\int_{a}^{b} f(t)dt}_{\widetilde{F}(b)} - \underbrace{\int_{a}^{a} f(t)dt}_{\widetilde{F}(a)}\\
