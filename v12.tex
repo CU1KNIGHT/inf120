@@ -1,0 +1,149 @@
+\section{Vorlesung 12}
+\begin{align*}
+\int \frac{f'(x)}{f(x)}dx &= ln |f(x)| + c \quad c \in \mathbb{R} \\
+( ln | f(x)| )'   &= 
+\begin{cases} 
+(ln f(x))' , f(x)> 0 \\
+(ln f(x))' , f(x)< 0 \\ 
+\end{cases}\\
+&=
+\begin{cases}
+\frac{1}{f(x)}f'(x),f(x) >0 \\
+\frac{1}{-f(x)}-f'(x),f(x) < 0\\
+\end{cases} \\
+&= 
+\begin{cases}
+\dfrac{f'(x)}{f(x)}
+\end{cases}
+\end{align*}
+\begin{example}
+\begin{align*}
+\int{\frac{ 2x +2 +1 }{ x^2 + 2x +5} dx }
+&= \int{\frac{ 2x + 2  }{ x^2 + 2x +5} dx } + 
+\int{\frac{1}{ x^2 + 2x +5} dx }\\
+ &= \underbrace{ln(x^2 + 2x + 5)}_{\text{keine reelle Nullstell}}  + \quad ? 
+\end{align*}
+\subsection{Kettenregel $\rightsquigarrow$ Integration durch \textbf{Substitution}}
+\end{example}
+\begin{align*}
+(f(g(x)))' - f'(g(x))g'(x) \rightsquigarrow \\
+\int f'(g(x)) \times g'(x)dx = f((g(x)) + c \quad c \in \mathbb{R} 
+\end{align*}
+Die Ableitung der zu Substituierende Funktion $g(x)$ steht als \textbf{Faktor} im Integration
+$$ \int{ f(g(x)) \times g(x) dx } $$
+man vereinfache $g(x)$ durch : $z : = g(x)$
+\begin{gather*}
+\frac{dz}{dx} = g'(x) \Rightarrow dz = g'(x)dx \Rightarrow \\
+\int{f(g(x)) \times g'(x)dx} = \int f(z)dz  = f(z) + c = f(g(x)) + c 
+\end{gather*}
+\begin{example}
+Sub : $z = sinx$
+\begin{align*}
+\int {e^{sinx} cos} dx = \int e^z dz\\
+\frac{dz}{dx} = cos x \Rightarrow dz = cos dx\\
+ e^z + c = e^{sin x } + c, \quad c \in \mathbb{R}
+\end{align*}
+\textbf{probe}
+$$ (e^{sinx} + c)' = (e^{sinx})' = c' = e^{sinx} cosx + 0 $$
+\end{example}
+\begin{example}
+Sub : $z = lnx $
+\begin{gather*}
+\int \dfrac{dx}{ x (1+(lnx)^2)}\\
+\frac{dz}{dx} = \frac{1}{x} \Rightarrow dz = \frac{1}{x} dx
+\\
+= \int \frac{dz}{ 1 + z^2} = arctan(z) + c = arctan(ln x )+ c \quad c \in \mathbb{R}
+\end{gather*}
+\textbf{Regel:}
+$$ \int f(ax+b)dx $$
+Sub : $z = ax+b $ , $ \frac{dz}{dx} = a $
+\begin{align*}
+&= \frac{1}{a} \int a f(ax+b) dx \\
+&= \frac{1}{a} \int f(z)dz = \frac{1}{a} F(z) + c \\
+&=\frac{1}{a} F(ax +b) + c \quad c \in \mathbb{R}
+\end{align*}
+\end{example}
+\subsection{Produktregel $\rightsquigarrow$  \textbf{Partielle Integration}}
+\begin{gather*}
+(u(x) \times v(x))' = u'(x) v(x) + u(x) \times v'(x)\\
+(uv)' = u'v + uv' \Rightarrow\\
+\int(uv)'dx = \int u'v dx + \int uv' dx\\
+\end{gather*}
+\textbf{d.h}
+\[ \int u'v dx = u v - \int u v' dx \]
+\[ \int uv' dx = u v - \int u' v dx \]
+\begin{example}
+\begin{align*}
+\int \underbrace{x}_{u} \underbrace{cosx}_{v'} dx 
+\end{align*}
+\textbf{Sub:}\\
+$u  := x \Rightarrow u' = 1$\\
+$v' := cos x \Rightarrow v = sinx $
+\begin{align*}
+&= x sinx - \int 1 \times sinx dx \\
+&= x sinx - (-cos x) + c \quad c \in \mathbb{R}\\
+&= x sinx + cos x + c
+\end{align*}
+\end{example}
+
+\begin{example}
+\begin{align*}
+\int \underbrace{sinx}_{u} \underbrace{cosx}_{v'} dx 
+\end{align*}
+\textbf{Sub:}\\
+$u  := sinx \Rightarrow u' = cosx$\\
+$v' := cos x \Rightarrow v = sinx $
+\begin{align*}
+= sinx \times sinx - \int cos x \times sinx dx 
+\end{align*}
+Diese Partielle Integration führt auf das Ausgangs integral zurück
+\begin{gather*}
+2 \int \dots \dots = (sinx)^2 + \tilde{c} , \quad c \in \mathbb{R} | : 2\\
+\Rightarrow \int sinx \times cos x dx = \frac{1}{2} (sin x )^2 + c , \quad c \in \mathbb{R} \frac{\tilde{c}}{2} = c
+\end{gather*} 
+\end{example}
+\begin{example}
+\begin{align*}
+\frac{2x +1}{(x-1)(x+2)}dx &= \int \frac{1}{x-1}dx + \int \frac{1}{x+2}dx\\
+\frac{2x+1}{(x-1)(x+2)} &= \frac{A}{x-1}+ \frac{B}{x-2} | \text{ gesucht A und B  }\\
+2x+1 &= \underbrace{ A(x+2) + B(x-2)}_{(A+B)x+(2A-B)}  
+\end{align*}
+\subsection{Koeffizienten Regel}
+? = A + B LGs A = 1 \\
+1 = 2 A - B lösen B = 1
+\end{example}
+\begin{example}
+\begin{gather*}
+\int \frac{x+2}{(x+1)^3}dx \\
+= \int \frac{A}{x+1}dx + \int \frac{B}{(x+1)^2}dx + \int \frac{C}{(x + 1)^3}dx\\
+\end{gather*}
+Gesucht : A , B , C mit 
+\end{example}
+\begin{align*}
+\frac{ x + 2 }{(x+1)^3} &= \frac{A}{(x+1)} + \frac{B}{(x+1)^2} + \frac{C}{(x+1)^3} | (x+1)^3\\
+&= x+2 = A(x+1)^2 * B(x+1)^2 + B(x+1) + C
+\end{align*}
+Koeffizienten $\dots \Rightarrow A = 0 , B = 1 , C = 1$
+\begin{align*}
+&= \int \frac{0}{x+1}dx + \int \frac{1}{(x+1)^2}dx + \int \frac{1}{(x+1)^3}\\
+&= - \frac{1}{x+1} - \frac{1}{2} \frac{1}{(x+1)^2}+c
+\end{align*}
+\begin{example}
+\begin{gather*}
+\int \frac{1}{x^2 + 2x + 5}dx = \int \frac{Ax+B}{x^2 + 2x + 5 }dx \\
+= \int \frac{Ax}{x^2 + 2x + 5 }dx = \int \frac{B}{x^2 + 2x + 5}dx \\
+\frac{1}{x^2 + 2x + 5} = \frac{Ax+B}{x^2 + 2x + 5} \quad | (x^2 + 2x +5)\\
+\Rightarrow 1 = Ax+B
+\end{gather*}
+A = 0\\
+B = 1
+\begin{align*}
+&=\int \frac{1}{x^2 + 2 + 5}dx =
+\int \frac{1}{(x+1)^2+4}dx \\
+&=\int \frac{1}{4(\frac{x+1}{2})^2+1}dx =
+\frac{1}{4} \int \frac{1}{ \big( \frac{(x+1)}{2} \big)^2 +1}\\
+&=  \frac{1}{4} arctan \bigg( \frac{(x+1)}{2} \bigg) \dfrac{1}{\frac{1}{2}} + c\\
+&= \frac{1}{2} arctan \bigg( \frac{x+1}{2} \bigg) + c , \quad c \in \mathbb{R}
+\end{align*}
+
+\end{example}
