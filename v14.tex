@@ -1,0 +1,33 @@
+\section{Vorlesung 14}
+\centering
+\begin{forest}
+	for tree={l+=0.5cm, s sep+=1cm}
+	[Differenzialgleichung (Dgl) 
+	[ gewöhnlich [gesucht : $ \underbrace{y(x)}_{Funktion}$ ] ]
+	[partielle [ gesucht :   $ y(x_1 \,\ x_2  \dots  x_n)$ ] ]
+	]
+\end{forest}
+
+\begin{definition}
+$y'(x)= f (x , g(x))$ heißt gewöhnliche Differenzialgleichung erste Ordnung \textbf{in explizite Form }
+$y : \underbrace{I}_{\text{ Intervall I }\in \mathbb{R}(\subseteq \mathbb{C}) }$ heißt lösung , wenn sich beim Einsetzen von $y(x)$ und dem Ableitung der Funktion in der Differenzialgleichung eine wahre Aussage gibt.   
+\end{definition}
+\begin{example}
+$y' = x - y^2$ auffüllbar $y'(x) = x(y(x))^2 $ $x > 0$
+\textbf{gesucht : $y(x)$} bei Lösungen dieser DGL sind.
+$y_1 = \frac{-2}{x^2} $ auf $(0,\infty)$ , $y_2(x)\frac{2}{2-x^2}$ auf $(0 , \sqrt{2})$ , $y_3(x) = \frac{2}{2-x^2}$ auf $(\sqrt{2}, \infty)$ 
+\end{example}
+\begin{enumerate}
+\item  $\underbrace{(L.S)}_{linke Seite} y' = (-2)(-2)\frac{1}{x^3} , \underbrace{R.S}_{right Seite} x\frac{-2}{x^2} \times \frac{-2}{x^2}$ , $L.S = R.S$ 
+\item  L.S $y_2' = 2 (\frac{1}{2-x^2})= 2(-2) \frac{1}{(2-x^2)^2 \times (-2x)},$ R.S $x(\frac{2}{2-x^2})^2$ \dots Selbst Studium\\
+ ende Ergebnis soll L.S = R.S 
+ 
+      
+\item \textbf{grafische Lösung von} 
+$y'= f(x ,y)$ , $\exists_m Punkt (x , y)$  ist eine  Anstieg\\
+\textbf{Anstieg} der Tangente an den Graphen einer Lösungen , $ y(x)$ im Punkt $(x,y)$. 
+\end{enumerate}
+\textbf{Linearelement } $(x , y)$\\
+\textbf{Richtungsfeld} : Menge aller Linearelement\\
+\textbf{Isokline} : verbinden punkte gleichen Anstieg 
+
