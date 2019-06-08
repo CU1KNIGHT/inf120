@@ -9,25 +9,95 @@
 \end{forest}
 
 \begin{definition}
-$y'(x)= f (x , g(x))$ heißt gewöhnliche Differenzialgleichung erste Ordnung \textbf{in explizite Form }
-$y : \underbrace{I}_{\text{ Intervall I }\in \mathbb{R}(\subseteq \mathbb{C}) }$ heißt lösung , wenn sich beim Einsetzen von $y(x)$ und dem Ableitung der Funktion in der Differenzialgleichung eine wahre Aussage gibt.   
+	$y'(x)= f (x , g(x))$ heißt gewöhnliche Differenzialgleichung erste Ordnung \textbf{in explizite Form }
+	$y : \underbrace{I}_{\text{ Intervall I }\in \mathbb{R}(\subseteq \mathbb{C}) }$ heißt lösung , wenn sich beim Einsetzen von $y(x)$ und dem Ableitung der Funktion in der Differenzialgleichung eine wahre Aussage gibt.   
 \end{definition}
 \begin{example}
-$y' = x - y^2$ auffüllbar $y'(x) = x(y(x))^2 $ $x > 0$
-\textbf{gesucht : $y(x)$} bei Lösungen dieser DGL sind.
-$y_1 = \frac{-2}{x^2} $ auf $(0,\infty)$ , $y_2(x)\frac{2}{2-x^2}$ auf $(0 , \sqrt{2})$ , $y_3(x) = \frac{2}{2-x^2}$ auf $(\sqrt{2}, \infty)$ 
+	$y' = x - y^2$ auffüllbar $y'(x) = x(y(x))^2 $ $x > 0$
+	\textbf{gesucht : $y(x)$} bei Lösungen dieser DGL sind.
+	$y_1 = \frac{-2}{x^2} $ auf $(0,\infty)$ , $y_2(x)\frac{2}{2-x^2}$ auf $(0 , \sqrt{2})$ , $y_3(x) = \frac{2}{2-x^2}$ auf $(\sqrt{2}, \infty)$ 
 \end{example}
 \begin{enumerate}
-\item  $\underbrace{(L.S)}_{linke Seite} y' = (-2)(-2)\frac{1}{x^3} , \underbrace{R.S}_{right Seite} x\frac{-2}{x^2} \times \frac{-2}{x^2}$ , $L.S = R.S$ 
-\item  L.S $y_2' = 2 (\frac{1}{2-x^2})= 2(-2) \frac{1}{(2-x^2)^2 \times (-2x)},$ R.S $x(\frac{2}{2-x^2})^2$ \dots Selbst Studium\\
- ende Ergebnis soll L.S = R.S 
- 
-      
-\item \textbf{grafische Lösung von} 
-$y'= f(x ,y)$ , $\exists_m Punkt (x , y)$  ist eine  Anstieg\\
-\textbf{Anstieg} der Tangente an den Graphen einer Lösungen , $ y(x)$ im Punkt $(x,y)$. 
+	\item  $\underbrace{(L.S)}_{linke Seite} y' = (-2)(-2)\frac{1}{x^3} , \underbrace{R.S}_{right Seite} x\frac{-2}{x^2} \times \frac{-2}{x^2}$ , $L.S = R.S$ 
+	\item  L.S $y_2' = 2 (\frac{1}{2-x^2})= 2(-2) \frac{1}{(2-x^2)^2 \times (-2x)},$ R.S $x(\frac{2}{2-x^2})^2$ \dots Selbst Studium\\
+	ende Ergebnis soll L.S = R.S 
+	
+	
+	\item \textbf{grafische Lösung von} 
+	$y'= f(x ,y)$ , $\exists_m Punkt (x , y)$  ist eine  Anstieg\\
+	\textbf{Anstieg} der Tangente an den Graphen einer Lösungen , $ y(x)$ im Punkt $(x,y)$. 
 \end{enumerate}
 \textbf{Linearelement } $(x , y)$\\
 \textbf{Richtungsfeld} : Menge aller Linearelement\\
 \textbf{Isokline} : verbinden punkte gleichen Anstieg 
 
+
+\begin{example}
+	$y'= x $ \begin{enumerate}
+		\item Isoklinen bestimmen 
+		\item  Lösungsklaieren y(x) in das Richtungsfield eintragen
+	\end{enumerate}
+y'=c =const $\Rightarrow x=c$ z.B.\begin{align*}
+c=0 , c=1 , c=3 ,c=-1,\\
+ x=0, x=1 ,x=2, x =-1
+\end{align*} 
+$y_1,y_2, y_3$ sind Bsp. für Lösungen$\underbrace{ \text{Alle lösungen}}_{\text{Allgemeine Lösung } y(x,\underset{\underset{\scriptstyle\text{reeller Parameter } c \in \mathbb{R} }{\scriptstyle\downarrow}}{C} )}$ bilden die lösungskurvenschar 
+Wählt man ein festes $C \in R$, dann erhält man eine singuläre Lösung.
+(fehlt Skizze !)
+\end{example}
+\begin{example}
+	$y'=\frac{-x}{y} mit y(x)ist nicht die Funktionen y \neq 0$\\
+	(fehlt skizze!)
+	\begin{align*}
+	y'= c=const  -\frac{x}{y}=C \Rightarrow y= -\frac{x}{c}\text{ z.B.} &c=1 \ c=-1 \\ 
+																   &y=\dots , y=\dots
+	\end{align*}
+
+	
+\end{example}
+\begin{definition}
+$y^{n}(x)=f(x,y(x),y'(x),\dots, y^{n-1}(x) )$ glo. Dgl. n-te ordn, Lösung $ y(x):I\rightarrow \mathbb{R}$\\
+Allg. Lösung :$ y(x,c_1,c_2,\dots,c_n) $ und $ c_1,c_2,\dots ,c_n \in \mathbb{R}$
+für Konkrete werte für ; erhällt wenn spezielle Lösungen
+\end{definition}
+\section{Anfangswert-Aufgabe}
+( Spezielle Bedieniegung  zur Bestimmung der Parameter )
+$y(x_0)=r_1$\\
+$y'(x_0)= r_1$\\
+$y^{(n-1)}(x_0)=r_{n-1}$
+
+\begin{align*}
+\text{ n Bedingungen }
+\begin{cases}
+y(x_0)=r_1\\
+y'(x_0)= r_1\\
+y^{(n-1)}(x_0)=r_{n-1}
+\end{cases}
+\end{align*}
+
+Methode:Trennung der ceränderlichen für Dgl.$ y'=h(x)g(y(x))$
+
+\begin{example}
+	\begin{align*}
+ y'=y \Rightarrow \frac{dy}{dx} =y \Rightarrow dy=y.dx | :y \text{( für  }y \neq 0) 
+	\end{align*}
+\begin{enumerate}
+	\item Fall :$ y \equiv 0$ \\	
+	\begin{align*}
+		\text{ l.s =r.s. }
+	\begin{cases}
+	l.s. y' \equiv 0 \\
+	r.s. y \equiv 0
+	\end{cases}	
+	\Rightarrow y\equiv 0\text{ ist eine Lösung.}
+\end{align*}
+	\item Fall: 
+	 \begin{flalign*}
+ y \equiv 0 \dots \Rightarrow \frac{dy}{y}=dx \Rightarrow \int \frac{dy}{y}= \int dx &\Rightarrow \frac{dy}{y}=dx \Rightarrow \int \frac{dy}{y}= \int dx \\
+ &\Rightarrow \ln |y| =x+k, k\in \mathbb{R}\\
+ &\Rightarrow|y|=e^{x+k}=e^x.\underbrace{e^k}_{>0} \Rightarrow y =\pm\underbrace{ e^K}_{>0}\Rightarrow .e^k \\ &\Rightarrow y= C .e^x\text{ und }c \in \mathbb{R}\backslash \{ 0\}
+\end{flalign*}
+\end{enumerate}
+$y'=y$ hat die allgemeine Lösung $y(x)=C.e^x (c\in \mathbb{R})$ $\underbrace{Probe}_{y'=C.e^x=y}$ erforderlich !
+
+\end{example}
