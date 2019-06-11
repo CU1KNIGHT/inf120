@@ -101,3 +101,49 @@ Methode:Trennung der ceränderlichen für Dgl.$ y'=h(x)g(y(x))$
 $y'=y$ hat die allgemeine Lösung $y(x)=C.e^x (c\in \mathbb{R})$ $\underbrace{Probe}_{y'=C.e^x=y}$ erforderlich !
 
 \end{example}
+\begin{example}
+	$y'=\sqrt{y}$ ,$y \geq 0$\\
+$\lightning	T.d.v.$\\
+	$y=\frac{1}{4}(x+c)^2$   $(c\in \mathbb{R})$\\
+
+	 \begin{flushleft}
+	 		Probe:\\
+	 	\begin{align*}
+		 \begin{rcases}
+			l.s. \; y'=\frac{1}{4}.2(x+c) \\	
+			r.s. \; \sqrt{y}=\frac{1}{4}(x+c) 
+	 	\end{rcases}	= \text{ nür für }
+		  	  x+c &\geqq 0 \\
+		   		x &\geqq -c
+	 	\end{align*}	
+	 \end{flushleft}
+
+\end{example}
+\begin{example}
+$	T(0)=90$     Raumtemperatur 20     ges: t bis der$\underbrace{ \text{ Kaffee trinkbar }}_{T(t)=40}$ \\
+$T(1)=80$\\
+$T(t) \backsim T-20$   $\underbrace{T'(t)=k(T-26)}_{ges. T(t)}$\\
+T.d.v: $\frac{dT}{dt}=k(T-20) \overset{T\neq 20}{\Rightarrow} \int k dt \Rightarrow \ln |T-20|=\overset{k \in \mathbb{R}}{kt+k }\Rightarrow |T-20|=e^{kt}.\underbrace{e^k}_{>0}$\\
+$ \Rightarrow T-20= \pm e^k e^{kt}\Rightarrow T-20= C.e^{kt}$, $c\in\mathbb{R} \backslash {0}$\\
+$T=20+C e^{kt}$, $C \in \mathbb{R}$\\
+$T=20 +C e^{kt}$ \\
+\begin{align*}
+\begin{rcases*}
+T(0)=90 \Rightarrow 90= 20+\overbrace{C.e^0}^{C} \Rightarrow
+ C=70\\
+ T(1)=80 \Rightarrow 80=20+70.e^{k.1}\Rightarrow e^k=\frac{60}{70} =\frac{6}{7} 
+ \end{rcases*}T(t)=20+70 .(\frac{6}{70})^t  \overset{T(t)=40}{\Rightarrow}& 40 =20 +70 .(\frac{6}{70})^t\\
+& \Rightarrow (\frac{6}{70})^t =\frac{20}{70}=\frac{2}{7}\\
+ &\Rightarrow \ln (\frac{6}{7})^t = \ln \frac{2}{7} \\
+ &\Rightarrow t .\ln \frac{6}{7}= \ln\frac{2}{7}\\
+&\Rightarrow t=\frac{\ln \frac{2}{7}}{\ln \frac{6}{7}} \approx 8,13 \text{ Minuten}
+ \end{align*}
+\end{example}
+\begin{example}
+	\text{ population wachstum} $\leadsto$ \text{logistikziele gleichung}\\
+	$N(t)$ größe der population zum Zeitpunkt t\\
+	$N'(t) \simeq N(t): (\underset{\underset{\text{Platz , der frei ist}}{\nwarrow}}{a}-N(t)) \Rightarrow \underset{\text{ zu lösen mit TdV}}{N'= \alpha .N(a-N)}$\\
+	$\frac{dN}{dt}=\alpha N(a-N) \overset{\overset{N>0}{a=n>0}}{\Rightarrow} \int \frac{dN}{N.(a-N)}= \int \alpha \ dt \Rightarrow \int (\frac{\frac{1}{a}}{N}+\frac{\frac{1}{a}}{a-N})dN=\alpha \; dt \Rightarrow \dots $\\
+	$\dots \Rightarrow \frac{N}{a-N}=C e^{\alpha a t}(c\in \mathbb{R}, C>0)$\\
+	$\dots \Rightarrow N(t)= \frac{aCe^{\alpha a t}}{1+Ce^{\alpha at}}=\frac{aC}{e^{-\alpha a t+C}}$  logictile gleichung
+\end{example}
