@@ -23,7 +23,7 @@ a+\delta < x < a \\
 \end{equation}
 \subsection{Ergebnis}
 $|x-a|<\delta \Leftrightarrow a-\delta < x < a+ \delta$ \\
-$\Leftrightarrow x \in (a-\delta , a+d ) $ offenes intervall \\
+$\Leftrightarrow x \in (a-\delta , a+d ) $ offenes Intervall \\
 $|x-a| < \delta$ \\
 
  %skizze++++++++++++++++++++++++++++++++++++++
@@ -68,46 +68,47 @@ $	\begin{cases}
 		1, x \in \mathbb{Q} \quad \quad (rational)\\		
 		0, x \in \mathbb{R} \backslash \mathbb{Q} \quad (irrational) 	
 	\end{cases}$\\ \\
-\text{steteig für welche a?}\\
+\text{stetig für welche a?}\\
 \text{1. Fall : a rational} \\ 
 \text{2. Fall : a irrational }
 \\ \\ a rational: a fest 
 \\ sei $\varepsilon = \frac{1}{2}$ , beliebig  $\exists \delta > 0 \forall x \in D: |x-a| < \delta \Rightarrow |D(x) -D(a) | < \frac{1}{2}$ 
 Sei $\delta$ beliebig, $\delta$ > 0, $x$ irrational , fest \\
-$|x-a|<d \Rightarrow |0-1| =|11= 1 < \frac{1}{2}$, widerspruch \\
+$|x-a|<d \Rightarrow |0-1| =|11= 1 < \frac{1}{2}$, Widerspruch \\
 $\Rightarrow D$ ist nicht stetig, für jede $ a \in \mathbb{R}$  \\
 Sei $\delta >0$ , beliebig, x rational , fest $|x-a| < \delta \Rightarrow |\underbrace{D(x)}_1 -\underbrace{D(a)}_0| < \frac{1}{2}= \varepsilon \Rightarrow 1 < \frac{1}{2} $ Widerspruch \\
 $\Rightarrow$ D ist nicht stetig für jede a $\in \mathbb{R} \backslash \mathbb{Q}$ 
 \end{example}
 \begin{theorem}
 Sei $ f: [a,b] \rightarrow \mathbb{R}$, stetig 
-f besetzt in [a,b] ein globale Maximum und ein golbales Minimum
+f besetzt in [a,b] ein globale Maximum und ein globales Minimum
 \end{theorem}
 \begin{remark}
-Beide (unklar!)veränderung sind wichtig
+Beide (unklar!)Veränderung sind wichtig
 \end{remark}
 \begin{remark}
 	[a,k]= {x $\in$ $\mathbb{R}$ | a $\leq$ x $\leq$ b}
 %skizze +++++++++++++++++++++
 %kizze ++++++++++++++++++
 \end{remark}
+\subsection{Zwischenwertsatz}
 \begin{theorem}[ZWS]
-	 Sei $f: [a,b] \rightarrow \mathbb{R}$ stetig , $\frac{x_m}{x_M}$ eine globale Minimale stelle \\ 
-	 eine golbale Maximalestalle\\	
+Sei $f: [a,b] \rightarrow \mathbb{R}$ stetig , $\frac{x_m}{x_M}$ eine globale Minimale stelle \\ 
+	 eine globale Maximalastelle\\	
 	 Sei  \^{y}
-	 $ \in $[ $f(x_m) , f(x_M) :$ Dann ex.  \^{x}$ \in $ [a,b] mit  \^{y}$=f($ \^{x} 
+	 $ \in $[ $f(x_m) , f(x_M) :$ Dann existiert  \^{x} $ \in $ [a,b] mit  \^{y}  = f(\^{x}) 
 \end{theorem}
 \begin{remark}
-	Jeder zwischenwert wird als Funktionswert angenommen
+	Jeder Zwischenwert wird als Funktionswert angenommen
 \end{remark}
 \begin{theorem}[Nullstellen]
-	Sei $f: $[a,b] $\rightarrow \mathbb{R}$ stetig, $f(a) . f(b) < 0$
-	Dann beliebig f in [a,] eine Nullstell $x_0$ , d.h. $\exists x_0 \in $ [a,b] : $f(x_0)=0$
+	Sei $f: $[a,b] $\rightarrow \mathbb{R}$ stetig, $f(a) \times f(b) < 0$
+Dann beliebig f in [a,b] eine Nullstelle $x_0$ , d.h. $\exists x_0 \in $ [a,b] : $f(x_0)=0$
 	%skizze +++++++++++++++++++  
 \end{theorem}
 \begin{proof}
 %skizze ....
-$f(a) < 0 , f(x) > 0$  (analog für $f(a) > 0 , f(b) <0$)\\
+$f(a) < 0 $ und $f(x) > 0$  (analog für $f(a) > 0 , f(b) <0$)\\
 \\$(\frac{a_1+b_1}{2})=
 \begin{cases}
  \; 0 , \frac{a_1+b_1}{2}\text{ ist die gesamte Nullstelle}\\
@@ -119,7 +120,7 @@ $f(a) < 0 , f(x) > 0$  (analog für $f(a) > 0 , f(b) <0$)\\
  \[\text{usw. } \frac{a_2+b_2}{2}  \text{berechnen}\]
 \[ f(..)  \begin{cases} =0 \\ <0 \\ >0 \end{cases}\]
  
- 
+\begin{center} 
 \begin{forest}
 	for tree={l+=0.5cm, s sep+=1cm}
 	[Betrachte $(a_n)$ 
@@ -128,7 +129,7 @@ $f(a) < 0 , f(x) > 0$  (analog für $f(a) > 0 , f(b) <0$)\\
 	]
 \end{forest}
 $\Rightarrow konvergent$
-\\
+\end{center}
 sei $\underbrace{\limNin a_n=:c}_{ex.}$
 \\
 sei $\underbrace{\limNin a_n=:c}_{ex.}$\\
@@ -141,6 +142,7 @@ ex. $\limNin b_n=2$
   				   &= |a-b|.0 \\
   				   &= 0\end{align*}
  \[ \limNin b_n=c \]
+\begin{center}
 \begin{forest}
 	for tree={l+=0.5cm, s sep+=1cm}
 	[Betrachte $(b_n)$ 
@@ -149,6 +151,7 @@ ex. $\limNin b_n=2$
 	]
 \end{forest}
 $\Rightarrow konvergent$
+\end{center}
 
 Falls keine Nullstelle beim bilden von $a_n,b_n$ gefunden wurden\\ \\
 \\
