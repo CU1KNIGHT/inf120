@@ -1,5 +1,6 @@
-\section{Vorlesung 7}
+\section{Vorlesung 7 \href{https://tu-dresden.de/mn/math/algebra/das-institut/beschaeftigte/antje-noack/ressourcen/dateien/v120-1/MathMethInf07.pdf?lang=en}{(03.05.2019)} }
 
+\subsection{ Wiederholung:Grenzwert von Funktionen }
 \begin{align*}
 &	f:D \rightarrow \mathbb{R} , D \subseteq \mathbb{R} , a \notin D &\\
 &\underbrace{\lim_{x\to a}}_{x \neq a} f(x)= r \in \mathbb{R}  \Leftrightarrow \forall (x_n) \limNin x_n= a \text{  und  } x_n \in D \\
@@ -10,51 +11,67 @@
 GWS nicht anwendbar $\limXo \overbrace{ x \sin x }^{f(x)} = \limXo x  .\quad \limXo \sin x=0. 0=0$
 \end{example}
 \begin{remark}
-GWS nicht anwendbar $\underbrace{\limXo(x \ \sin \frac{1}{x}}_{f(x)} \underbrace{\limXo}_{0},\limXo \sin \frac{1}{x}$
+GWS nicht anwendbar $\underbrace{\limXo(x \ \sin \frac{1}{x}}_{f(x)} \underbrace{\limXo}_{0})$ , $\limXo( \sin \frac{1}{x} )$
 \end{remark}
 \begin{definition}
-	Sei $f: (a,b) \to \mathbb{R} , x_0 \in (a,b) $\\
-	 $x_0 \in (a,b) \Leftrightarrow  x_0 \in \mathbb{R} $  und  $ a<s_0 < b ( \Leftrightarrow (skizze  not complate))$\\
-	$f$ ist in $x_0$  differenzierbar : $\Leftrightarrow f'(x_0) := \ \underbrace{\lim\limits_{x \rightarrow f(x)}}_{f \neq x_0} \frac{f(x) -f(x_0)}{x-x_0}$ existiert  $(f'(x_0) \in \mathbb{R}) $\\
-	Falls der Grenzwert ex., nennt man $f'(x_0)$ die erste Ableitung von $f$ in $x_0$.\\
-	Existiert $f'(x_0)$ für alle $x_0 \in (a,b)$ , dann nennt man $ f':(a,b) \rightarrow \mathbb{R} \longmapsto f'(x_0)$ die erste Ableitung von $f$.
+Sei $f: (a,b) \to \mathbb{R} , x_0 \in (a,b) $\\
+	 $x_0 \in (a,b) \Leftrightarrow  x_0 \in \mathbb{R} $  und  $ a<s_0 < b  $
+	 
+	 %%%\Leftrightarrow fehlende Skitzze !!! %
+	 
+	$f$ ist in $x_0$  differenzierbar : $\Leftrightarrow$
+	
+$$	 f'(x_0) := \lim_{\substack{x \to x_0 \\ x \neq x_0}}\frac{f(x) - f(x_0)}{x-x_0} \textbf{ existiert }   (f'(x_0) \in \mathbb{R}) $$
+Falls der Grenzwert existiert , nennt man $f'(x_0)$ die erste Ableitung von $f$ in $x_0$.\\
+Existiert $f'(x_0)$ für alle $x_0 \in (a,b)$ , dann nennt man $ f':(a,b) \rightarrow \mathbb{R} \longmapsto f'(x_0)$ die erste Ableitung von $f$.
 
 	
 
 \end{definition}
 \begin{example}
-	$f(x) =\frac{1}{x}$ auf $(0,r)$ $r\in \mathbb{R}_{>0}$ ,$r$ fest und $x_0 \in (0,)r $, ges: $ f'(x_0)$
-	\begin{align*}
-			f'(x_0) =
-		\underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \frac{\frac{1}{x}-\frac{1}{x_0}}{x-x_0}= 
-		\underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \frac{\frac{x_0-x}{x.x_0}}{x-x_0}=
-		\underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \frac{(x_0-x)}{x-x_0(x-x_0)}=
-		\underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \underbrace{(-\frac{1}{x_0})}_{konst.}\frac{1}{x}=
-		-\frac{1}{x_0} \underbrace{\lim\limits_{x \to x_0}}_{x \neq x_0} \frac{1}{x}\\
+	$f(x) =\frac{1}{x}$ auf $(0,r)$ $r\in \mathbb{R}_{>0}$ ,$r$ fest und $x_0 \in (0,r) $, ges: $ f'(x_0)$
+	\begin{align*} 
+	\lim_{\substack{x \to x_0 \\ x \neq x_0}}{f(x)}
+			f'(x_0) &=  
+		\lim_{\substack{x \to x_0 \\ x \neq x_0}}{f(x)}
+		 \frac{\frac{1}{x}-\frac{1}{x_0}}{x-x_0} \\
+		 &=
+		\lim_{\substack{x \to x_0 \\ x \neq x_0}}{f(x)}                   			\frac{\frac{x_0 - x}{x - x_0}}{x x_0} \\
+		&=
+		\lim_{\substack{x \to x_0 \\ x \neq x_0}}{f(x)}
+		 \frac{(x_0-x)}{(x x_0)(x-x_0)}\\
+		 &=
+		\lim_{\substack{x \to x_0 \\ x \neq x_0}}{f(x)}
+		 \underbrace{(-\frac{1}{x_0})}_{konst.}\frac{1}{x} \\
+		 &=
+		-\frac{1}{x_0} \lim_{\substack{x \to x_0 \\ x \neq x_0}}{f(x)} \frac{1}{x}\\
 		\overset{\overset{\frac{1}{x} stetig F.}{\downarrow}}{=}
-		-\frac{1}{x}. \frac{1}{x}= - \frac{1}{x^2}
+		-\frac{1}{x} \times \frac{1}{x} &= - \frac{1}{x^2}
 	\end{align*}
+	
 	\begin{flalign*}
-		f' : (0,r) \rightarrow \mathbb{R} : x \longmapsto -\frac{1}{x^2} \text{in die erste Abbildung von } f(x)= \frac{1}{x}
+		f' : (0,r) \rightarrow \mathbb{R} : x \longmapsto -\frac{1}{x^2} \text{in die erste Ableitung  von } f(x)= \frac{1}{x}
 	\end{flalign*}
   
 
 \end{example}
-\subsection{tafelwerk}   
+\subsection{Ableitung einer Funktion}
+\textbf{Tafelwerk}\\
 $f \qquad \qquad$					 $f'$\\ \\
 $x^n \qquad \qquad$				   	$nx^{n-1}$\\
 $\downarrow n=-1 \qquad $		$ \downarrow $ \\
 \\
 $\frac{1}{x} \qquad \qquad$					$-\frac{1}{x^2}$
-\begin{theorem}
-	$f$ in $x_0$ differenzierbar $\Rightarrow$ $f$ in $x_0$ stetig
+
+\begin{theorem}[Differenzeierbarkit]
+Es sei I ein offenes Intervall und $x_0 \in I $ Eine Funktion $f : I \rightarrow \mathbb{R}$ heißt an der stelle $x_0$ \textbf{ differenzierbar} $\Leftrightarrow  f$ in $x_0$ stetig ist
 \end{theorem}
 \begin{proof}
-Sei $f$ in $x_0$ d.b $\Rightarrow$ $f'(x_0) = \limXin \frac{f(x) - f(x_0)}{x-x_0 }$ ex.
-...
-%fehlt den Rest von proof
+Sei $f$ in $x_0$ differenzierbar $\Rightarrow$ $f'(x_0) = \limXin \dfrac{f(x) - f(x_0)}{ x - x_0 }$ ex. ..usw.\\
+Link : \href{https://tu-dresden.de/mn/math/algebra/das-institut/beschaeftigte/antje-noack/ressourcen/dateien/v120-1/MathMethInf07Zusatz.pdf?lang=en}
+{\textbf{Sieh Zusatz aus der Vorlesung 7 (03.05) Seite 2} }
 \end{proof}
-
+\begin{center}
 \begin{tikzpicture} 
   \newcommand*\funktion[1]{2*sin(0.5*deg(#1)) + 1.5}% dargestellte Funktion
   \newcommand*\ableitung[1]{cos(0.5*deg(#1))}% Ableitung der Funktion
@@ -74,8 +91,8 @@ Sei $f$ in $x_0$ d.b $\Rightarrow$ $f'(x_0) = \limXin \frac{f(x) - f(x_0)}{x-x_0
   \draw[red,dotted] (P) -- (R) node[below] {$x_0$} ;
   \end{axis}
 \end{tikzpicture}
-
-Die Linie repräsentiert die Tangente ((T)) an den Grenzwert von $f(x_0)$ im Punkt $(x_0 , f(x_0))$
+\end{center}
+Die Linie repräsentiert die Tangente (T) an den Grenzwert von $f(x_0)$ im Punkt $(x_0 , f(x_0))$
 
 \begin{gather*}
 (x) = \dfrac{t(x)-t(x_0)}{x - x_0} = \dfrac{f(x)-f(x_0)}{x - x_0}
@@ -112,7 +129,7 @@ In Tafelwerk : \\
 \[ (\dfrac{f}{g})' = \dfrac{f'.g - f.g'}{g^2}\]
 Herleitung :
 \begin{align*}
-\bigg(\dfrac{f(x)}{g(x)}\bigg)' =
+\bigg(\dfrac{f(x)}{g(x)}\bigg)' &=
 \bigg(f(x)\frac{1}{g(x)}\bigg)'\\
 &=f'(x)\frac{1}{g(x)} + 
 f(x)\bigg(\frac{1}{g(x)}\bigg)'\\
