@@ -19,11 +19,12 @@ Bild von $f$ \[ f(D)= \{ f(x) \quad | \quad x \in D \} \] \\
 Graph von $f$ \[ Graph(f)= \{( x \quad |\quad f(x)) \quad | \quad x \in D \} \] \\
 
 \end{remark}   
-
+\subsection{Stetigkeit von Funktionen an einer Stelle a }
 \begin{definition}
 Sei $f : D \rightarrow \mathbb{R} , D \subseteq \mathbb{R} , a \in D \quad $\\
+Sei $x_n$ ist eine \textbf{Folge} 
 $f$ heißt in a stetig , wenn gilt :\\
-$\forall (X_n) : X_n \in D$ und 
+$\forall (x_n) : x_n \in D$ und 
 $\limNin{f(x_n)} = f(a)$ für alle Folgen $(x_n)$\\
 Die Folgenglieder sollen in Definitionsbereich liegen (Die in Definitionsbereich liegen können und den Grenzwert a haben)
 \end{definition}
@@ -111,9 +112,12 @@ Sei $(x_n)$ eine beliebige Folge und $x_n \in D(f)$ und $\lim_{x\to \infty}(x_n)
 \end{gather*}
 
 d.h Grenzwert ex. (und es ist 2 ).
-
+\newpage
+\subsection{Verhalten bei Definitionslücken}
+Bei der Annäherung der Argument von links $(x < x_0)$ bzw. von rechts $(x > x_0)$ an eine Definitionslücke $x_0$ sind folgende Fälle von besonderem Interesse:\\
+(1) \textbf{hebbare Lücke bei} $x_0 = 1$\\
+\begin{center}
 \begin{tikzpicture}[scale=1.1],
-
 \begin{axis}[xlabel=$x$,
 ylabel= $\delta$,
 height=6cm,
@@ -136,12 +140,15 @@ xticklabels={$1$}
 
 \end{axis}
 \end{tikzpicture}
+\end{center}
 
+Es gilt $$\lim_{\substack{x \to x_0 \\ x < x_0}}{f(x)} = \lim_{\substack{x \to x_0 \\ x > x_0}}{f(x) = a}$$
+Dann hat der Graph von $f$ an der Stelle $x_0$ lediglich ein Loch, das sich durch die Festsetzung $f(x_0) = a $ schließen lässt. Die Stelle $x_0$ heißt dann eine \textbf{herbbare Lücke} bzw. 
 Man sagt , $f$ hat an der stelle 1 eine Lücke.
 \end{example}
 
-\begin{example}
 (2) $$ f(x)=\frac{1}{x} \quad ,\quad  a = 0 $$
+\begin{center}
 \begin{tikzpicture}[scale=1.1],
 \begin{axis}[xlabel=$x$,
 ylabel= $y$,
@@ -160,7 +167,7 @@ axis x line=center,
 
 \end{axis}
 \end{tikzpicture}
-
+\end{center}
 
 (i) betrachte $? \lim\limits_{x \rightarrow 0^-} {f(x):}$ d.h wir
 betrachten alle Folgen $(x_n)$ \\
@@ -176,8 +183,8 @@ X_n \in D , X_n \leq 0 \limNin (x_n) = 0 \\
 \end{align*}
 \\
 (ii) Betrachte $\lim\limits_{n \rightarrow + 0}{f(x_n)}$ , ex .nicht\\
-\newpage
 (3)\\
+\begin{center}
 \begin{tikzpicture}[scale=1.1],
 \begin{axis}[xlabel=$x$,
 ylabel= $y$,
@@ -192,12 +199,9 @@ axis x line=center,
 ]
 \addplot[domain= -3:-0.01] {1/x};
 \addplot[domain= 0.01:3] {1};
-
-
 \end{axis}
 \end{tikzpicture}
-
-
+\end{center}
 $$
 f(x) = \left\{\begin{array}{lr}
         1 , & x \geq 0\\
@@ -206,10 +210,10 @@ f(x) = \left\{\begin{array}{lr}
 $$
 
 $$ \lim\limits_{x \rightarrow 0^+}{f(x)} = 1 , 
-\lim\limits_{x \rightarrow  0^-}{f(x)}= - \infty \quad \text{ex. nicht} $$ \\
- 
-(4)\\
-
+\lim\limits_{x \rightarrow  0^-}{f(x)}= - \infty \quad \text{ex. nicht} $$
+\newpage 
+(4) \textbf{Sprungstelle}\\
+\begin{center}
 \begin{tikzpicture}[scale=1.1],
 \begin{axis}[xlabel=$x$,
 ylabel= $y$,
@@ -229,6 +233,14 @@ axis x line=center,
 node [midway, xshift=-0.5mm, yshift=1mm,auto, swap, outer sep=9pt,font=\tiny]{Sprung};
 \end{axis}
 \end{tikzpicture}
+\end{center}
+Es gilt 
+$$\lim_{\substack{x \to x_0 \\ x < x_0}}{f(x)= a}$$ 
+und 
+$$\lim_{\substack{x \to x_0 \\ x > x_0}}{f(x)= b}$$
+mit $a \neq b$
+Dann hat der Graph von $f$ an der stelle $x_0$ eine \textbf{Sprungstelle}
+
 
 \begin{definition}[ sgn(x)]
 Die Vorzeichenfunktion oder \textbf{Signumfunktion} (von lateinisch signum ‚Zeichen‘) ist in der Mathematik eine Funktion, die einer reellen oder komplexen Zahl ihr Vorzeichen zuordnet.\\
@@ -245,7 +257,6 @@ $$
         \lim\limits_{x \rightarrow 0^+}{f(x)} = 1 \quad \text{ex.} 
         \end{array}\right\} \lim\limits_{x \rightarrow 0}{f(x)} \quad \text{ex. nicht , O heißt Sprungstelle}
 $$  
-\end{example}
 \newpage
 \begin{definition}
 \begin{align*}
