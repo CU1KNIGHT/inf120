@@ -101,6 +101,15 @@ f(x)= p_n(x) + R_n(x,0) \text{ und } R_n(x,0) = \frac{e^z}{(n+1)!} y^{n+1} \quad
 \subsection{Näherungsformel für $e^x$}
 \[ p_5 (x) = 1 + x + \frac{x^2}{2} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} \text{ für } x \leq 1 \]
 \end{example}
+\subsection{Taylor Entwicklung der Exponentialfunktion:}
+wegen $\dfrac{d}{dx}e^x = e^x$ erhält man die folgende Taylor-Entwicklung der Exponentialfunktion $exp(x) = e^x$ zum Entwicklungspunkt $x_0 = 0$:
+\begin{align*}
+e^x &= 1 + x + \dfrac{x^2}{2} + \dots + \dfrac{x^n}{n!} + R_n(x)\\
+R_n(x) &= \dfrac{e^k}{n+1}x^{n+1}, \quad k = rx , \quad 0 < r < 1
+\end{align*}
+Man erkennt dass für jedes (feste) $x \in \mathbb{R}$ gilt : 
+\[ \lim_{n \to \infty}{R_n(x) = 0} \]
+und damit: \[ exp(x) = \sum_{K=0}^{\infty}\dfrac{x^k}{k!} \] 
 \begin{definition}
 Sei $f : (a,b) \rightarrow \mathbb{R}$ beliebig oft stetig differenzierbar und $x_0 \in (a,b)$\\
 Die Reihe \[ \sum_{k=0}^{\infty}{\frac{f^k(x_0)}{k!}(x-x_0)^k}\] heißt \textbf{Taylor Reihe} von $f$ an der stelle $x_0$ 

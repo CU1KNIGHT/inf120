@@ -1,15 +1,15 @@
 \section{Vorlesung 10 \href{https://tu-dresden.de/mn/math/algebra/das-institut/beschaeftigte/antje-noack/ressourcen/dateien/v120-1/MathMethInf10.pdf?lang=en}{17.05.2019}}
 \section{Spezielle Ableitungen }
-\begin{gather*}
-f(x) = x^x \quad x>0\\
-ln(f(x)) = \underbrace{ln  x^x}_{x \: ln  x } \Rightarrow \frac{1}{p(x)}f'(x) = 1 \times ln \ x + \underbrace{x \ \frac{1}{x}}_{1}\\
-\Rightarrow f'(x) = \underbrace{x^x }_{f(x)}(ln \ x + 1) \text{ logarithmisches Differenzieren }\\
-f(x) = x^x = e^{ln  x^x} = e^{x \ ln x} \Rightarrow f'(x)= \underbrace{e^{x \ ln  x}}_{x^x}(x \ ln  x)' = x^x (ln  x + 1) 
-\end{gather*}
+\subsection{Einleitung}
+Für viele Funktionen kann die Ableitung nicht mit Hilfe einfacher Ableitungsregel bestimmt werden. Daher befindet sich an dieser Stelle  den wichtigsten Funktionen und ihren Ableitungen
 \begin{align*}
-(\sinh  x)'&= \cosh  x\\
-(\cosh  x)'&= \sinh x\\
-\cosh x:&= \frac{e^x + e^{-x}}{2} \text{ Kosinus Hyperbolicus}\\
+f(x) &= x^x \quad x>0\\
+ln(f(x)) &= \underbrace{ln  x^x}_{x \: ln  x } \Rightarrow \frac{1}{p(x)}f'(x) = 1 \times ln \ x + \underbrace{x \ \frac{1}{x}}_{1}\\
+\Rightarrow f'(x) &= \underbrace{x^x }_{f(x)}(ln \ x + 1) \text{ logarithmisches Differenzieren }\\
+f(x) &= x^x = e^{ln  x^x} = e^{x \ ln x} \Rightarrow f'(x)= \underbrace{e^{x \ ln  x}}_{x^x}(x \ ln  x)' = x^x (ln  x + 1) \\
+(\sinh  x)'&= \cos h x\\
+(\cosh  x)'&= -\sin h x\\
+\cosh x :   &= \frac{e^x + e^{-x}}{2} \text{ \href{https://de.wikipedia.org/wiki/Sinus_hyperbolicus_und_Kosinus_hyperbolicus}{Kosinus Hyperbolicus} }\\
 \sinh x:&= \frac{e^x + e^{-x}}{2}\\
 \end{align*}
 
@@ -31,6 +31,7 @@ axis x line=center,
 \addplot[dashed]{x}node at (3.1, 4) {$"kettenlinie"$};
 \end{axis}
 \end{tikzpicture}
+\subsection{Taylor - Entwicklung der Kosinus hyperbolicus}
 gesucht: \textbf{Taylor-Reihe Entwicklung} für $\cosh x$\\
 \begin{align*}
 e^x &= \sum_{ k = 0 }^{ \infty }{ \frac{x^k}{k!} }\\
@@ -47,6 +48,10 @@ Reihe ist absolut konvergent für alle $ x \in \mathbb{R}$ \\
 \end{gather*}
 \section{Spezielle Grenzwerte}
 \subsection{Regeln von Bernoulli l'Hospital -}
+\textbf{Einleitung}\\
+Bei den Regeln von de l'Hospital handelt es sich um nützliche Methoden zur Berechnung so genannten \textbf{"unbestimmten Ausdrücken"} der Form $\frac{0}{0} $ oder $\frac{\infty}{\infty} $. Gemeint sind hiermit Grenzwerte der Form $\lim_{n \to \infty}\frac{f(x)}{g(x)}$ wobei $f(x) \to 0 $ und $g(x) \to 0 $ oder aber $f(x) \to \infty $ und $g(x) \to \infty $konvergieren.\\
+Die Existenz dieser Grenzwerte und ihr Wert hängt davon ab, wie schnell Zähler und Nenner gegen Null bzw. gegen $\infty$ konvergieren. Die Regel von de l'Hospital besagt in etwa, dass es hierzu genügt, den Quotienten der Ableitungen von f und g zu untersuchen.
+\begin{example}
 Seien $ f(x) $ , $g(x)$ reelle , zweimal stetig differenzierbare Funktionen auf $(a,b)$ und $f(x_0) = g(x_0) = 0$\\
 gesucht: $$\lim_{x \to x_0}{\frac{f(x)}{g(x)}}$$\\
 \begin{align*}
@@ -63,6 +68,12 @@ gesucht: $$\lim_{x \to x_0}{\frac{f(x)}{g(x)}}$$\\
 \end{align*}
 \[\Rightarrow \lim_{x \to x_0}{\frac{f(x)}{g(x)}} =
 \lim_{x \to x_0}{\frac{f'(x)}{g'(x)}}   \qquad \text{falls der Grenzwert existiert }\]
+\end{example}
+\begin{remark}
+Seien f , g : ]a , b[ $\rightarrow \mathbb{R}$ differenzierbar , sei $x_0 \in$ ]a , b[ mit $f(x_0) = g(x_0) = 0 $ und gelte $g'(x)\neq 0 $ für $x \neq x_0$ Dann Folgt:
+\[ \lim_{x \to x_0}{\dfrac{f(x)}{g(x)}} = \lim_{x \to x_0}{\dfrac{f'(x)}{g'(x)}} \]
+sofern der rechts stehende Grenzwert existiert.
+\end{remark}
 \begin{example}
 \begin{gather*}
 \lim_{x \to 0}{\frac{sin x}{x}} =
