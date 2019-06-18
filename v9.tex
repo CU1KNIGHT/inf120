@@ -1,4 +1,18 @@
 \section{Vorlesung 9 \href{https://tu-dresden.de/mn/math/algebra/das-institut/beschaeftigte/antje-noack/ressourcen/dateien/v120-1/MathMethInf09.pdf?lang=en}{(14.05.2019)} }
+
+\begin{definition}[Taylorscher Satz]
+Sei $f : [a,b] \rightarrow \mathbb{R} $ eine $C^n$ - Funktion , $ n \in \mathbb{N}$ und $x_0 \in ]a , b[$.\\
+Dann gibt es genau ein Polynom $T_n(x;x_0)$ höchstens n-ten Grades mit Approximationsgüte 
+ \[ f(x) = T_n(x;x_0) + o((x-x_0)^n), \]
+das so genannte \textbf{Taylor Polynom n-ten Gerades} zum Entwicklungspunkt $x_0$
+\[ T_n(x;x_0) := \sum_{k=0}^{n}{\dfrac{f^(k)(x_0)}{k!}(x-x_0)^k} \]
+Ist $ f $ eine $C^{(n+1)}$- Funktion, so gilt für den Fehler die so genannte \textbf{Restgliedformel nach Lagrange}
+\[ f(x) = \sum_{k=0}^{n}{\dfrac{f^(k)(x_0)}{k!}(x-x_0)^k} + R_n(x;x_0), \quad a \leq x \leq b \]    
+
+\end{definition}
+
+
+
 \begin{example}
 $f: \mathbb{R} \rightarrow \mathbb{R} : x \mapsto x^2-1 $ gesucht
 \end{example}
@@ -89,12 +103,12 @@ f(x)= p_n(x) + R_n(x,0) \text{ und } R_n(x,0) = \frac{e^z}{(n+1)!} y^{n+1} \quad
 \end{example}
 \begin{definition}
 Sei $f : (a,b) \rightarrow \mathbb{R}$ beliebig oft stetig differenzierbar und $x_0 \in (a,b)$\\
-Die Reihe $\sum_{k=0}^{\infty}{\frac{f^k(x_0)}{k!}(x-x_0)^k}$ heißt \textbf{Taylor Reihe} von $f$ an der stelle $x_0$ 
+Die Reihe \[ \sum_{k=0}^{\infty}{\frac{f^k(x_0)}{k!}(x-x_0)^k}\] heißt \textbf{Taylor Reihe} von $f$ an der stelle $x_0$ 
 \end{definition}
 \begin{remark}
 (1) Nicht für jede Funktion $f(x)$ ist dir \textbf{Taylor-Reihe konvergent}\\
 (2) Ist die Taylor-Reihe konvergent , dann muss der Grenzwert ......... die Funktion $f$ sein.\\
-(3) Ist die Taylor-reihe konvergent gegen $f$ , d.h $f(x)= \sum_{k=0}^{\infty}{\frac{f^k(x_0)}{k!}(x - x_0)^k}$ , heißt die Funktion $f$ \textbf{reell analytisch} \\
+(3) Ist die Taylor-reihe konvergent gegen $f$ , d.h \[f(x)= \sum_{k=0}^{\infty}{\frac{f^k(x_0)}{k!}(x - x_0)^k}\] , heißt die Funktion $f$ \textbf{reell analytisch} \\
 \end{remark}
 \begin{example}
 \[ f(x) = \frac{1}{x+1} \text{ mit } x \in (-1 , 1) \text{ ist reell analytisch }  \]
@@ -104,10 +118,13 @@ Taylor-reihe $\sum_{k=0}^{\infty}{(-1)^kx^k}$ hat konvergenzradius 1(...) und Mi
 Sei $|x| \leq 1 $ Dann gilt: $f(x) = \frac{1}{1 + x} =\frac{1}{1-(-x)} = \sum_{k=0}^{\infty}{x^k} = \sum_{k=0}^{\infty}{(-1)^kx^k}$ ist die Taylor-reihe Darstellung von $f(x)$ 
 \end{theorem}
 \subsection{Rechnen mit Potenzreihen: }
-Sei $\sum_{k=0}^{\infty}{a_k(x - x_0)^k} := a(x) , b(x) =\sum_{k=0}^{\infty}{b_k(x-x_0)^k}$
+\textbf{\href{https://tu-dresden.de/mn/math/algebra/das-institut/beschaeftigte/antje-noack/ressourcen/dateien/v120-1/MathMethInf09Zusatz.pdf?lang=en}{Sieh der Zusatz (Rechnen mit Potenzreihen)}}\\
+Es Sei \[ \sum_{k=0}^{\infty}{a_k(x - x_0)^k} := a(x) , b(x) =\sum_{k=0}^{\infty}{b_k(x-x_0)^k}\]
 mit konvergenzradius $r_1$  für $a(x)$ , $r_2$ für b(x) sei r := min \{$r_1$ , $r_2$ \}\\
 Dann gilt :
-\[ a(x) \pm b(x)= \sum_{k=0}^{\infty}{(a_k + b_k)(x - x_0)^k}  \text{ für } x \in (x_0 - r , x_0 + r) \]
-\[ C \times a(x) = \sum_{k=0}^{\infty}{c.a_k(x-x_0)^k} \text{ für } x \in (x_0 -r , x_0+r) c \in \mathbb{R} \]
-\[ a(x) . b(x) = \sum_{k=0}^{\infty}{(a_0 b_k + a_1 b_{k-1}+ \dot + \dots +a_kb_0)(x- x_0)^k} \]
-\[ \frac{1}{b(x)} \text{ für } b(x)\neq 0 \text{ kann mit der Methode unbestimmten koeffizienten } \]
+\begin{align*}
+a(x) \pm b(x)&= \sum_{k=0}^{\infty}{(a_k + b_k)(x - x_0)^k}  \text{ für } x \in (x_0 - r , x_0 + r) \\
+ C \times a(x) &= \sum_{k=0}^{\infty}{c.a_k(x-x_0)^k} \text{ für } x \in (x_0 -r , x_0+r) c \in \mathbb{R}\\
+ a(x) . b(x) &= \sum_{k=0}^{\infty}{(a_0 b_k + a_1 b_{k-1}+ \dot + \dots +a_kb_0)(x- x_0)^k}
+\end{align*}
+$\dfrac{1}{b(x)}$  für  $b(x) \neq 0$  kann mit der Methode unbestimmten Koeffizienten. 

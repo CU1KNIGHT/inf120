@@ -1,5 +1,5 @@
 \section{Vorlesung 8 \href{https://tu-dresden.de/mn/math/algebra/das-institut/beschaeftigte/antje-noack/ressourcen/dateien/v120-1/MathMethInf08.pdf?lang=en}{(10.05.2019)}}
-\begin{definition}
+\begin{definition}[Potenzreihen]
 Eine Reihe $\sum_{K=0}^{\infty}{a_k (x - X_0)^k} $ heißt Potenzreihe Dabei gilt $a_0,a_1 \dots \in \mathbb{R} , x_0 \in \mathbb{R} ,$ x ist eine reelle veränderlich $x_0$ heißt Mittelpunkt der Potenzreihe.    
 \end{definition}
 
@@ -23,7 +23,7 @@ wir fragen nicht nach der Konvergenz dieser Folge sondern für welche x ist dies
 \end{remark}
 
 \begin{example}
-$$ \sum_{K=0}^{\infty}{(\frac{-2}{3})^k}\frac{1}{k}(x-0)^k $$
+$$ \sum_{K=0}^{\infty}{\bigg( \frac{-2}{3}\bigg)^k}\frac{1}{k}(x-0)^k $$
 für welche $ x \in \mathbb{R} $ konvergent ?\\
 Wurzelkriterium für absolute konvergent : 
 
@@ -53,8 +53,10 @@ $ x = \frac{3}{2} $ einsetzen
 \[ \sum_{k=1}^{\infty}{(\frac{-2}{3})^k} \frac{1}{k} (x-7)^k  \text{ ist für } x \in (7- \frac{3}{2}, 7 + \frac{3}{2}) \text{ abs konvergent }\]
 \end{example}
 
-\begin{definition}
-Sei $\sum_{k=0}^{\infty}{a_k(x-x_0)^k}$ eine P.R . dann ex. ein r $\in \mathbb{R} \geq 0 $ oder $ x = \infty $ , so dass die P.R für alle x mit $ |x-x_0| \leq r $ oder $x \in \mathbb{R} $ absolut konvergent ist. Dieser ( r )  heißt \textbf{Konvergenzradius} der PR
+\begin{definition}[Konvergenz von Potenzreihen]
+Es Sei $$f(x) = \sum_{k=0}^{\infty}{a_k(x-x_0)^k}$$ eine Potenzreihe dann existiert eine Zahl r $\in \mathbb{R} \geq 0 $ oder $ x = \infty $ , so dass die Potenzreihe für alle x mit $ |x-x_0| \leq r $ oder $x \in \mathbb{R} $ absolut konvergent ist. Dieser ( r )  heißt \textbf{Konvergenzradius} der Potenzreihe mit den Eigenschaften :
+\[ |x - x_0| < r \Rightarrow  \sum_{k=0}^{\infty}{a_k(x-x_0)^k} \textbf{ absolut Konvergent } \]
+\[ |x - x_0| > r \Rightarrow  \sum_{k=0}^{\infty}{a_k(x-x_0)^k} \textbf{ divergent } \]
 \end{definition}
 
 \begin{remark}
@@ -62,8 +64,9 @@ Der konvergenzradius r ist unabhängig von Mittelpunkt $X_0$
 \end{remark}
 
 \begin{remark}
-Jede PR ist für $x = x_0$ abs . konvergent , denn $\sum_{k=0}^{\infty}{a_k(x-x_0)^k} = \sum_{k=0}^{\infty}{a_k 0^k} = 0$\\
-Sei $\sum_{k=0}^{\infty}{a_k(x-x_0)^k}$ eine Reihe mit konvergenzradius r Dann kann eine Funktion f definieren \\
+Jede Potenzreihe ist für $x = x_0$ abs . konvergent , denn $\sum_{k=0}^{\infty}{a_k(x-x_0)^k} \\
+= \sum_{k=0}^{\infty}{a_k 0^k} = 0$\\
+Sei $\sum_{k=0}^{\infty}{a_k(x-x_0)^k}$ eine Reihe mit konvergenzradius r Dann kann eine Funktion f definiert  als : \\
  \[f : ( x_0 - r \quad ,\quad x_0 +r ) \rightarrow \mathbb{R} : \underbrace{x \longmapsto \sum_{k=0}^{\infty}{a_k(x-x_0)^k}}_{\text{Grenzwert der PR}}  \]
 \end{remark} 
 
@@ -74,9 +77,10 @@ wegen der abs Konvergenz ist diese Funktion f
 \end{remark}
 
 \begin{remark}
-Analog kann man PR über $\mathbb{C}$ definieren.
-Z.B $\sum_{k=0}^{\infty}{\frac{z^k}{k!}}(z \in \mathbb{C})$ 
-$\sum_{k=0}^{\infty}{\frac{1}{k!}(z-0)^k}$ ist für ..... abs. konvergent.
+Analog kann man die potenzierte über $\mathbb{C}$ definieren.
+Z.B\\
+\[ \sum_{k=0}^{\infty}{\frac{z^k}{k!}}(z \in \mathbb{C}) \] 
+\[ \sum_{k=0}^{\infty}{\frac{1}{k!}(z-0)^k} \] ist für $ z \in \mathbb{C} $ abs. konvergent.
 Quotienten Kriterium : 
 \begin{align*}
 \lim_{k \to \infty}{\bigg| \dfrac{\frac{z^k+1}{(k+1)!}}{\frac{z^k}{k!}}\bigg|} = \lim_{k \to \infty}{\bigg|\dfrac{z^{k+1 \times k!}}{z^k(k+1)!}} = \lim{\frac{|z|}{k+1}} = \underbrace{|z|\times \lim_{k \to \infty}{\frac{1}{k+1}}}_{0}<0
