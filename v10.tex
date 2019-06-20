@@ -115,12 +115,14 @@ $\lim\limits_{x \rightarrow 0}x^2=\lim\limits_{x \rightarrow 0}e \ lnx^x= \lim\l
 	\end{align*}
 \end{example}
 \section{Integral}
-\begin{align*}
+\subsection{Riemann Integral }
+\textbf{\href{https://de.wikipedia.org/wiki/Riemannsches_Integral}{Riemannsches Integral (Wikipedia)}}
+\begin{gather*}
 f(x)>0 \text{ auf } [a,b]\\
-\underline{S_p}= \sumIin f_k (x_k - x_{k-n})und f_k =\min \{ f(x) | \in [x_{k-1},x_K ] \} \\
+\underline{S_p}= \sumIin f_k (x_k - x_{k-n}) \text{ und } f_k =\min \{ f(x) | \in [x_{k-1},x_K ] \} \\
 \overline{S_p}= \sumIin f_k (x_k - x_{k-n})und \overline{f_k} =\max \dots \\
 \underbrace{ \lim\limits_{||p|| \rightarrow 0} \underline{S_p}}_{(1) ex.}\underbrace{=}_{(3)} \lim\limits_{||p|| \rightarrow 0 } \overline{S_p}= \underbrace{\int_a^b f(x) \mathrm{d}x}_{Integral von f(x) auf [a,b]}
-\end{align*}
+\end{gather*}
 %skizze
 \begin{example}
 $ 	D(x)=\begin{cases} 
@@ -139,12 +141,24 @@ Riemann : $\lim \underline{S_p} \overset{\overset{ex. irrationale Zahl im Int.}{
 \[  \neq \lim \overline{S_p}= \lim \sum (x_k-x_{k-1}))> 0\]
 Das Riemann - Integral von D(x) ex. nicht 
 
-\subsection{Lebague-Integral }
- skizze fehlt!\\
- %skizze!
+\subsection{Lebesgue-Integral }
+\textbf{\href{https://de.wikipedia.org/wiki/Lebesgue-Integral}{mehr über Lebesgue  (wikipedia)}}
+ % fehlende skizze!
+\begin{definition}[Treppenfunktion]
+Eine Funktion
+\[f:[a,b] \rightarrow \mathbb{R} \]
+heißt eine \textbf{Treppenfunktion} , wenn es Zahlen $\{t_0,t_1, \dots , t_n  \}$ mit \[ a = t_0<t_1<t_2 \dots t_n = b \]
+gibt und Zahlen $c_1 , c_2 , \dots , c_n$ sodass 
+\[ f(x)=c_{i} \text{ für alle } x \in (t_{i-1},t_{i}) \]
+und alle $i=1,\dots ,n$  gilt. Dabei sind die Funktionswerte $f(t_{i})$ an den „Stützstellen“ beliebig, aber reell.   
+\end{definition}
+\begin{remark}[Verwendung von Treppenfunktion]
+Treppenfunktionen benutzt man auch zur Approximation von Integralen. Das Integral einer Treppenfunktion wird durch
 \[ \phi(x) \text{ treppenfunktion } \int_a^b \phi(x) = \sumIn c_k (x_k - x_{k-1} ) 
 (\phi_k (x)) \]
-\[ \text{ Folge von Treppenfunktion auf } [a,b] \backslash M \]
+Folge von Treppenfunktion auf $ [a,b] \backslash M $\\
 M := $ Nullmenge \textbf{ z.B } \phi \int_a^b D(x)\mathrm{d}x=0$ \\
 \[\underbrace{\limKin \phi_k (x)}_{ex.}= f(x)\]
 \[\underbrace{\limKin \int_a^b \phi(x)  }_{ex.}=\underbrace{\int_a^b f(x) \mathrm{d}x }_{\text{Lebague-Integral}} \]
+\end{remark}
+
