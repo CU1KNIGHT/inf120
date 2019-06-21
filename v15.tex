@@ -1,0 +1,129 @@
+\section{Vorlesung 15 \href{https://tu-dresden.de/mn/math/algebra/das-institut/beschaeftigte/antje-noack/ressourcen/dateien/v120-1/MathMethInf15.pdf?lang=en}{21.06.2019}}
+\begin{example}
+\begin{align*}
+y'_1 &= 0 \times y_1 + 8 y_2 + 15 y_3 + sinx \quad y_i = y_i(x)\\
+y'_2 &= y_3 + e^x\\
+y'_3 &= y_1 + 2 y_2 - y_3 + lnx 
+\end{align*}
+\end{example}
+\begin{definition}[Dgl-System]
+$\underline{y'} =\overbrace{A}^{\mathclap{\text{Matrix}}}\underbrace{\underline{y}}_{\mathclap{\text{Vektor der gesuchten Funktion }}} +$ a heißt lineares Differentialgleichung System erste Ortung mit konstanten\\
+Koeffizienten, wenn gilt :
+\begin{gather*}
+\underline{y} =\underbrace{\begin{pmatrix}
+y_1(x)\\
+\vdots\\
+y_n(x)
+\end{pmatrix}}_{\mathclap{\text{Vektor der gesuchte Funktion}}} \text{ , } 
+y' = \begin{pmatrix}
+y_1(x)\\
+\vdots\\
+y_n(x)
+\end{pmatrix}
+\text{ , } 
+a = \begin{pmatrix}
+0_1(x)\\
+\vdots\\
+0_n(x)
+\end{pmatrix}
+\text{ , }
+A \in \mathbb{R^{\text{n} \times \text{n}}}
+\end{gather*}
+\end{definition}
+\begin{remark}
+\[ \underline{a} = \begin{pmatrix}
+0\\
+\vdots\\
+0
+\end{pmatrix} \Rightarrow \text{ Das Dgl-System heißt homogenen }  \]
+\end{remark}
+\begin{remark}
+Die Lösungsmenge von $\underline{y} = A \underline{y}$ bildet einen $\underbrace{\textbf{Vektorraum}}_{Untervektorraum}$.
+\end{remark}
+\begin{remark}\hfill 
+\begin{enumerate}
+\item 
+$\begin{pmatrix}
+0\\
+\vdots\\
+0
+\end{pmatrix}$
+d.h $y_i(x)=0$ für $i=1 , \dots , n$ diese Vektor ist eine Lösung.
+\item $y_1$ ,$y_2$ seien Lösungen : Dann ist $y_1$ , $y_2$ eine Lösung , denn : \begin{align*}
+A(\underline{y_1} , \underline{y_2}) &= A \underline{y_1} + A\underline{y_2} \\
+&= \underline{y'_1} + \underline{y'_2}\\
+&= (\underline{y_1} + \underline{y_2})'
+\end{align*}  
+\item $\underline{y}$ sei eine Lösung , $r \in \mathbb{R}$ Dann ist auch $ry$ eine Lösung denn :
+\[ A(r , \underline{y}) = r A \underline{y} = r \underline{y'}(ry)'\] 
+\end{enumerate}
+\end{remark}
+\begin{example}
+\begin{gather*}
+\begin{pmatrix}
+y_1'\\
+y_2'\\
+y_3'
+\end{pmatrix}=
+\underbrace{\begin{pmatrix}
+\color{red}{2} & 0 & 0\\
+0 & \color{red}{-3} & 0\\
+0 & 0 & \color{red}{5}
+\end{pmatrix} 
+}_{\mathclap{\textbf{ \color{red}{Diagonal Matrix}}}}
+\begin{pmatrix}
+y_1\\
+y_2\\
+y_3
+\end{pmatrix} \Leftrightarrow 
+\begin{matrix}
+y_1' = 2 y_1\\
+y_2' = -3y_2\\
+y_3' = 5y_3
+\end{matrix}\\
+\text{ gesucht :- } y_1(x) , y_2(x) , y_3(x)
+\end{gather*}
+\end{example}
+\begin{remark}
+$y'= \underbrace{k}_{\mathbb{R}} \times y$ heißt die allgemeine Lösung.
+$y = C e^{kx}\text{ , } (c \in \mathbb{R})$
+\end{remark}
+\textbf{Probe}\newline
+Linke Seite: $Ce^{kx}K$ = Rechte Seite: $K Ce^{kx}$\newline
+\textbf{Rechnung}
+\begin{enumerate}
+\item Fall $y \equiv 0$ ist eine Lösung.
+\item Fall $y \neq 0$
+\end{enumerate}
+\begin{align*}
+y'=ky &\Rightarrow \dfrac{dy}{dx}=k\\
+      &\Rightarrow \int\dfrac{dy}{y}= \int k dx\\
+      &\Rightarrow lin|y| = kx + \underbrace{k}_{\mathbb{R}}\\
+      &\Rightarrow |y|=e^{kx}e^{k > 0} = y = \underbrace{e^{k}}_{>0}e^{kx}=ce^{kx} \text{ c } \in \mathbb{R} \backslash 0
+\end{align*}
+\textbf{Allgemeine Lösung}\\
+\[ y = Ce^{kx} \text{ , } (c \in \mathbb{R}) \]
+\textbf{Lösung für die obere Beispiel }
+\begin{align*}
+y_1 &= c_1 e^{2x}\\
+y_2 &= c_2 e^{-3x} \text{ , }(c_1 , c_2 , c_3) \in \mathbb{R} \\
+y_3 &= c_3 e^{5x}
+\end{align*}
+\begin{remark}
+$\underline{y'} = A \underline{y} $ ist sehr leicht lösbar, falls A eine Diagonal Matrix ist. 
+\end{remark}
+\textbf{Idee} Substitution verwenden , sodass die Matrix Diagonal bekommt , ohne die Lösungsmenge zu ändern.\\
+ \textbf{gesucht: A}\\
+Basis $ \{ a_1(x_1) , \dots a_n(x) \} $ der Lösungsmenge von $y'= Ay$\\
+\textbf{gesucht} : $y_1(x) , \dots , y_2(x)$\\
+\textbf{Substitution:-} \\
+$\begin{rcases}
+y_1(x) = P_{11} a_1(x) + \dots + p_{1n} a_{1n}(x) \\
+	y_n(x)=p_{n1} a_n{x} + \dots + p_{nn}a_n\\	 
+	\end{rcases}$ Lösung $ y = p \underline{a} $ mit $ p = (p_{ij})_{ij}=1 $\\
+zu lösen ist $\underline{y'} = Ay $ zur Substitution : $\underline{y} = p \underline{u}$ , 
+$\underline{y'}= p \times \underline{u'} \Rightarrow p \underline{u'} = A \times p \times \underline{u'}$\\
+$\Rightarrow \underline{u'} = 
+\underbrace{p^{-1} \times A \times P}_{matrix} \times \underline{u} $
+$\underline{u'} = D u$ (leicht Lösbar) \\
+D : soll eine Diagonalmatrix sein
