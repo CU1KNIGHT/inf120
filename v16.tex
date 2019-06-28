@@ -1,5 +1,5 @@
-\section{Vorlesung 15}
-\textbf{Mäuse problem }\\
+\section{Vorlesung 16}
+\subsection{Mäuse problem}
 4 Mäuse = 4 Masse punkte 
 Gleich......, gleich förmige Bewegung zu jedem Punkt bewegt sich $m_i$ auf $m_{i+1}$ zu.
 ( Bahnkmorn ??? ) der Mäuse ? Z.B für $m_0$\\
@@ -9,9 +9,170 @@ y(t)
 \end{pmatrix}$
 Sei $M_0$ zu Punkt t m Punkt $p_0(x(t),y(t))$\\
  $\Rightarrow m_1$ ist im Punkt $p_1 (-y(t),x(t))$\\
- Richtungsvektor : $p_1 - p_0 = \begin{pmatrix}
- -y(t) - x(t)\\
- x(t)-y(t)
- \end{pmatrix}$
+$\underset{\underset{\text{Tangentenrichtung an Bahnkurve (entspricht) Ableitung} }{\uparrow}}{Richtungsvektor}$  : $p_1 - p_0 = \begin{pmatrix}
+ 									-y(t) - x(t)\\
+									 x(t)-y(t)
+								\end{pmatrix}$\\
+								
+								$Y' (t)=\begin{pmatrix}
+									x'(t)\\
+									y'(t)
+								\end{pmatrix}=C . \begin{pmatrix}
+								-y(t) - x(t)\\
+								x(t)-y(t)
+								\end{pmatrix}$
+								wählen C=1\\ 
+ \textbf{Lösung} \\
+ges: sind 2 linear unabh. \\
+lösungen: $Y_1(t), Y_2(t)$.	\\
+$\Rightarrow $ allg. Lösung: $Y(t) = C_1 Y_1(t)+C_2 Y_2(t) \qquad, C_1,C_2\in \mathbb{R}$\\
+Eigenwete:\\
+$det(A-\lambda E_2)= \left| \begin{matrix}
+	-1-  \lambda \quad &-1\\
+	1			 \quad &-1-\lambda
+\end{matrix}\right|$\\
+$=(-1-\lambda)^2 +1 =0$\\
+$=\lambda^2+2\lambda +2=0$\\
+$\overset{pq.formel}{\Rightarrow} \lambda_1,2=-1\pm i$\\
+Es existert keine rellen Eigenvektoren.\\
+\textbf{Trick}\\
+Erweiterung des Zahlbereich: $\mathbb{R} \leadsto \mathbb{C}$\\
+Eigenraum zu $\lambda_1 = -1+i:$\\
+$\begin{pmatrix}
+	-1-(-1+i)   &-1\\
+	1 			&-1-c-1+i
+\end{pmatrix}$$\begin{pmatrix}
+x_1\\
+x_2
+\end{pmatrix}$= $\begin{pmatrix}
+0\\
+0
+\end{pmatrix}$\\
+$\begin{pmatrix}
+-i &-1\\
+1  &-i
+\end{pmatrix}$
+$\begin{pmatrix}
+x_1\\
+x_2
+\end{pmatrix} $ $=\begin{pmatrix}
+	0\\
+	0
+\end{pmatrix}$\\
+$-ix_1-x_2=0$\\
+$x_2=-ix_1$\\
+$ \Rightarrow Eig_A (\lambda_1)=span(\{ \begin{pmatrix}
+		i\\
+		1
+	\end{pmatrix} \})$	\\
+für $\lambda_2=\overline{\lambda_1}	$	ist\\
+$Eig_A(\lambda_2)=span(\{ \underbrace{\begin{pmatrix}
+-1\\
+1
+\end{pmatrix}}_{:= \overline{V}}  \})	$	\\
+$\Rightarrow $Allg. komplexe Lösung:\\
+$Y_\mathbb{C}(t)=C_1e^{\overline{\lambda_1}(t)}	\overline{V},C_1,C_2 \in \mathbb{C}	$\\
+$Re(e^{\lambda_1 t }V  ) $ und $Im(e^{\lambda t}V)$	\\
+sind l.u reelle Lösungen
+$e^{\lambda_1 t}V= e^{(-1+i)t}(\begin{pmatrix}
+	0\\
+	1
+\end{pmatrix}+i\begin{pmatrix}
+	1\\
+	0
+\end{pmatrix})$\\
+$e^{-t}(\cos t+ i \sin t)(\begin{pmatrix}
+0\\
+1
+\end{pmatrix} +i\begin{pmatrix}
+1\\
+0
+\end{pmatrix})$
+$e^{\lambda_1 t}V=e^-t (\cos \begin{pmatrix}
+0\\
+1
+\end{pmatrix}+i^2 \sin t \begin{pmatrix}
+1\\
+0
+\end{pmatrix}+i \cos t \begin{pmatrix}
+1\\
+0
+\end{pmatrix})                              $\\
+$=\underbrace{e^{-t}\begin{pmatrix}
+-\sin t\\
+\cos t
+\end{pmatrix}}_{Reelleteil}+\underbrace{i e^{-t}\begin{pmatrix}
+\cos t\\
+\sin t
+\end{pmatrix}}_{Imag.teil}$\\
+$\Rightarrow$ Allg. reelle Lösung\\
+$Y(t)= C_1 e^{-t}\begin{pmatrix}
+\cos t\\
+\sin t
+\text { für } \end{pmatrix}= \underbrace{e^{+t}}_{ \underset{ \text{ für } t \rightarrow \infty}{\rightarrow 0} } \underbrace{\begin{pmatrix}
+	\cos t   &-\sin t\\
+	\sin t   &\cos t
+\end{pmatrix}}_{Rotationsmatrix} \begin{pmatrix}
+C_1\\
+C_2
+\end{pmatrix}$\\
+$C_1 , C_2\in \mathbb{R}$\\
+Spezielle lösung für $m_0$: Startpunkt $ Y_s(0)=	\begin{pmatrix}
+	1\\
+	1
+\end{pmatrix}$	\\
+$Y_s(0)= C_1 e^{-t}\begin{pmatrix}
+\cos t\\
+\sin t
+\text { für } \end{pmatrix}= e^{-0} \begin{pmatrix}
+	\cos 0   &-\sin 0\\
+	\sin 0   &\cos 0
+	\end{pmatrix}\begin{pmatrix}
+C_1\\
+C_2
+\end{pmatrix}$	\\
+$\Rightarrow Bahn Kurve von M_0: Y_s(t)e^{-t}	\begin{pmatrix}
+-\sin t+\cos t\\
+\cos t+ \sin t
+\end{pmatrix}$			
+ Lineare Dgl. in n-ter Ordnung mit konst. Koeffizienten.
+ \begin{example}
+ 	$y"+5y'+6y=0$ harmon. Oszillator\\
+ 	Allg. n-ter Ordnung \\
+ 	$y^(n)*a_1y^{(n1)}+\dots+ a_{n-1}y'+a_n y=0$\\
+ 	im ein System 1. Ordnung umschreiben:\\
+\begin{align*}
+	&y_1' := y' =y_2   				\quad & \overset{Ableitung}{\curvearrowright} \qquad  &y_1'=y'=y_2 \\
+	&y_2:= y' 	  	  		 		 &	\quad		    						   &y_2'=y"=y_3   \\
+ 	&\vdots  		  		 		 & \quad    									   &\vdots      \\
+ 	&	y_n:= y^{(n-1)}				 & 	\quad				 		  &y^{(n)}=-a_1y_n-a_2y_{n-1}-\dots -a_n y_1\\
+ 	&\text{	für Das Beispiel:} 	  	 &	\quad		&\\
+&y_1:= y             			 	\quad&\rightarrow \qquad 												&y_1'=y_2\\
+&y_2:=y' 					        & \quad								&y_2'= -5y_2-6y_1
+\end{align*}
+Dgl. System:\\
+$\begin{pmatrix}
+y_1'\\
+y_2'
+\end{pmatrix}= \begin{pmatrix}
+0   & 1\\
+-6  &-5
+\end{pmatrix}\begin{pmatrix}
+y_1\\
+y_2
+\end{pmatrix}$\\
+$\left| \begin{matrix}
+	-1-  \lambda \quad &\quad-1\\
+	1			 \quad &-1-\lambda
+\end{matrix}\right| \begin{matrix}
+					= (-\lambda (-5-\lambda))\\
+					=\lambda^2 +5 \lambda +6=0
+						\end{matrix}$\\
+						\\$\lambda_1 =-3, \lambda_2=-2
+			Eigenräume: Eig_a(-3)=span(\{ \begin{matrix}
+			= (-\lambda (-5-\lambda))\\
+			=\lambda^2 +5 \lambda +6=0
+			\end{matrix \})			
+ \end{example}
  
  
