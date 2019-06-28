@@ -1,0 +1,108 @@
+\section{Vorlesung 17 \href{https://tu-dresden.de/mn/math/algebra/das-institut/beschaeftigte/antje-noack/ressourcen/dateien/v120-1/MathMethInf17.pdf?lang=en}{28.06.2019} }
+\subsection{Grafische Darstellung}
+\begin{definition}
+Sei $ X \subseteq \mathbb{R}^n $ Die Abbildung $f : \rightarrow \mathbb{R} : (x_1 , x_2, \dots x_n ) \mapsto f(x_1 , x_2, \dots x_n )$ heißt reellen Funktion in n Veränderlichen $(x_1 , x_2, \dots x_n )$
+\end{definition}
+\begin{remark}
+$D(f)= X ? $ W(f)? grafische Darstellung ?
+\end{remark} 
+\begin{example}
+%Fehlende Skitzze %
+$n= 2$ , $ z = f(x_1 , x_2)= f(x,y)= \sqrt{(4-x^2+y^2)}$\\
+$D(f) = \{ (x,y) \in \mathbb{R}^2  |x^2 + y^2 \leq 2^2 | \}$\\
+$W(f)= \{ r \in \mathbb{R} | 0 \leq r \leq 2 \}$\\
+\textbf{grafische Darstellung :}\\
+1 .weg : \textbf{mittels Höhenlinien }\\
+$ \{ (x,y) | f(x,y) = c \quad (c \in \mathbb{R}) , c \text{ konstant }  \}$\\
+2 .weg : \textbf{Darstellung im xyz - Koordinatensystem }\\
+\begin{example}
+%Fehlende Skitzze %
+\begin{gather*}
+\sqrt{(4-x^2+y^2)}= c , const.\\
+\Leftrightarrow 4-(x^2+y^2) = c^2\\
+\Leftrightarrow x^2+y^2 = 4 - c^2 = \underbrace{\sqrt{(4-c)^2}}_{r(c)}
+\end{gather*}
+\end{example}
+\end{example}
+\subsection{Grenzwert}
+\begin{definition}
+Sei $f:X \rightarrow \mathbb{R} , c \subseteq \mathbb{R}^n , \underline{x_0} \in X$ in der Umgebung von $x_0$ definiert.\\
+a heißt Grenzwert von $f$ an der stelle $x_0$ wenn gilt : 
+\begin{gather*}
+\forall(x_n): \underline{x_n} \in X \text{ und } \lim_{n \to \infty}{\underline{x_n} = \underline{x_0}} \Rightarrow \lim_{n \to \infty}{f(\underline{x_n})} \underbrace{=}_{\mathclap{|f(x_n)-a| \overbrace{\rightarrow}^{n \to \infty}  0}}  a\\
+Norm \quad || \underline{x_n}-{x_0} \overbrace{\rightarrow}^{n \to \infty}  0 ||
+\end{gather*}
+\textbf{Schreibweise} :
+\[ \lim_{\underline{x} \to \underline{x_0}} f(\underline{x}) \text{ mit } \underline{x} \in X \]
+\textbf{Grenzwertsätze (GWZ)}:$$ \lim_{\underline{x} \to \underline{x_0}}(f \pm g )(\underline{x}) = \lim_{\underline{x} \to \underline{x_0}}f(\underline{x}) \pm \lim_{\underline{x} \to \underline{x_0}}g(\underline{x}) $$ 
+\end{definition}
+\textbf{punktiert} :
+$\varepsilon \underbrace{ Umgebung }_{\mathclap{ \text{ offene Kreisscheibe von} x_0 \text{  mit Radius } \varepsilon}}$ von $\underline{x_0}$ (für n = 2)
+
+\subsection{Stetigkeit}
+\begin{definition}
+Sei $f : X \rightarrow \mathbb{R} , X \subseteq \mathbb{R}^n , f  $ sei in einer Umgebung von $x_0$ definiert.\\
+f ist stetig in $x_0$: $\Leftrightarrow$
+\begin{align*}
+&(1) \quad f(\underline{x_0}) \text{ ex. und }\\
+&(2) \quad \lim_{\underline{x} \to \underline{x_0} }{f(\underline{x})} \text{ ex. und }\\
+&(3) \quad \lim_{\underline{x} \to \underline{x_0} }{f(\underline{x})} = f(\underline{x_0})
+\end{align*}
+\end{definition}
+\begin{example}
+$f(x ,y ) = x^2 -y^2$ , $(x_0 , y_0)$ beliebig , Behauptung: $f$ ist in $(x_0 , y_0)$ stetig\\
+\begin{equation}
+\lim{f(x,y)} = \lim_{\substack{x_n \to x_0 \\ y_n \to y_0}}{(x^2-y^2)} =
+\lim_{x \to x_0}{x^2} - \lim_{y \to y_0}{y^2} =
+(\lim_{x \to x_0}{x})^2 -
+(\lim_{y \to y_0}{y})^2 = x_0^2 - y_0^2
+\end{equation}
+\end{example}
+\begin{example}
+$f(x,y)= \dfrac{x^2 - y^2}{x^2 + y^2}$ ist in $(x_0,y_0) = (0,0)$ nicht stetig , $\underbrace{ \text{ an allen anderen stellen stetig}}_{\text{ wie die obere Beispiel }}$ hat in $(x_0 , y_0) = (0 ,0) $ keinen Grenzwert (das ist z.z) \\
+Falls der Grenzwert existiert , muss für alle Folgen , die gegen (0,0) konvergieren , die Folge der Funktionswerte gegen den Grenzwert konvergieren.\\
+\begin{equation}
+\lim_{n \to \infty}{\frac{1}{n} , 0 } = \lim_{n \to \infty}{\frac{1}{n} , \lim_{n \to \infty}{0} } = (0,0) (\text{ auf der x - Achse}) 
+\end{equation}
+\begin{equation}
+\lim_{n \to \infty}{0 , \frac{1}{n} } = (0 ,0) \text{ auf der y-achse}
+\end{equation}
+\begin{equation*}
+\text{für (2): }
+\lim_{n \to \infty}{\dfrac{(\frac{1}{n})^2-0^2}{(\frac{1}{n})^2+0^2}} = \lim_{n \to \infty}{1} 
+\end{equation*}
+\begin{equation*}
+\text{für (3): }
+\lim_{n \to \infty}{\dfrac{0^2 - (\frac{1}{n})^2}{0^2+(\frac{1}{n})^2}}=-1
+\end{equation*}
+\end{example}
+Also: Grenzwert existiert nicht !\\
+Aber : Es gilt Funktionen , für die Folge der Funktionswerte für alle Folgen auf der x-Achse bzw. y-Achse gegen den gleichen wert konvergieren, die aber trotzdem keinen Grenzwert haben.  
+\begin{example}
+$$f(x,y)= \frac{xy^2}{x^2+y^2}, (x_0, y_0)= (0 ,0) $$
+Behauptung : f(x,y) hat in(0,0) einen Grenzwert.\\
+$$\lim_{x,y \to (0,0)} = \lim_{r \to 0} 
+f(r cos(\varphi) , r sin(\varphi) )$$\\
+Grenzwertesätze sind nicht anwendbar , daher \textbf{\href{https://de.serlo.org/mathe/deutschland/bayern/realschule/klasse-10/zweig-trigonometrie/polarkoordinaten}{Polarkoordinaten}} verwenden.
+\begin{equation}
+\lim_{r \to 0} 
+\dfrac
+{r cos (\varphi) r^2 sin^2(\varphi)}{r^2(cos^2(\varphi)) + sin^2(\varphi) } =
+\lim_{r \to 0} 
+\dfrac{r cos(\varphi)(sin(\varphi))^2}{1} 
+\underbrace{=}_{\mathclap{\text{ Quetschlemma}}} \underline{0}
+\end{equation}
+denn $ ( -r \leq r cos(\varphi) (sin(\varphi)^2)  $
+\end{example}
+
+\subsection{Partielle Ableitung}
+Richtungsableitung in Richtung der Koordinatenwachsen heißen partielle Ableitung  $\rightarrow$ können mit den bekannten Ableitungsregeln berechnen.
+\begin{example}[\href{https://de.wikipedia.org/wiki/Satz_von_Schwarz}{Satz von Schwarz}]
+\begin{align*}
+&f_x = \dfrac{\partial f}{\partial x } \overbrace{=}^{y = Const} y 2x - e^{xy}y \\
+&f_y = \dfrac{\partial f}{\partial y } \underbrace{=}_{x = Const}  x^2 1-  e^{xy}x \\
+&f_{yx}= \frac{\partial}{\partial y}\frac{\partial f}{\partial x}\\
+&f_{xy}= \frac{\partial}{\partial x}\frac{\partial f}{\partial y}\\
+&f(x,y)= x^2y -e^{xy}
+\end{align*}
+\end{example}
