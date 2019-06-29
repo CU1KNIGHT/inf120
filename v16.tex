@@ -1,8 +1,9 @@
 \section{Vorlesung 16}
 \subsection{Mäuse problem}
-4 Mäuse = 4 Masse punkte 
-Gleich......, gleich förmige Bewegung zu jedem Punkt bewegt sich $m_i$ auf $m_{i+1}$ zu.
-( Bahnkmorn ??? ) der Mäuse ? Z.B für $m_0$\\
+\begin{flushleft}
+	4 Mäuse = 4 Masse punkte 
+gleichschnell, gleich förmige Bewegung zu jedem Punkt bewegt sich $m_i$ auf $m_{i+1}$ zu.
+Bahnkkurve der Mäuse ? Z.B für $m_0$\\
 $y(t)= \begin{pmatrix}
 x(t)\\
 y(t)
@@ -136,6 +137,7 @@ $\Rightarrow Bahn Kurve von M_0: Y_s(t)e^{-t}	\begin{pmatrix}
 \cos t+ \sin t
 \end{pmatrix}$			
  Lineare Dgl. in n-ter Ordnung mit konst. Koeffizienten.
+\end{flushleft}
  \begin{example}
  	$y"+5y'+6y=0$ harmon. Oszillator\\
  	Allg. n-ter Ordnung \\
@@ -165,14 +167,60 @@ $\left| \begin{matrix}
 	-1-  \lambda \quad &\quad-1\\
 	1			 \quad &-1-\lambda
 \end{matrix}\right| \begin{matrix}
-					= (-\lambda (-5-\lambda))\\
-					=\lambda^2 +5 \lambda +6=0
+					&= (-\lambda (-5-\lambda))\\
+					&=\lambda^2 +5 \lambda +6=0
 						\end{matrix}$\\
-						\\$\lambda_1 =-3, \lambda_2=-2
-			Eigenräume: Eig_a(-3)=span(\{ \begin{matrix}
-			= (-\lambda (-5-\lambda))\\
-			=\lambda^2 +5 \lambda +6=0
-			\end{matrix \})			
+						$\lambda_1 =-3, \lambda_2=-2$\\
+			$\text{Eigenräume:} Eig_a(-3)=span(\{ \begin{pmatrix} 1 \\ 
+			-3 \end{pmatrix} \})$
+		$\Rightarrow $ allg. Lösung:\\
+			$\begin{pmatrix}
+					y_1(x)\\
+					y_2(x)
+			\end{pmatrix}= C_1e^{-3x}	\begin{pmatrix}
+			1\\
+			-3
+		\end{pmatrix}+C_2e^{-2x}\begin{pmatrix}
+1\\
+-2
+	\end{pmatrix} \quad , \quad C_1,C_2\in \mathbb{R}$\\
+	Lösung der ursprüngl. Dgl. in 1.Zeile\\
+$y(x) = C_1^{-3x}+C_2 e^{-2x} \quad , c_2,C_2 \in \mathbb{R}$\\
+$x  \to \infty  $ Stark gedämpfter Oszillator\\
+Beobactung für $y"+ay'+by=0$\\
+EW-Gleichung \\
+$\lambda^2 +a\lambda +b=0$\\
+1.) Nullstellen $\lambda_1,\lambda_2\in \mathbb{R}, \lambda_1\neq \lambda_2$\\
+$y(x)=C_1e^{\lambda_1 x}+C_2e^{\lambda_2}$\\
+$\lambda_{1,2} =-\frac{a}{2}\pm \sqrt{\frac{a^2}{4}-b}$\\
+$\lambda_1  \neq \lambda_2 und in \mathbb{R} \frac{a^2}{4}-b >0$\\
+2.) Fall : $\frac{a^2}{4}-b=0 \Rightarrow \lambda_1 =\lambda_2=- \frac{a}{2}$\\
+Eigenraum gat nur Dim. 1.\\
+$y(x)=C_1e^{\lambda_1 x}+ C_2 x. e^{\lambda_1 x}$    $C_1,C_2 \in \mathbb{R}$\\
+(skizze! fehlt!)\\
+3.) Fall: $\frac{a^2}{4}-b<0$\\
+$ \Rightarrow paar Konj. komplexer EW:$\\
+$\lambda_{1,2}=\alpha +i\beta (\alpha=- \frac{a}{2}<0)$\\
+allg. Lösung:
+$y(x)= C_1 e^{\alpha x} \cos (\beta x) +C_2 e^{\alpha x} \sin (\beta x)$\\
+Eigentlich ist die welt nicht linear, warum sind linear. system interssant?\\
+$y'(t)=F`(Y_{(t)} ) \neq AY$\\
+Ruhelagen? $Y'(t)= 0 $ d.h. $ F(Y)=0$\\
+sei   $ y_0(t)=y_0 $ konst. eine Ruhelage Tayloretwicklung (linearisierung)\\
+$ F(y) \approx F(y_0)+F'(y_0)(y-y_0)$\\
+$y(t)-y_0)'\approx F'(y_0)(y_{(t)}-y_0) \qquad (F(y_0)=0)$
  \end{example}
  
- 
+\begin{example}[Wettermodell (Edward Lorenz)]
+
+	\includegraphics[width=6cm, height=6cm]{wettermodell}
+	
+
+
+	$x'=-0x+0y$\\
+	$y'=-xy+rx-x$\\
+	$z'=xy-by$\\
+\href{ https://en.wikipedia.org/wiki/Lorenz_system }{Lorenz System Wikipedia}
+
+
+\end{example}
