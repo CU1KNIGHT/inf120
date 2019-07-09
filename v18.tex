@@ -1,0 +1,84 @@
+\section{Vorlesung 18}
+\section{( Totale ) Differenzeierbarkit für Funktionen in zwei Veränderlichen}
+$y = f(x_1 , \dots x_n)\rightsquigarrow \text{ partielle Ableitung }$\\
+$f(x_i) = \dfrac{d \partial}{ \partial x_i }$ ( wo bei $x_j$ mit $ j \neq i $ konstant )\\
+- existiert eine Partielle Ableitung $\Rightarrow f $ ist partielle  Differenzeierbar.\\
+Def. $\Rightarrow$ f ist ( total ) differenzierbar.
+lineare Approximierbarkeit $\Leftrightarrow f$ ist (total ) differenzierbar. 
+\begin{definition}  
+Sei $f : X \rightarrow \mathbb{R}$ , $X \subseteq R^n$ , $x_0 \in X$ : $( x_{01} = (x_0 , \dots , x_{0n}))$ Dann heißt f an der stelle $x_0$ total Differenzierbar wenn gilt :\\
+\begin{enumerate}
+\item $\exists a \in \mathbb{R^n}$ \begin{equation*}
+f(\underline{x})= f(\underline{x_0}) + \underline{a} (x-x_0) + R(\underline{x}) \quad (x \in X) \text{ mit } \lim_{x \to x_0} \dfrac{|R_n(\underline{x})|}
+{\lVert \underline{x} - x_0 \rVert} = 0
+\end{equation*}
+\[ \text{ für } n = 1 \Rightarrow f(x)= f(x_0) + f'(x_1)(x-x_0) + R(x) \]
+\end{enumerate}
+\end{definition}
+\begin{remark}
+Ist $f$ in $x_0$ (total) differenzierbar ? dann gilt\\
+$f(\underline{x}) \underbrace{ \approx f(x_0) + \underline{a}( x - x_0)^1}_{\text{ mittels Aprroximation von f  }}$
+\end{remark}
+\begin{remark}
+Ist f in $x_0$ linear approximierbar , dann kann $\underline{a}$ wie folgt berechnet werden.
+\begin{equation}
+a = \begin{pmatrix}
+f_{x_1}(\underline{x_0})\\
+f_{x_2}(\underline{x_0}\\
+\vdots\\
+f_{x_n}(\underline{x_0}
+\end{pmatrix} = 
+\begin{pmatrix}
+\dfrac{\partial f}{\partial x_1}\\
+\dfrac{\partial f}{\partial x_2}\\
+\vdots\\
+\dfrac{\partial f}{\partial x_n}
+\end{pmatrix}_{|x_0}
+\end{equation}
+\end{remark}
+\begin{remark}
+$\begin{pmatrix}
+f_{x_1}\\
+\vdots\\
+f_{x_n}
+\end{pmatrix}_{x_0}$ heißt Gradient von f an der Stelle $\underline{x_0}$
+\end{remark}
+\begin{remark}
+f ist ( total ) differenzierbar $\Rightarrow$ f ist partiell differenzierbar.\\
+f partiell differenzierbar und hat stetige Ableitung  $\Rightarrow$ f (total) differenzierbar. ($\Leftarrow$ nicht ex.)
+\end{remark}
+\section{Verallgemeinerte Kettenregel
+}
+$z = f(x ,y)$ $ x = x(t)  $ $ y = y(t)  $\\
+$ f(x(t) , y(t) ) = \varphi(t) $
+\begin{example}
+$z= f(x,y)= x^2y$ ,  $x(t) = t^2 $
+ , $y(t) = t$\\
+$\varphi(t)=(t^2)^2 t = t^5 $ Ableitung ?\\
+$f(x(t)) , y(t) = \varphi(t) $ Ableitung nach t\\
+$\dfrac{d\varphi}{dt}(= \varphi') = f_x(x(t) , y(t)) \dfrac{dx}{dt} +
+f_y(x(t) , y(t)) \dfrac{dy}{dt} $\\
+\[\textbf{Kurz: } f_x \dfrac{dx}{dt} + f_y \dfrac{dy}{dt} = \dfrac{d \varphi}{dt}   \]
+\end{example}
+\begin{remark}
+Für die Gültigkeit der Formel begütigt man stetige Differenzeierbarkit (für f nach x und y , für $\varphi$ nach t)  
+\end{remark}
+\begin{example}
+$f(x,y)=x^2 y : x(t)=t^2$ , $y(t)=t = $\\
+ableiten nach t 
+\begin{align*}
+\frac{d \varphi}{dt} &= 2xy \times 2t + x^2 \times 1 \times 1 \\
+&=2t^2 \times t \times 2t + (t^2) \times 1\\
+&= 4t^2 + t^4 = st^4
+\end{align*}
+\end{example}
+\section{Taylorentwicklung für 
+$ z = f (x, y)$ an der Stelle $(x_0, y_0)$}
+$ f(x,y) = f( x_0 , y_0) + \dots $
+$\varphi (1)  = f( \underbrace{ x_0 + 1 (x - x_0)}_{ = x}  , \underbrace{ y_0 +1 (y - y_0)}_{ = y} )$\\
+$ \varphi(t) = f (x_0 + t \overbrace{( x - x_0 )}^{h} 
+y_0 + t \overbrace{( y - y_0 )}^{k}) $\\
+$x(t)=x_0 + th $ , $y(t)= y_0 +t \times k$
+$\varphi(t)$ ist eine Funktion einer reellen Veränderlichen (t) Taylorentwicklung ist bekannt. 
+
+
