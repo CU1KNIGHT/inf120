@@ -81,4 +81,47 @@ y_0 + t \overbrace{( y - y_0 )}^{k}) $\\
 $x(t)=x_0 + th $ , $y(t)= y_0 +t \times k$
 $\varphi(t)$ ist eine Funktion einer reellen Veränderlichen (t) Taylorentwicklung ist bekannt. 
 
+\subsection{Taylorentwicklung für $\phi (t)$ an der Stelle $t_0=0$ }
+\begin{flushleft}
+	$\varphi (t) =\varphi (0) +\varphi (0).t+\frac{1}{2}\varphi''(0) t^2+\dots +\frac{1}{n!}\varphi ^{(n)} (0)t^n +R_n(t)$\\
+für t=1\\
+$f(x,y)=\varphi (1)= \varphi (0) +\varphi'(0)+\frac{1}{2}\varphi''(0) +\dots +\frac{1}{n!}\varphi ^{(n)}(0)+R_n(1)$\\
+Weitere Scritte   t=0\\
+\begin{align*}
+	&\varphi'(t) \qquad &\varphi'(0)\\  
+		&\varphi''(t) \qquad &\varphi''(0)\\  
+			&\varphi'''(t) \qquad &\varphi'''(0)\\  
+			& \dots \qquad &\dots  
+\end{align*}
+$\varphi(t) =f(x(t),y(t))  $ nach ableiten und dabei $\alpha $ die verallgemeinerte kettenregel bemerken\\
+$\varphi '(t)= f_x \underbrace{\frac{dx}{dt}}_{n}+f_y\underbrace{\frac{dy}{dt}}_{k}$\\
+$x(t)=x_0+t.h$   $\frac{dx}{dt}=0+1.h=h$\\
+$y(t)=y_0+t.k$    $\frac{dx}{dt}=0+1.k=k$\\
+$\varphi'(t)=f_x .h+f_y k$\\
+\begin{align*}
+\varphi''(t)= (\phi'(t))=& (f_x h+f_y k)\\
+=&(f_{xx})h+f_{yx}k) h+(f_{xy}h+f_{yy}k)k\\
+=& f_{xx}h^2+2f_{xy}h'.k'+f_{yy}k^2
+\end{align*}
+$\varphi'''(t)=1.f_{xxx}h^3  +3f_{xxy}h^2k+3.f_{xyy}hk^2+^.f_{yyy}k^3$
 
+
+ 
+
+\end{flushleft}
+
+\subsection{Lineare Näherungsformel:}
+für f(x,y) an der Stelle$ (x_0,y_0)$ 
+\[ \varphi (0) +\varphi'(0) = \underbrace{f(x_0+0(x-x_0),y_0(y-y_0))}_{f(x_0,y_0)} + f_x(x_0,y_0)\underset{h}{(x-x_0)}+f_y(x_0,y_0)\underset{k}{(y-y_0)} \]
+$= f(x_0,y_0)+f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)$\\
+$:=$ tangentialebene
+\subsection{Quaratische Nääherungsformel:}
+tangentialebene+$\frac{1}{2}(f_{xx}(x_0,y_0)(x-x_0)^2+2f_{xy}(x_0,y_0)(y-y_0)(x-x_0)+f_{yy}(x_0,y_0)(y-y_0)^2)
+$
+\begin{example}
+	$f(x,y)=\sin x ,\sin y,(x_0,y_0)=(0,0)$\\Gesucht Tangentialebene:\\
+	$f_x=\cos x \sin y $   $f_x(0,0)=0$\\
+	$f_y=\sin x \cos y $ $f_y(0,0)=0$\\
+	$t(x,y)=f_1(x,y)$\\ 
+	$\qquad \quad =\underbrace{f(0,0)}_{0}+\underbrace{f_x(0,0)(x-0)}_{0}+\underbrace{f_y(0,0)(y-0)}_{0}=0$
+\end{example}
